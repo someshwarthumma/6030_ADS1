@@ -1,0 +1,1 @@
+The weighted Union with path compression is consired as the best because it has better memory management along with the better time delay to produce the output.
