@@ -107,7 +107,7 @@ public class Solution {
     /**.
      * Solution class constructor
      */
-    Solution() {
+    private Solution() {
         //Private constructor
     }
     /**.
