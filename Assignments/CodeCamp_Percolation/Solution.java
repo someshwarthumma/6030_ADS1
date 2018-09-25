@@ -6,30 +6,30 @@ class Percolation {
     /**.
      * { Size variable for gridSize  }
      */
-    int size;
+    private int size;
     /**.
      * { Bottom Virtual node as size ,for avoiding the time complexity }
      */
-    int end;
+    private int end;
     /**.
      * Top node as Start, for avoiding the time complexity
      */
-    int start;
+    private int start;
     /**.
      * This is grid matrix for represating the open and close nodes
      */
-    boolean[][] grid;
+    private boolean[][] grid;
     /**.
      * Creation of Weighted Quick Union object to find the connection
      * between start and end node.
      */
-    WeightedQuickUnionUF unionObj;
+    private WeightedQuickUnionUF unionObj;
     /**.
      * percolation constructor
      *
      * @param      n     { Size of the grid defined }
      */
-    public Percolation(final int n) {
+    Percolation(final int n) {
         end = n * n + 1;
         start = n * n;
         size = n;
@@ -58,14 +58,14 @@ class Percolation {
         if (row - 1 >= 0 && isOpen(row - 1, col)) {
             unionObj.union(getIndex(row, col), getIndex(row - 1, col));
         }
-        if (row + 1 < size && isOpen(row + 1 , col)) {
+        if (row + 1 < size && isOpen(row + 1, col)) {
             unionObj.union(getIndex(row, col), getIndex(row + 1, col));
         }
-        if (col - 1 >= 0 && isOpen(row , col - 1)) {
+        if (col - 1 >= 0 && isOpen(row, col - 1)) {
             unionObj.union(getIndex(row, col), getIndex(row, col - 1));
         }
         if (col + 1 < size && isOpen(row , col + 1)) {
-            unionObj.union(getIndex(row, col), getIndex(row , col + 1));
+            unionObj.union(getIndex(row, col), getIndex(row, col + 1));
         }
 
     }
@@ -97,27 +97,32 @@ class Percolation {
      * @return     { Return true if percolation occurs,else false }
      */
     public boolean percolates() {
-        return unionObj.connected(end , start);
+        return unionObj.connected(end, start);
     }
 }
 /**.
  * Solution class to handle the input testcases
  */
 public class Solution {
-    static Scanner scan = new Scanner(System.in);
+    /**.
+     * Scanner object for reading the inputs
+     */
+    private static Scanner scan = new Scanner(System.in);
     /**.
      * main class for input.
      *
      * @param      args  The arguments
      */
     public static void main(final String[] args) {
-        Percolation percolationObj = new Percolation(Integer.parseInt(scan.nextLine()));
+        Percolation percolationObj = new Percolation(Integer.
+            parseInt(scan.nextLine()));
         while (scan.hasNext()) {
             String[] input = scan.nextLine().split(" ");
             //System.out.println(Arrays.toString(input));
-            percolationObj.open(Integer.parseInt(input[0]) - 1, Integer.parseInt(input[1]) - 1);
+            percolationObj.open(Integer.
+                parseInt(input[0]) - 1, Integer.
+                parseInt(input[1]) - 1);
         }
         System.out.println(percolationObj.percolates());
-
     }
 }
