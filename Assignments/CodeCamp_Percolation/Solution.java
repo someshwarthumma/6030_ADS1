@@ -64,7 +64,7 @@ class Percolation {
         if (col - 1 >= 0 && isOpen(row, col - 1)) {
             unionObj.union(getIndex(row, col), getIndex(row, col - 1));
         }
-        if (col + 1 < size && isOpen(row , col + 1)) {
+        if (col + 1 < size && isOpen(row, col + 1)) {
             unionObj.union(getIndex(row, col), getIndex(row, col + 1));
         }
 
@@ -105,13 +105,19 @@ class Percolation {
  */
 public class Solution {
     /**.
+     * Solution class constructor
+     */
+    Solution(){
+        //Private constructor
+    }
+    /**.
      * Scanner object for reading the inputs
      */
     private static Scanner scan = new Scanner(System.in);
     /**.
      * main class for input.
      *
-     * @param      args  The arguments
+     * @param      args  arguments
      */
     public static void main(final String[] args) {
         Percolation percolationObj = new Percolation(Integer.
