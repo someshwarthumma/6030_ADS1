@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.*;
 // public class Percolation {
 //    public Percolation(int n)                // create n-by-n grid, with all sites blocked
 //    public    void open(int row, int col)    // open site (row, col) if it is not open already
@@ -21,7 +22,7 @@ class Percolation {
 		start = n*n;
 		size = n;
 		grid = new boolean[n][n];
-		unionObj = new WeightedQuickUnionUF(n*n+1);
+		unionObj = new WeightedQuickUnionUF(n*n+2);
 		for(int i =0;i<n;i++){
 			for(int j=0;j<n;j++){
 				grid[i][j]=false;
@@ -35,21 +36,21 @@ class Percolation {
 		grid[row][col] = false;
 
 		if(row == 0){
-			unionObj.union(getIndex(row,col), start);
+			unionObj.union(start, getIndex(row,col));
 		}
 		if(row == size-1){
-			unionObj.union(getIndex(row,col), end);
+			unionObj.union(end, getIndex(row,col));
 		}
 		if(row-1 >= 0 && isOpen(row-1,col)){
 			unionObj.union(getIndex(row-1,col), getIndex(row, col));
 		}
-		if(row + 1 <= size && isOpen(row+1 , col)){
+		if(row + 1 < size && isOpen(row+1 , col)){
 			unionObj.union(getIndex(row+1, col), getIndex(row , col));
 		}
 		if(col-1 >=0 && isOpen(row , col-1)){
 			unionObj.union(getIndex(row, col-1), getIndex(row, col));
 		}
-		if(col +1 <= size && isOpen(row , col+1)){
+		if(col +1 < size && isOpen(row , col+1)){
 			unionObj.union(getIndex(row , col+1), getIndex(row , col));
 		}
 		
@@ -74,7 +75,8 @@ public class Solution {
 		Percolation percolationObj = new Percolation(Integer.parseInt(scan.nextLine()));
 		while(scan.hasNext()){
 			String[] input = scan.nextLine().split(" ");
-			percolationObj.open(Integer.parseInt(input[0]),Integer.parseInt(input[1]));
+			//System.out.println(Arrays.toString(input));
+			percolationObj.open(Integer.parseInt(input[0])-1,Integer.parseInt(input[1])-1);
 		}
 		System.out.println(percolationObj.percolates());
 		 
