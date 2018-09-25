@@ -1,79 +1,123 @@
 import java.util.Scanner;
-import java.util.*;
-// public class Percolation {
-//    public Percolation(int n)                // create n-by-n grid, with all sites blocked
-//    public    void open(int row, int col)    // open site (row, col) if it is not open already
-//    public boolean isOpen(int row, int col)  // is site (row, col) open?
-//    public boolean isFull(int row, int col)  // is site (row, col) full?
-//    public     int numberOfOpenSites()       // number of open sites
-//    public boolean percolates()              // does the system percolate?
-// }
-
-
-// You can implement the above API to solve the problem
+/**.
+ * Percolation class for find weather percolation occurs or not
+ */
 class Percolation {
-	int size;
-	int end;
-	int start;
-	boolean[][] grid;
-	WeightedQuickUnionUF unionObj;
-	public Percolation(int n){
-		end = n*n+1;
-		start = n*n;
-		size = n;
-		grid = new boolean[n][n];
-		unionObj = new WeightedQuickUnionUF(n*n+2);
-	}                
-	public void open(int row, int col){
-		if(grid[row][col]){
-			return;
-		}
-		grid[row][col] = true;
+    /**.
+     * { Size variable for gridSize  }
+     */
+    int size;
+    /**.
+     * { Bottom Virtual node as size ,for avoiding the time complexity }
+     */
+    int end;
+    /**.
+     * Top node as Start, for avoiding the time complexity
+     */
+    int start;
+    /**.
+     * This is grid matrix for represating the open and close nodes
+     */
+    boolean[][] grid;
+    /**.
+     * Creation of Weighted Quick Union object to find the connection
+     * between start and end node.
+     */
+    WeightedQuickUnionUF unionObj;
+    /**.
+     * percolation constructor
+     *
+     * @param      n     { Size of the grid defined }
+     */
+    public Percolation(final int n) {
+        end = n * n + 1;
+        start = n * n;
+        size = n;
+        grid = new boolean[n][n];
+        unionObj = new WeightedQuickUnionUF(n * n + 2);
+    }
+    /**.
+     *Open method to Open the node in grid matrix,
+     *and to establish te connecction
+     *
+     * @param      row   row
+     * @param      col   column
+     */
+    public void open(final int row, final int col) {
+        if (grid[row][col]) {
+            return;
+        }
+        grid[row][col] = true;
 
-		if(row == 0){
-			unionObj.union(start, getIndex(row,col));
-		}
-		if(row == size-1){
-			unionObj.union(end, getIndex(row,col));
-		}
-		if(row-1 >= 0 && isOpen(row-1,col)){
-			unionObj.union(getIndex(row, col), getIndex(row-1,col));
-		}
-		if(row + 1 < size && isOpen(row+1 , col)){
-			unionObj.union(getIndex(row, col), getIndex(row+1, col));
-		}
-		if(col-1 >=0 && isOpen(row , col-1)){
-			unionObj.union(getIndex(row, col),getIndex(row, col-1));
-		}
-		if(col +1 < size && isOpen(row , col+1)){
-			unionObj.union(getIndex(row, col), getIndex(row , col+1));
-		}
-		
-	}
-	private int getIndex(int row,int col){
-		return row*size+col;
-	}
+        if (row == 0) {
+            unionObj.union(start, getIndex(row, col));
+        }
+        if (row == size - 1) {
+            unionObj.union(end, getIndex(row, col));
+        }
+        if (row - 1 >= 0 && isOpen(row - 1, col)) {
+            unionObj.union(getIndex(row, col), getIndex(row - 1, col));
+        }
+        if (row + 1 < size && isOpen(row + 1 , col)) {
+            unionObj.union(getIndex(row, col), getIndex(row + 1, col));
+        }
+        if (col - 1 >= 0 && isOpen(row , col - 1)) {
+            unionObj.union(getIndex(row, col), getIndex(row, col - 1));
+        }
+        if (col + 1 < size && isOpen(row , col + 1)) {
+            unionObj.union(getIndex(row, col), getIndex(row , col + 1));
+        }
 
-	public boolean isOpen(int row, int col){
-		return grid[row][col];
-	}
-
-	//public boolean isFull(int row, int col)  
-	//public int numberOfOpenSites()       
-	public boolean percolates(){
-		return unionObj.connected(end , start);
-	}              
+    }
+    /**.
+     * GetIndex method to convert 2D cordinate into a 1D cordinate
+     *
+     * @param      row   The row
+     * @param      col   The col
+     *
+     * @return     The index.
+     */
+    private int getIndex(final int row, final int col) {
+        return row * size + col;
+    }
+    /**.
+     * Open method to check weather it is open or not
+     *
+     * @param      row   row
+     * @param      col   column
+     *
+     * @return     True if open, False otherwise.
+     */
+    private boolean isOpen(final int row, final int col) {
+        return grid[row][col];
+    }
+    /**.
+     * percolates method to check weather for percolation
+     *
+     * @return     { Return true if percolation occurs,else false }
+     */
+    public boolean percolates() {
+        return unionObj.connected(end , start);
+    }
 }
+/**.
+ * Solution class to handle the input testcases
+ */
 public class Solution {
-	static Scanner scan = new Scanner(System.in);
-	public static void main(String[] args) {
-		Percolation percolationObj = new Percolation(Integer.parseInt(scan.nextLine()));
-		while(scan.hasNext()){
-			String[] input = scan.nextLine().split(" ");
-			//System.out.println(Arrays.toString(input));
-			percolationObj.open(Integer.parseInt(input[0])-1,Integer.parseInt(input[1])-1);
-		}
-		System.out.println(percolationObj.percolates());
-		 
-	}
+    static Scanner scan = new Scanner(System.in);
+    /**.
+     * main class for input.
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
+        Percolation percolationObj = new Percolation(Integer.parseInt(scan.nextLine()));
+        while (scan.hasNext()) {
+            String[] input = scan.nextLine().split(" ");
+            //System.out.println(Arrays.toString(input));
+            percolationObj.open(Integer.parseInt(input[0]) - 1, Integer.parseInt(input[1]) - 1);
+        }
+        System.out.println(percolationObj.percolates());
+
+    }
 }
