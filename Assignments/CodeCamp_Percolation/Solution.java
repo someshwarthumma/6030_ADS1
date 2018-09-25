@@ -103,7 +103,7 @@ class Percolation {
 /**.
  * Solution class to handle the input testcases
  */
-public class Solution {
+public final class Solution {
     /**.
      * Solution class constructor
      */
