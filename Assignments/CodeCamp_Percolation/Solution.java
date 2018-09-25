@@ -23,17 +23,12 @@ class Percolation {
 		size = n;
 		grid = new boolean[n][n];
 		unionObj = new WeightedQuickUnionUF(n*n+2);
-		for(int i =0;i<n;i++){
-			for(int j=0;j<n;j++){
-				grid[i][j]=false;
-			} 
-		}
 	}                
 	public void open(int row, int col){
 		if(grid[row][col]){
 			return;
 		}
-		grid[row][col] = false;
+		grid[row][col] = true;
 
 		if(row == 0){
 			unionObj.union(start, getIndex(row,col));
@@ -42,16 +37,16 @@ class Percolation {
 			unionObj.union(end, getIndex(row,col));
 		}
 		if(row-1 >= 0 && isOpen(row-1,col)){
-			unionObj.union(getIndex(row-1,col), getIndex(row, col));
+			unionObj.union(getIndex(row, col), getIndex(row-1,col));
 		}
 		if(row + 1 < size && isOpen(row+1 , col)){
-			unionObj.union(getIndex(row+1, col), getIndex(row , col));
+			unionObj.union(getIndex(row, col), getIndex(row+1, col));
 		}
 		if(col-1 >=0 && isOpen(row , col-1)){
-			unionObj.union(getIndex(row, col-1), getIndex(row, col));
+			unionObj.union(getIndex(row, col),getIndex(row, col-1));
 		}
 		if(col +1 < size && isOpen(row , col+1)){
-			unionObj.union(getIndex(row , col+1), getIndex(row , col));
+			unionObj.union(getIndex(row, col), getIndex(row , col+1));
 		}
 		
 	}
