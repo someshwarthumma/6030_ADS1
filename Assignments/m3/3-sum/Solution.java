@@ -19,7 +19,7 @@ class ThreeSum {
     /**.
      * ThreeSum constructor to find the threesum of a number
      *
-     * @param      size  The size
+     * @param      sizeOfArray  The size
      */
     ThreeSum(final int sizeOfArray) {
         givenArray = new int[sizeOfArray];
@@ -50,7 +50,7 @@ class ThreeSum {
     }
 }
 /**.
- * Solution class 
+ * Solution class
  */
 final class Solution {
     /**.
