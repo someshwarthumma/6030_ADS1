@@ -14,7 +14,7 @@ class ThreeSum {
     public void threesum() {
         Arrays.sort(givenArray);
         for (int i = 0; i < size - 1; i++) {
-            for (int j = i + 1; j < size - 1; j++) {
+            for (int j = i + 1; j < size ; j++) {
                 int k = Arrays.binarySearch(givenArray, -(givenArray[i] + givenArray[j]));
                 if (k > j) {
                     counter++;
