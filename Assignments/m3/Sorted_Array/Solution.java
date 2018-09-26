@@ -1,5 +1,5 @@
 import java.util.Scanner;
-import java.util.Arrays;
+//import java.util.Arrays;
 /**.
  * Solution class
  */
@@ -7,7 +7,7 @@ public class Solution {
     /**.
      * Constructor for solution class
      */
-    Solution(){
+    private Solution() {
         //constructor for solution class
     }
     /**.
@@ -15,7 +15,7 @@ public class Solution {
      *
      * @param      args  arguments
      */
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         /**.
          * Scanner objet to read the input;
          */
@@ -82,7 +82,7 @@ public class Solution {
      *
      * @param      sortedArray sorted array
      */
-    public static void print(int[] sortedArray) {
+    public static void print(final int[] sortedArray) {
         /**.
          * temporary string variable to print the output
          */
