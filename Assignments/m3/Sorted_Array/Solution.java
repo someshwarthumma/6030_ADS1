@@ -43,7 +43,7 @@ public class Solution{
 public static void print(int[] sortedArray){
 	String temp = "";
 	for(int i=0;i<sortedArray.length-1;i++){
-		temp += sortedArray[i];
+		temp += sortedArray[i]+",";
 	}
 	temp += sortedArray[sortedArray.length-1];
 	System.out.println(temp);
