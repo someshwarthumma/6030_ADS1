@@ -7,29 +7,29 @@ class ThreeSum {
     /**.
      * Array to store the given elements
      */
-    int[] givenArray;
+    private int[] givenArray;
     /**.
      * size variable to index the array elements
      */
-    int size = 0;
+    private int size = 0;
     /**.
      * Counter variable to count the threesum count
      */
-    int counter = 0;
+    private int counter = 0;
     /**.
      * ThreeSum constructor to find the threesum of a number
      *
      * @param      size  The size
      */
-    ThreeSum(final int size) {
-        givenArray = new int[size];
+    ThreeSum(final int sizeOfArray) {
+        givenArray = new int[sizeOfArray];
     }
     /**.
      * add method to add the element to into the given array
      *
      * @param      element  The element
      */
-    public void add(int element) {
+    public void add(final int element) {
         givenArray[size++] = element;
     }
     /**.
@@ -38,8 +38,9 @@ class ThreeSum {
     public void getThreesum() {
         Arrays.sort(givenArray);
         for (int i = 0; i < size - 1; i++) {
-            for (int j = i + 1; j < size -1; j++) {
-                int k = Arrays.binarySearch(givenArray, -(givenArray[i] + givenArray[j]));
+            for (int j = i + 1; j < size - 1; j++) {
+                int k = Arrays.binarySearch(
+                    givenArray, -(givenArray[i] + givenArray[j]));
                 if (k > j) {
                     counter++;
                 }
@@ -51,11 +52,11 @@ class ThreeSum {
 /**.
  * Solution class 
  */
-class Solution {
+final class Solution {
     /**.
      * Solution class constructor
      */
-    private Solution(){
+    private Solution() {
         //Solution constructor
     }
     /**.
