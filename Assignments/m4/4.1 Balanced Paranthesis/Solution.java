@@ -16,7 +16,8 @@ class Stack {
 	 * Stack class constructor
 	 */
 	Stack() {
-		data = new char[20];
+		final int twenty = 20;
+		data = new char[twenty];
 		size = 0;
 	}
 	/**.
@@ -57,13 +58,13 @@ class Stack {
 		return size == 0;
 	}
 	/**.
-	 * Resize array to resize the array 
+	 * Resize array to resize the array
 	 */
 	private void resize() {
-		data = Arrays.copyOf(data , 2 * data.length);
+		data = Arrays.copyOf(data, 2 * data.length);
 	}
 	/**.
-	 * 
+	 *
 	 * to set size of the stack to zero.
 	 */
 	public void setSize() {
@@ -74,7 +75,7 @@ class Stack {
 /**.
  * solution class
  */
-public class Solution {
+final public class Solution {
 	/**.
 	 * Solution constructor
 	 */
@@ -105,7 +106,10 @@ public class Solution {
 				break;
 			}
 			for (char each : s) {
-				if (s[s.length - 1] == '[' || s[s.length - 1] == '{' || s[s.length - 1] == '(' ) {
+				if (s[s.
+					length - 1] == '[' || s[s.
+					length - 1] == '{' || s[s.
+					length - 1] == '(') {
 					System.out.println("NO");
 					flag = false;
 					break;
