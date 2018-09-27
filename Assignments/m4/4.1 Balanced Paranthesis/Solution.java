@@ -46,6 +46,11 @@ public class Solution{
 		for(int i=0;i<n;i++){
 			boolean flag = true;
 			char[] s = scan.nextLine().toCharArray();
+			if(s.length %2 ==1){
+				flag = false;
+				System.out.println("NO");
+				break;
+			}
 			for(char each: s){
 			if(each == '(' || each == '{' || each == '['){
 				stackObj.push(each);
@@ -61,13 +66,10 @@ public class Solution{
 
 		}
 		if(flag){
-			if(!stackObj.isEmpty()){
-				System.out.println("NO");
-			}else{
-				System.out.println("YES");
+				System.out.println("YES"); 
 			}
 			
-		}
+		
 			
 		}
 	}
