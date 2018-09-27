@@ -1,0 +1,13 @@
+input: 
+	it was - the best - of times - - - it was - the - -
+output:
+	was
+	best
+	times
+	of
+	the
+	was
+	the
+	it
+Elements in stack at the end: 
+	it
