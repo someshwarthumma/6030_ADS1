@@ -47,10 +47,23 @@ public class Solution{
 			boolean flag = true;
 			char[] s = scan.nextLine().toCharArray();
 			for(char each: s){
+				if(stackObj.isEmpty()){
+					if(each == ')' || each == '}' || each == ']'){
+						System.out.println("NO");
+						flag = false;
+						break;
+					}
+				}
 			if(each == '(' || each == '{' || each == '['){
 				stackObj.push(each);
 			}else{
-				if(each != stackObj.pop()){
+				char ch = stackObj.pop();
+				if(ch == '0'){
+					System.out.println("NO");
+					flag = false;
+					break;
+				}
+				if(each != ch){
 					stackObj.setSize();
 					System.out.println("NO");
 					flag = false;
