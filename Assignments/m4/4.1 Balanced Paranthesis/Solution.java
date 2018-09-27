@@ -52,6 +52,11 @@ public class Solution{
 				break;
 			}
 			for(char each: s){
+				if(s[s.length-1] == '[' || s[s.length-1] == '{' || s[s.length-1] == '(' ){
+					System.out.println("NO");
+					flag = false;
+					break;
+				}
 			if(each == '(' || each == '{' || each == '['){
 				stackObj.push(each);
 			}else{
@@ -66,7 +71,7 @@ public class Solution{
 
 		}
 		if(flag){
-				System.out.println("YES"); 
+				System.out.println("NO");				
 			}
 			
 		
