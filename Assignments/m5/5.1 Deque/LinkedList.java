@@ -16,15 +16,15 @@ class LinkedList<E>{
     }
 
 	LinkedList(){
-        head = new Node();
+        //head = new Node();
         size = 0;
 	}
 
     public void addAtEnd(E data){
         Node newNode;
         if(size == 0) {
-            newNode = new Node(data);
-            head = newNode;
+            head = new Node(data);
+            //head = newNode;
             size++;
             return;
         }
@@ -66,7 +66,8 @@ class LinkedList<E>{
 
     public void removeAtEnd(){
         if(size == 0){
-            System.out.println("No element Found Exception!");
+            System.out.println("Deck is Empty");
+            return;
         }
         Node current = head;
         int counter = 1;
@@ -80,7 +81,8 @@ class LinkedList<E>{
 
     public void removeAtStart(){
         if(size == 0){
-            System.out.println("No element Found Exception!");
+            System.out.println("Deck is Empty");
+            return; 
         }
         Node current = head;
         head = head.link;
@@ -90,7 +92,7 @@ class LinkedList<E>{
 
     public void removeAtLocation(int location){
         if(size == 0){
-            System.out.println("No element Found Exception!");
+            System.out.println("Deck is Empty");
         }
         if(location == size){
             removeAtEnd();
@@ -125,6 +127,10 @@ class LinkedList<E>{
         }
     }
     public void print(){
+        if(size == 0){
+            System.out.println("[]");
+            return;
+        }
         Node current = head;
         System.out.print("[");
         while(current.link != null){
@@ -148,20 +154,23 @@ class LinkedList<E>{
         str += current.data+ "]";
         return str;
     }
+    public int getSize(){
+        return this.size;
+    }
 
-    /*public E getObject(int location){
+    public E getObject(int index){
         if(size==0){
             return head.data;
         }
         Node current = head;
-        int counter = 1;
-        while(counter < location-1){
+        int counter = 0;
+        while(counter < index){
             current = current.link;
             counter++;
         }
-        return current.next.data;
+        return current.data;
 
-    }*/
+    }
 
 
 }
