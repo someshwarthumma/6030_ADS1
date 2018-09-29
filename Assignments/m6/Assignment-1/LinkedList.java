@@ -1,26 +1,57 @@
+/**.
+ * LinkedList class implementation as ADT
+ */
 class LinkedList{
+    /**.
+     * Head pointer for first element
+     */
     Node head;
+    /**.
+     * Size variable for size
+     */
     int size;
+    /**.
+     * Class node for each cell containing data and link
+     */
     class Node{
+        /**.
+         * Data variable
+         */
         int data;
+        /**.
+         * link object belong to class
+         */
         Node link;
+        /**.
+         * Node constructor
+         */
         Node(){
             this.data = 0;
             this.link = null;
         }
-
-        Node(int data){
+        /**.
+         * Node constructor
+         *
+         * @param      data  The data
+         */
+        Node(final int data){
             this.data = data;
             this.link = null;
         }
     }
-
+    /**.
+     * Linked list constructor
+     */
 	LinkedList(){
         //head = new Node();
         size = 0;
 	}
-
-    public void addAtEnd(int data){
+    /**.
+     * Add at End method to add at end of the linkedlist
+     *
+     * @param      data  The data
+     */
+    public void addAtEnd(final int data){
         Node newNode;
         if(size == 0) {
             head = new Node(data);
@@ -37,34 +68,20 @@ class LinkedList{
         current.link = newNode; 
         size++;
     }
-
-    public void addAtStart(int data){
-        //System.out.println(" add at start: ");
+    /**.
+     * Add at start method to add at head
+     *
+     * @param      data  The data
+     */
+    public void addAtStart(final int data){
         Node newNode = new Node(data);
         newNode.link = head;
         head = newNode;
         size++;
     }
-
-    /*public void addAtLocation(int location, E data){
-        if(location >size){
-            System.out.println("Invalid position Exception in add at location.");
-            return;
-        }
-        Node newNode = new Node(data);
-        int counter = 1;
-        Node current = head;
-
-        while(counter < location-1){
-            current = current.link;
-            counter++;
-        }
-        newNode.link = current.link;
-        current.link = newNode;
-        size++;
-
-    }*/
-
+    /**.
+     * Remove at end to remove the element at the end
+     */
     public void removeAtEnd(){
         if(size == 0){
             System.out.println("No Element Found");
@@ -79,7 +96,9 @@ class LinkedList{
         current.link = null;
         size--;
     }
-
+    /**.
+     * to remove at start 
+     */
     public void removeAtStart(){
         if(size == 0){
             System.out.println("No Element Found");
@@ -91,75 +110,22 @@ class LinkedList{
         size--;
     }
 
-    /*public void removeAtLocation(int location){
-        if(size == 0){
-            System.out.println("No Element Found");
-        }
-        if(location == size){
-            removeAtEnd();
-            size--;
-            return;
-        }
-        if(location > size){
-            System.out.println("Invalid location ");
-            return;
-        }
-        Node current = head;
-        int counter = 1;
-        while(counter < location-1){
-            current = current.link;
-            counter++;
-        }
-        Node temp = current.link;
-        current.link = temp.link;
-        temp.link = null;
-        size--;
-
-    }*/
-    /*public void removeElement(E element){
-        try{Node current = head;
-        int counter = 1;
-        while(current.data != element){
-            current = current.link;
-        }
-        removeAtLocation(counter);
-        } catch(Exception e){
-            System.out.println("No element found for removeElement");
-        }
-    }*/
-    /*public void print(){
-        if(size == 0){
-            System.out.println("[]");
-            return;
-        }
-        Node current = head;
-        System.out.print("[");
-        while(current.link != null){
-            System.out.print(current.data +", ");
-            current = current.link;
-        }
-        System.out.print(current.data+ "]");
-        System.out.println();
-    }*/
-
-    /*public String getList(){
-        if(size == 0){
-            return "[]";
-        }
-        Node current = head;
-        String str = "[";
-        while(current.link != null){
-            str += current.data +", ";
-            current = current.link;
-        }
-        str += current.data+ "]";
-        return str;
-    }*/
+    /**.
+     * To get the size
+     *
+     * @return     The size.
+     */
     public int getSize(){
         return this.size;
     }
-
-    public int getObject(int index){
+    /**.
+     * To return the data in the node.
+     *
+     * @param      index  The index
+     *
+     * @return     The object.
+     */
+    public int getObject(final int index){
         if(size==0){
             return (int)head.data;
         }
@@ -172,7 +138,11 @@ class LinkedList{
         return (int)current.data;
 
     }
-
+    /**.
+     * To return the head data.
+     *
+     * @return     The first.
+     */
     public int getFirst(){
         return (int)head.data;
 

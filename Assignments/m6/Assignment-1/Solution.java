@@ -52,8 +52,8 @@ class AddLargeNumbers {
      */
     public static LinkedList numberToDigits(final String number) {
         LinkedList linkedlist = new LinkedList();
-        for (int i = 0; i < number.length(); i++) {
-            int num = Integer.parseInt(number.charAt(i) + "");
+        for (int index = 0; index < number.length(); index++) {
+            int num = Integer.parseInt(number.charAt(index) + "");
             linkedlist.addAtEnd(num);
         }
         return linkedlist;
@@ -68,7 +68,7 @@ class AddLargeNumbers {
     public static String digitsToNumber(final LinkedList list) {
         int listSize = list.getSize();
         String str = "";
-        for (int i = 0; i < listSize; i++) {
+        for (int index = 0; index < listSize; index++) {
             str += list.getFirst();
             list.removeAtStart();
         }
@@ -113,14 +113,14 @@ class AddLargeNumbers {
         if (size1 > size2) {
             //System.out.println("first if");
             int diff = size1 - size2;
-            for (int i = 0; i < diff; i++) {
+            for (int index = 0; index < diff; index++) {
                 list2.addAtStart(0);
             }
         }
         if (size2 > size1) {
             //System.out.println("second if");
             int diff = size2 - size1;
-            for (int i = 0; i < diff; i++) {
+            for (int index = 0; index < diff; index++) {
                 list1.addAtStart(0);
             }
         }
@@ -128,13 +128,13 @@ class AddLargeNumbers {
         size1 = list1.getSize();
         size2 = list1.getSize();
         if (size1 == size2) {
-            for (int i = 0; i < size1; i++) {
+            for (int index = 0; index < size1; index++) {
                 stack1.push(list1.getFirst());
                 list1.removeAtStart();
                 stack2.push(list2.getFirst());
                 list2.removeAtStart();
             }
-            for (int i = 0; i < size1; i++) {
+            for (int index = 0; index < size1; index++) {
                 int one = stack1.pop();
                 int two = stack2.pop();
                 int sum = one + two;
