@@ -158,9 +158,9 @@ class LinkedList<E>{
         return this.size;
     }
 
-    public E getObject(int index){
+    public int getObject(int index){
         if(size==0){
-            return head.data;
+            return (int)head.data;
         }
         Node current = head;
         int counter = 0;
@@ -168,12 +168,12 @@ class LinkedList<E>{
             current = current.link;
             counter++;
         }
-        return current.data;
+        return (int)current.data;
 
     }
 
-    public E getFirst(){
-        return head.data;
+    public int getFirst(){
+        return (int)head.data;
 
     }
 

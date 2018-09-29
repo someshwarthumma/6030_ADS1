@@ -41,7 +41,7 @@ class AddLargeNumbers {
     	int size1 = list1.getSize();
     	int size2  = list2.getSize();
     	LinkedList<Integer> addition = new LinkedList<Integer>();
-    	/*if(size1 > size2){
+    	if(size1 > size2){
     		int diff = size1 - size2;
     		for(int i=0; i<diff;i++){
     			list2.addAtStart(0);
@@ -70,7 +70,7 @@ class AddLargeNumbers {
     			addition.addAtStart(add);
     		}
     		
-    	}*/
+    	}
     	return addition;
 
     }
