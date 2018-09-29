@@ -58,7 +58,9 @@ class AddLargeNumbers {
     		}
     	}
     	//System.out.println(list1.getSize() +"-"+ list2.getSize());
-    	
+    	size1 = list1.getSize();
+    	size2 = list1.getSize();
+    	if(size1==size2){
     		for(int i=0;i<size1;i++){
     			stack1.push(list1.getFirst());
     			list1.removeAtStart();
@@ -78,7 +80,7 @@ class AddLargeNumbers {
     			addition.addAtStart(carry);
     		}
 
-    	
+    	}
     	return addition;
 
     }
