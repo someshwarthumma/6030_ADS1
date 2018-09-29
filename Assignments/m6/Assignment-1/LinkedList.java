@@ -1,15 +1,15 @@
-class LinkedList<E>{
+class LinkedList{
     Node head;
     int size;
     class Node{
-        E data;
+        int data;
         Node link;
         Node(){
-            this.data = null;
+            this.data = 0;
             this.link = null;
         }
 
-        Node(E data){
+        Node(int data){
             this.data = data;
             this.link = null;
         }
@@ -20,7 +20,7 @@ class LinkedList<E>{
         size = 0;
 	}
 
-    public void addAtEnd(E data){
+    public void addAtEnd(int data){
         Node newNode;
         if(size == 0) {
             head = new Node(data);
@@ -38,7 +38,8 @@ class LinkedList<E>{
         size++;
     }
 
-    public void addAtStart(E data){
+    public void addAtStart(int data){
+        System.out.println(" add at start: ");
         Node newNode = new Node(data);
         newNode.link = head;
         head = newNode;

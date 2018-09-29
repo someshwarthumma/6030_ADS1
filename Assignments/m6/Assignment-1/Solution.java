@@ -1,9 +1,9 @@
 import java.util.Scanner;
 
 class Stack{
-	LinkedList<Integer> stack;
+	LinkedList stack;
 	Stack(){
-		stack = new LinkedList<Integer>();
+		stack = new LinkedList();
 	}
 	public void push(int item){
 		stack.addAtEnd(item);
@@ -17,7 +17,7 @@ class Stack{
 }
 class AddLargeNumbers {
     public static LinkedList numberToDigits(String number) {
-    	LinkedList<Integer> linkedlist = new LinkedList<Integer>();
+    	LinkedList linkedlist = new LinkedList();
     	for(int i=0;i<number.length();i++){
     		int num = Integer.parseInt(number.charAt(i)+"");
     		linkedlist.addAtEnd(num);
@@ -39,20 +39,25 @@ class AddLargeNumbers {
     	Stack stack2 = new Stack();
     	int carry = 0;
     	int size1 = list1.getSize();
+
     	int size2  = list2.getSize();
-    	LinkedList<Integer> addition = new LinkedList<Integer>();
+    	System.out.println(size1 +"-"+ size2 );
+    	LinkedList addition = new LinkedList();
     	if(size1 > size2){
+    		System.out.println("first if");
     		int diff = size1 - size2;
     		for(int i=0; i<diff;i++){
     			list2.addAtStart(0);
     		}
     	}
     	if(size2 > size1){
+    		System.out.println("second if");
     		int diff = size2 - size2;
     		for(int i=0; i<diff;i++){
     			list1.addAtStart(0);
     		}
     	}
+    	System.out.println(list1.getSize() +"-"+ list2.getSize());
     	if(size1==size2){
     		for(int i=0;i<size1;i++){
     			stack1.push(list1.getFirst());
