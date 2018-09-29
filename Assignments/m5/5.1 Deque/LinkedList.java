@@ -1,26 +1,59 @@
+/**.
+ * LinkedList class
+ *
+ * @param      <E>   { parameter_description }
+ */
 class LinkedList<E>{
+	/**.
+	 * head node to point the first element
+	 */
     Node head;
+    /**.
+     * size variable
+     */
     int size;
+    /**.
+     * Node class to point the next cell
+     */
     class Node{
+    	/**.
+    	 * Data variable
+    	 */
         E data;
+        /**.
+         * Link object for pointing
+         */
         Node link;
+        /**.
+         * Node constuctor without arguments.
+         */
         Node(){
             this.data = null;
             this.link = null;
         }
-
+        /**.
+         * Node constructor with parameters
+         *
+         * @param      data  data
+         */
         Node(E data){
             this.data = data;
             this.link = null;
         }
     }
-
+    /**.
+     * LinkedList constructor
+     */
 	LinkedList(){
         //head = new Node();
         size = 0;
 	}
-
-    public void addAtEnd(E data){
+	/**.
+	 * method to add the element at the end
+	 *
+	 * @param      data  The data
+	 */
+    public void addAtEnd(final E data){
         Node newNode;
         if(size == 0) {
             head = new Node(data);
@@ -37,15 +70,24 @@ class LinkedList<E>{
         current.link = newNode; 
         size++;
     }
-
-    public void addAtStart(E data){
+    /**.
+     * method to addd at the start
+     *
+     * @param      data  The data
+     */
+    public void addAtStart(final E data){
         Node newNode = new Node(data);
         newNode.link = head;
         head = newNode;
         size++;
     }
-
-    public void addAtLocation(int location, E data){
+    /**.
+     * method to add at the given location
+     *
+     * @param      location  The location
+     * @param      data      The data
+     */
+    public void addAtLocation(final int location, final E data){
         if(location >size){
             System.out.println("Invalid position Exception in add at location.");
             return;
@@ -63,7 +105,9 @@ class LinkedList<E>{
         size++;
 
     }
-
+    /**.
+     * method to remove at the end
+     */
     public void removeAtEnd(){
         if(size == 0){
             System.out.println("Deck is Empty");
@@ -78,7 +122,9 @@ class LinkedList<E>{
         current.link = null;
         size--;
     }
-
+    /**.
+     * method to remove at start
+     */
     public void removeAtStart(){
         if(size == 0){
             System.out.println("Deck is Empty");
@@ -89,8 +135,12 @@ class LinkedList<E>{
         current.link = null;
         size--;
     }
-
-    public void removeAtLocation(int location){
+    /**.
+     * Method to remove at the given location
+     *
+     * @param      location  The location
+     */
+    public void removeAtLocation(final int location){
         if(size == 0){
             System.out.println("Deck is Empty");
         }
@@ -115,7 +165,12 @@ class LinkedList<E>{
         size--;
 
     }
-    public void removeElement(E element){
+    /**.
+     * Method to remove the given element
+     *
+     * @param      element  The element
+     */
+    public void removeElement(final E element){
         try{Node current = head;
         int counter = 1;
         while(current.data != element){
@@ -126,6 +181,9 @@ class LinkedList<E>{
             System.out.println("No element found for removeElement");
         }
     }
+    /**.
+     * print methood.
+     */
     public void print(){
         if(size == 0){
             System.out.println("[]");
@@ -140,7 +198,11 @@ class LinkedList<E>{
         System.out.print(current.data+ "]");
         System.out.println();
     }
-
+    /**.
+     * method to return the data in the node
+     *
+     * @return     The list.
+     */
     public String getList(){
         if(size == 0){
             return "[]";
@@ -154,11 +216,22 @@ class LinkedList<E>{
         str += current.data+ "]";
         return str;
     }
+    /**.
+     * method to return the size
+     *
+     * @return     The size.
+     */
     public int getSize(){
         return this.size;
     }
-
-    public E getObject(int index){
+    /**.
+     * Method to return the linkedList object at the given index.
+     *
+     * @param      index  The index
+     *
+     * @return     The object.
+     */
+    public E getObject(final int index){
         if(size==0){
             return head.data;
         }
