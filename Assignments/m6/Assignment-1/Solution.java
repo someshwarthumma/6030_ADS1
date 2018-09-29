@@ -38,6 +38,12 @@ class Stack {
  */
 class AddLargeNumbers {
     /**.
+     * constructor.
+     */
+    AddLargeNumbers(){
+        //Constructor
+    }
+    /**.
      * This is addLargeNumbers
      *
      * @param      number  number
@@ -76,7 +82,9 @@ class AddLargeNumbers {
      *
      * @return     { linked list obj }
      */
-    public static LinkedList addLargeNumbers(final LinkedList list1, final LinkedList list2) {
+    public static LinkedList addLargeNumbers(
+        final LinkedList list1,
+        final LinkedList list2) {
 
         /**.
          * Stack object for first list
@@ -131,8 +139,9 @@ class AddLargeNumbers {
                 int two = stack2.pop();
                 int sum = one + two;
                 int temp = carry;
-                carry = (carry + sum) / 10;
-                int add = (sum + temp) % 10;
+                final int ten = 10;
+                carry = (carry + sum) / ten;
+                int add = (sum + temp) % ten;
                 addition.addAtStart(add);
             }
             if (carry != 0) {
@@ -187,8 +196,10 @@ public class Solution {
         case "addLargeNumbers":
             pDigits = AddLargeNumbers.numberToDigits(p);
             qDigits = AddLargeNumbers.numberToDigits(q);
-            LinkedList result = AddLargeNumbers.addLargeNumbers(pDigits, qDigits);
-            System.out.println(AddLargeNumbers.digitsToNumber(result));
+            LinkedList result = AddLargeNumbers.
+            addLargeNumbers(pDigits, qDigits);
+            System.out.println(AddLargeNumbers.
+                digitsToNumber(result));
             break;
         default:
         }
