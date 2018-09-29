@@ -69,7 +69,10 @@ class AddLargeNumbers {
     			int add = (sum+temp)%10;
     			addition.addAtStart(add);
     		}
-    		
+    		if(carry != 0){
+    			addition.addAtStart(carry);
+    		}
+
     	}
     	return addition;
 
