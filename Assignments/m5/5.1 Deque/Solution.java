@@ -32,6 +32,9 @@ public class Solution {
             case "popRight":
                 d.popRight();
                 break;
+            default:
+                //This is light
+                break;
             }
         }
     }
