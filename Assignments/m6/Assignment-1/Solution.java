@@ -6,7 +6,7 @@ class Stack {
     /**.
      * creation of the linked list object for stack class.
      */
-    LinkedList stack;
+    private LinkedList stack;
     /**.
      * Stack constructor
      */
@@ -40,7 +40,7 @@ class AddLargeNumbers {
     /**.
      * constructor.
      */
-    AddLargeNumbers(){
+    private AddLargeNumbers() {
         //Constructor
     }
     /**.
@@ -156,7 +156,7 @@ class AddLargeNumbers {
 /**.
  * Solution class
  */
-public class Solution {
+public final class Solution {
     /**.
      * Solution constructor.
      */
