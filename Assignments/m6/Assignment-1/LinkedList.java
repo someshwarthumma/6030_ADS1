@@ -39,7 +39,7 @@ class LinkedList{
     }
 
     public void addAtStart(int data){
-        System.out.println(" add at start: ");
+        //System.out.println(" add at start: ");
         Node newNode = new Node(data);
         newNode.link = head;
         head = newNode;

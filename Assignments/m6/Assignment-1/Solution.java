@@ -41,18 +41,18 @@ class AddLargeNumbers {
     	int size1 = list1.getSize();
 
     	int size2  = list2.getSize();
-    	System.out.println(size1 +"-"+ size2 );
+    	//System.out.println(size1 +"-"+ size2 );
     	LinkedList addition = new LinkedList();
     	if(size1 > size2){
-    		System.out.println("first if");
+    		//System.out.println("first if");
     		int diff = size1 - size2;
     		for(int i=0; i<diff;i++){
     			list2.addAtStart(0);
     		}
     	}
     	if(size2 > size1){
-    		System.out.println("second if");
-    		int diff = size2 - size2;
+    		//System.out.println("second if");
+    		int diff = size2 - size1;
     		for(int i=0; i<diff;i++){
     			list1.addAtStart(0);
     		}
