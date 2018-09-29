@@ -36,7 +36,7 @@ class Stack {
 /**.
  * Class for add large numbers.
  */
-class AddLargeNumbers {
+final class AddLargeNumbers {
     /**.
      * constructor.
      */
