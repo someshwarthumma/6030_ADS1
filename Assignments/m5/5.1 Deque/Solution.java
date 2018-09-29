@@ -8,7 +8,7 @@ public class Solution {
      *
      * @param      args  The arguments
      */
-    public static void main(final String[] args) {
+    public static void main(String[] args) {
         Deque<Integer> d = new Deque<Integer>();
         Scanner scan = new Scanner(System.in);
         while (scan.hasNext()) {
