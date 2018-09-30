@@ -1,55 +1,61 @@
-/**
+/**.
  * Queue class for queue implementaion
  */
 public class Queue {
-	/**
+	/**.
 	 * size variable 
 	 */
-	int size;
-	/**
+	private int size;
+	/**.
 	 * Node obj creation
 	 */
-	Node queue;
-	/**
+	private Node queue;
+	/**.
 	 * Head node creation for referance
 	 */
-	Node head;
-	/**
+	private Node head;
+	/**.
 	 * Node class
 	 */
 	class Node {
-		/**
+		/**.
 		 * data variable to store the data
 		 */
 		int data;
-		/**
+		/**.
 		 * Node object to point to the next Node
 		 */
 		Node link;
-		/**
+		/**.
 		 * Node constructor without arguments
 		 */
 		Node() {
 			this.data = 0;
 			this.link = null;
 		}
-		/**
+		/**.
 		 * Node constructor with arguments
 		 *
 		 * @param      data  The data
 		 */
-		Node(int data) {
+		Node(final int data) {
 			this.data = data;
 			this.link = null;
 		}
 	}
-		
+	/**.
+	 * Queue constructor
+	 */
 	Queue() {
 		queue = new Node();
 		size = 0;
 	}
-
-	public void enQueue(int data) {
+	/**.
+	 * enQueue method to add the element at the head
+	 *
+	 * @param      data  The data
+	 */
+	public void enQueue(final int data) {
 		if (size == 0) {
 			head = new Node(data);
 			size++;
@@ -61,7 +67,11 @@ public class Queue {
 		size++;
 		return;
 	}
-
+	/**.
+	 * method to remove the element at the end
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	public int deQueue(){
 		Node current = head;
 		if (size == 1) {
@@ -81,9 +91,19 @@ public class Queue {
 		size--;
 		return data;
 	}
+	/**.
+	 * Checks weather Queue is empty or not
+	 *
+	 * @return     True if empty, False otherwise.
+	 */
 	public boolean isEmpty() {
 		return size == 0;
 	}
+	/**.
+	 * Getter method for sizes
+	 *
+	 * @return     The size.
+	 */
 	public int getSize(){
 		return size;
 	}
