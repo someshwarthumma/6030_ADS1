@@ -42,8 +42,8 @@ public class Queue {
 			this.data = data;
 			this.link = null;
 		}
-		
 	}
+		
 	Queue() {
 		queue = new Node();
 		size = 0;
@@ -62,10 +62,7 @@ public class Queue {
 		return;
 	}
 
-	public int deQueue() throws Exception{
-		if(size == 0){
-			throw new Exception("Queue is empty");
-		}
+	public int deQueue(){
 		Node current = head;
 		if (size == 1) {
 			size--;

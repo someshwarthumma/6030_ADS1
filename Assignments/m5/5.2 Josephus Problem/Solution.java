@@ -41,20 +41,15 @@ public final class Solution {
              * Checking of mth position person and poping the same
              */
             while (!queueObj.isEmpty() && number != 1) {
-                try {
-                    for (int i = 1; i < position; i++) {
-                        queueObj.enQueue(queueObj.deQueue());
-                    }
-                    System.out.print(queueObj.deQueue() + " ");
-                    number--;
-
-                    System.out.print(queueObj.deQueue());
-                } catch (Exception e) {
-                    System.out.println(e.getMessage());
+                for (int i = 1; i < position; i++) {
+                    queueObj.enQueue(queueObj.deQueue());
                 }
-                System.out.println();
-                //System.out.println("while completed");
+                System.out.print(queueObj.deQueue() + " ");
+                number--;
             }
+            System.out.print(queueObj.deQueue());
+            System.out.println();
+            //System.out.println("while completed");
         }
     }
 }
