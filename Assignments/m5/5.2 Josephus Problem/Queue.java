@@ -1,42 +1,48 @@
+/**
+ * Queue class for queue implementaion
+ */
 public class Queue {
+	/**
+	 * size variable 
+	 */
 	int size;
+	/**
+	 * Node obj creation
+	 */
 	Node queue;
+	/**
+	 * Head node creation for referance
+	 */
 	Node head;
+	/**
+	 * Node class
+	 */
 	class Node {
+		/**
+		 * data variable to store the data
+		 */
 		int data;
+		/**
+		 * Node object to point to the next Node
+		 */
 		Node link;
-		int size = 0;
+		/**
+		 * Node constructor without arguments
+		 */
 		Node() {
 			this.data = 0;
 			this.link = null;
 		}
+		/**
+		 * Node constructor with arguments
+		 *
+		 * @param      data  The data
+		 */
 		Node(int data) {
 			this.data = data;
 			this.link = null;
 		}
-
-		public Node getNode() {
-			return this.link;
-		}
-
-		public int getdata() {
-			return this.data;
-		}
-
-		public int getSize() {
-			return this.size;
-		}
-
-		public void setLink(Node link) {
-			this.link = link;
-		}
-
-		public void setData(int data) {
-			this.data = data;
-		}
-		public void setSize(int size) {
-			this.size = size;
-		}
+		
 	}
 	Queue() {
 		queue = new Node();
@@ -56,7 +62,10 @@ public class Queue {
 		return;
 	}
 
-	public int deQueue()  {
+	public int deQueue() throws Exception{
+		if(size == 0){
+			throw new Exception("Queue is empty");
+		}
 		Node current = head;
 		if (size == 1) {
 			size--;
