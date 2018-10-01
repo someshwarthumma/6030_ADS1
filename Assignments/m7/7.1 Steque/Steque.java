@@ -87,10 +87,11 @@ class Steque{
 	}
 
 	public void reset(){
-		while (size > 0) {
+		/*while (size > 0) {
 			pop();
 			size--;
-		}
+		}*/
+		size=0;
 		return;
 	}
 
