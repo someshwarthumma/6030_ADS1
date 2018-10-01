@@ -10,7 +10,7 @@ public class Solution {
 		
 		while (scan.hasNext()) {
 			String[] input = scan.nextLine().split(" ");
-			if(input[0].length() >2){
+			if(input[0].length() <2){
 				System.out.println("Its reset: ");
 				steque.reset();
 				System.out.println();
