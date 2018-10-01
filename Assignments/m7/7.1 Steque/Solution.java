@@ -11,6 +11,7 @@ public class Solution {
 		while (scan.hasNext()) {
 			String[] input = scan.nextLine().split(" ");
 			if(input.length == 0){
+				System.out.println("Its reset: ");
 				steque.reset();
 				System.out.println();
 			}
