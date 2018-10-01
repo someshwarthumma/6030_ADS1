@@ -22,6 +22,7 @@ class Steque{
 	public void push(int data){
 		if(size==0){
 			head = new Node(data);
+			last = head;
 			size++;
 			return;
 		}
@@ -35,6 +36,7 @@ class Steque{
 	public void enqueue(int data){
 		if(size==0){
 			head = new Node(data);
+			last = head;
 			size++;
 			return;
 		}
