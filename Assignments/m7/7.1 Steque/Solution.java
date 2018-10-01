@@ -7,27 +7,27 @@ public class Solution {
 		Scanner scan = new Scanner(System.in);
 		int noOfTests = Integer.parseInt(scan.nextLine());
 		Steque steque = new Steque();
-		for (int i = 0; i < noOfTests; i++) {
-			while (scan.hasNext()) {
-				String[] input = scan.nextLine().split(" ");
-				switch (input[0]) {
-				case "push":
-					steque.push(Integer.parseInt(input[1]));
-					System.out.println(steque.printer());
-					break;
-				case "enqueue":
-					steque.enqueue(Integer.parseInt(input[1]));
-					System.out.println(steque.printer());
-					break;
-				case "pop":
-					steque.pop();
-					System.out.println(steque.printer());
-					break;
-				}
+		
+		while (scan.hasNext()) {
+			String[] input = scan.nextLine().split(" ");
+			if(input.length == 0){
+				steque.reset();
+				System.out.println();
 			}
-			steque.reset();
-			System.out.println("This is end of while loop:");
-			System.out.println();
+			switch (input[0]) {
+			case "push":
+				steque.push(Integer.parseInt(input[1]));
+				System.out.println(steque.printer());
+				break;
+			case "enqueue":
+				steque.enqueue(Integer.parseInt(input[1]));
+				System.out.println(steque.printer());
+				break;
+			case "pop":
+				steque.pop();
+				System.out.println(steque.printer());
+				break;
+			}
 		}
 	}
 }
