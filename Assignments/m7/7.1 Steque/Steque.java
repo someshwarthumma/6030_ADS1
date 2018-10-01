@@ -87,8 +87,10 @@ class Steque{
 	}
 
 	public void reset(){
-		size = 0;
-		head = null;
+		while (size > 0) {
+			pop();
+			size--;
+		}
 		return;
 	}
 
