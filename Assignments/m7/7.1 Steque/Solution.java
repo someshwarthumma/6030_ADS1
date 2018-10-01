@@ -26,6 +26,7 @@ public class Solution {
 				}
 			}
 			steque.reset();
+			System.out.println("This is end of while loop:");
 			System.out.println();
 		}
 	}
