@@ -2,7 +2,7 @@ import java.util.Scanner;
 /**.
  * Soluton class
  */
-public class Solution {
+public final class Solution {
     /**.
      * Solution constructor
      */
@@ -14,7 +14,7 @@ public class Solution {
      *
      * @param      args  The arguments
      */
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         /**.
          * Scanner obj to read the inputs
          */
@@ -55,6 +55,7 @@ public class Solution {
                 steque.pop();
                 System.out.println(steque.printer());
                 break;
+            default:
             }
         }
     }
