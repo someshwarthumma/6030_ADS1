@@ -1,6 +1,7 @@
 class Steque{
 	Node head;
 	int size;
+	Node last;
 	class Node{
 		Node link;
 		//Node last;
@@ -37,12 +38,11 @@ class Steque{
 			size++;
 			return;
 		}
-		/*
-		 *last
-		 *last.link = newNode;
-		 *last = newNode;
-		*/
 		Node newNode = new Node(data);
+		last.link = newNode;
+		last = newNode;
+		
+		/*Node newNode = new Node(data);
 		Node current = head;
 		int counter =1;
 		while(counter < size){
@@ -50,7 +50,7 @@ class Steque{
 			counter++;
 		}
 
-		current.link = newNode;
+		current.link = newNode;*/
 		size++;
 		return;
 	}
@@ -87,10 +87,6 @@ class Steque{
 	}
 
 	public void reset(){
-		/*while (size > 0) {
-			pop();
-			size--;
-		}*/
 		size=0;
 		return;
 	}
