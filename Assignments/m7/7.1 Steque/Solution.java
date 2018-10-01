@@ -11,8 +11,10 @@ public final class Solution {
     }
     /**.
      * Main method to handle the input testcases
+     * complexity: O(N)
+     * because of the usage of while loop
      *
-     * @param      args  The arguments
+     * @param      args  String
      */
     public static void main(final String[] args) {
         /**.
@@ -27,6 +29,10 @@ public final class Solution {
          *eque object declaration as steque
          */
         Steque steque = new Steque();
+        /**
+         * While loop to handle the inputs
+         * complexity: O(N)
+         */
         while (scan.hasNext()) {
             /**.
              * reading input from console
