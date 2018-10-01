@@ -4,7 +4,6 @@ class Steque{
 	Node last;
 	class Node{
 		Node link;
-		//Node last;
 		int data;
 		Node(){
 			this.data = 0;
@@ -42,8 +41,7 @@ class Steque{
 		}
 		Node newNode = new Node(data);
 		last.link = newNode;
-		last = newNode;
-		
+		last = newNode;		
 		/*Node newNode = new Node(data);
 		Node current = head;
 		int counter =1;
@@ -51,7 +49,6 @@ class Steque{
 			current = current.link;
 			counter++;
 		}
-
 		current.link = newNode;*/
 		size++;
 		return;
