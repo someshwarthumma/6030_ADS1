@@ -13,18 +13,6 @@ class Sorting{
 	 * @return     { Teams[] }
 	 */
 	public Teams[] sort(Teams[] teams, final int size){
-		/*int min =0;
-		for(int i=0;i<size;i++){
-			min = i;
-			for(int j=i+1;j<size;j++){
-				if(teams[min].compareTo(teams[j])){
-					min = j;
-				}
-			}
-			teams = exchange(teams, i, min);
-		}
-		return teams;*/
-
 		for(int i=1;i<size;i++){
 			Teams key = teams[i];
 			int j =i-1;
