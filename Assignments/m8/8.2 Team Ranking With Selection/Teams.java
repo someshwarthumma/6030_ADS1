@@ -27,7 +27,7 @@ class Teams{
 	}
 
 	public boolean compareTo(Teams that){
-		//System.out.println(this.teamName+"->"+this.wins+":-:"+that.teamName+"->"+that.wins);
+		//System.out.println(this.teamName+"wins->"+this.wins+"Lose-> "+this.lose+"Draw-> "+this.draw+":-:"+that.teamName+"wins->"+that.wins+"Lose-> "+that.lose+"Draw-> "+that.draw);
 		if(this.wins < that.wins){
 			return true;
 		} else if (this.wins > that.wins){
