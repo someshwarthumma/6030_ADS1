@@ -29,10 +29,10 @@ class Leaderboard{
 	}
 
 	public void print(){
-		teamsObj = sortObj.sort(teamsObj);
-		for(int i=0; i<teamsObj.length-1;i++){
+		teamsObj = sortObj.sort(teamsObj , size);
+		for(int i=0; i<size-1;i++){
 			System.out.print(teamsObj[i].getTeamName()+",");
 		}
-		System.out.println(teamsObj[teamsObj.length-1].getTeamName());
+		System.out.println(teamsObj[size-1].getTeamName());
 	}
 }
