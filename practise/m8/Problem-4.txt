@@ -1,0 +1,1 @@
+Both make equal no of comparisions because the values at the position of the elements has to changed in a sorted order
