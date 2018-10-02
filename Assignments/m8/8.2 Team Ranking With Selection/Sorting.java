@@ -1,27 +1,40 @@
-import java.util.Arrays;
+//import java.util.Arrays;
+
+/**.
+ * Sorting class for implemting the sort
+ */
 class Sorting{
-	public Teams[] sort(Teams[] teams, int size){
+	/**.
+	 * Method to sort the fiven elements
+	 *
+	 * @param      teams  Team
+	 * @param      size   int
+	 *
+	 * @return     { Teams[] }
+	 */
+	public Teams[] sort(Teams[] teams, final int size){
 		int min =0;
-		//System.out.println("Initial: "+Arrays.toString(teams));
 		for(int i=0;i<size;i++){
-			//System.out.println("for i: "+i+" "+Arrays.toString(teams));
-			//System.out.println("Its for i: "+i);
 			min = i;
-			//int j =i+1;
 			for(int j=i+1;j<size;j++){
 				if(teams[min].compareTo(teams[j])){
 					min = j;
 				}
 			}
-			//System.out.println("min: "+min);
 			teams = exchange(teams, i, min);
-
 		}
 		return teams;
 	}
-
-
-	public Teams[] exchange(Teams[] teams, int i, int j){
+	/**.
+	 * Exchange method to swap the provided elements in a given array
+	 *
+	 * @param      teams  Teams[]
+	 * @param      i      { int }
+	 * @param      j      { int j }
+	 *
+	 * @return     { Teams[] }
+	 */
+	public Teams[] exchange(final Teams[] teams, final int i, final int j){
 		Teams temp = teams[i];
 		teams[i] = teams[j];
 		teams[j] = temp;
