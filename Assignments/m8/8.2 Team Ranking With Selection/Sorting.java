@@ -2,7 +2,7 @@ class Sorting{
 	public Teams[] sort(Teams[] teams, int size){
 		int min =0;
 		for(int i=0;i<size;i++){
-			System.out.println("Its for i: "+i);
+			//System.out.println("Its for i: "+i);
 			min = i;
 			//int j =i+1;
 			for(int j=i+1;j<size;j++){
