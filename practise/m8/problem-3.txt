@@ -1,0 +1,2 @@
+ Insertion sort will do O(1) work per element and visit O(n) elements for a total runtime of O(n). Selection sort always runs in time Θ(n2) regardless of the input structure, so its runtime will be quadratic.
+Thus insertion sort runs faster than the selection sort.
