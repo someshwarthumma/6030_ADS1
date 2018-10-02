@@ -54,7 +54,7 @@ class Leaderboard{
 	 */
 	public void print(){
 		teamsObj = sortObj.sort(teamsObj , size);
-		for(int i=size-1; i>=0; i--){
+		for(int i=size-1; i>0; i--){
 			System.out.print(teamsObj[i].getTeamName()+",");
 		}
 		System.out.println(teamsObj[0].getTeamName());
