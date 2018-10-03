@@ -1,9 +1,20 @@
 import java.util.Scanner;
 class Merge {
-    
-    private  int x = 7;
-    public void merge(Comparable[] array, Comparable[] aux,
-         int lo,  int mid,  int hi) {
+    /**.
+     * int variable
+     */
+    final private  int x = 7;
+    /**.
+     * merge method to sort the elements in the array
+     *
+     * @param      array  array
+     * @param      aux    auxiliary array
+     * @param      lo     lower of type int
+     * @param      mid    middle of type int
+     * @param      hi     higher of type int
+     */
+    public void merge(final Comparable[] array, final Comparable[] aux,
+        final int lo, final int mid, final int hi) {
         assert isSorted(array, lo, mid);
         assert isSorted(array, mid + 1, hi);
         int i = lo;
@@ -21,9 +32,16 @@ class Merge {
         }
         assert isSorted(aux, lo, hi);
     }
-    
-    public void sort( Comparable[] array,  Comparable[] aux,
-         int lo,  int hi) {
+    /**.
+     * sort method to implement the sort algorithm of Merge
+     *
+     * @param      array  array
+     * @param      aux    auxiliary array
+     * @param      lo     lower of type int
+     * @param      hi     higher of type int
+     */
+    public void sort(final Comparable[] array, final Comparable[] aux,
+        final int lo, final int hi) {
         if (hi <= lo + x) {
             insertionSort(aux, lo, hi);
             System.out.println("Insertion sort method invoked...");
@@ -42,12 +60,24 @@ class Merge {
         }
         merge(array, aux, lo, mid, hi);
     }
-    public void sort( Comparable[] a) {
+    /**.
+     * Sort method with one argument 
+     *
+     * @param      a     { array }
+     */
+    public void sort(final Comparable[] a) {
         Comparable[] aux = a.clone();
         sort(aux, a, 0, a.length - 1);
         assert isSorted(a);
     }
-    public void insertionSort( Comparable[] a,
+    /**.
+     * method to implement insertion sort
+     *
+     * @param      a     { array }
+     * @param      low   low of type int
+     * @param      high  high of type int
+     */
+    public void insertionSort(final Comparable[] a,
          int low,  int high) {
         for (int i = low; i <= high; i++) {
             for (int j = i; j > low && less(a[j], a[j - 1]); j--) {
@@ -55,22 +85,49 @@ class Merge {
             }
         }
     }
-    
+    /**.
+     * method to swap the elements in a given array
+     *
+     * @param      a     { parameter_description }
+     * @param      i     { parameter_description }
+     * @param      j     { parameter_description }
+     */
     public void exch( Comparable[] a,
          int i,  int j) {
         Comparable swap = a[i];
         a[i] = a[j];
         a[j] = swap;
     }
-    
-    public boolean less( Comparable item1,  Comparable item2) {
+    /**.
+     * Method to check weather the given numbers are less or not
+     *
+     * @param      item1  item 1
+     * @param      item2  item 2
+     *
+     * @return     { boolean }
+     */
+    public boolean less(final Comparable item1, final Comparable item2) {
         return item1.compareTo(item2) < 0;
     }
-    
+    /**.
+     * method to check weather array is sorted or not
+     *
+     * @param      array  array
+     *
+     * @return     True if sorted, False otherwise.
+     */
     public boolean isSorted( Comparable[] array) {
         return isSorted(array, 0, array.length - 1);
     }
-    
+    /**.
+     * method to check weather given array is sorted or not
+     *
+     * @param      array  The array
+     * @param      lo     The lower
+     * @param      hi     The higher
+     *
+     * @return     True if sorted, False otherwise.
+     */
     public boolean isSorted( Comparable[] array,
          int lo,  int hi) {
         for (int i = lo + 1; i <= hi; i++) {
@@ -80,6 +137,13 @@ class Merge {
         }
         return true;
     }
+    /**.
+     * Show method to print the output
+     *
+     * @param      array  The array
+     *
+     * @return     { String }
+     */
     public String show( Comparable[] array) {
         String str = "[";
         int i;
@@ -90,8 +154,17 @@ class Merge {
         return str;
     }
 }
-public  class Solution {
-    public static void main( String[] args) {
+/**.
+ * Solution class 
+ */
+public final class Solution {
+    /**.
+     * solution concstructor
+     */
+    private Solution(){
+        //solution constructor
+    }
+    public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         Merge mergeObj = new Merge();
         while (scan.hasNext()) {
