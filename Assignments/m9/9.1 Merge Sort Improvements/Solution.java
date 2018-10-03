@@ -1,9 +1,13 @@
 import java.util.Scanner;
+
+/**.
+ * Merge class
+ */
 class Merge {
     /**.
      * int variable
      */
-    final private  int x = 7;
+    private final int x = 7;
     /**.
      * merge method to sort the elements in the array
      *
@@ -61,7 +65,7 @@ class Merge {
         merge(array, aux, lo, mid, hi);
     }
     /**.
-     * Sort method with one argument 
+     * Sort method with one argument
      *
      * @param      a     { array }
      */
@@ -78,7 +82,7 @@ class Merge {
      * @param      high  high of type int
      */
     public void insertionSort(final Comparable[] a,
-         int low,  int high) {
+        final int low, final int high) {
         for (int i = low; i <= high; i++) {
             for (int j = i; j > low && less(a[j], a[j - 1]); j--) {
                 exch(a, j, j - 1);
@@ -92,8 +96,8 @@ class Merge {
      * @param      i     { parameter_description }
      * @param      j     { parameter_description }
      */
-    public void exch( Comparable[] a,
-         int i,  int j) {
+    public void exch(final Comparable[] a,
+        final int i, final int j) {
         Comparable swap = a[i];
         a[i] = a[j];
         a[j] = swap;
@@ -116,7 +120,7 @@ class Merge {
      *
      * @return     True if sorted, False otherwise.
      */
-    public boolean isSorted( Comparable[] array) {
+    public boolean isSorted(final Comparable[] array) {
         return isSorted(array, 0, array.length - 1);
     }
     /**.
@@ -128,8 +132,8 @@ class Merge {
      *
      * @return     True if sorted, False otherwise.
      */
-    public boolean isSorted( Comparable[] array,
-         int lo,  int hi) {
+    public boolean isSorted(final Comparable[] array,
+        final int lo, final int hi) {
         for (int i = lo + 1; i <= hi; i++) {
             if (less(array[i], array[i - 1])) {
                 return false;
@@ -144,7 +148,7 @@ class Merge {
      *
      * @return     { String }
      */
-    public String show( Comparable[] array) {
+    public String show(final Comparable[] array) {
         String str = "[";
         int i;
         for (i = 0; i < array.length - 1; i++) {
@@ -155,15 +159,20 @@ class Merge {
     }
 }
 /**.
- * Solution class 
+ * Solution class
  */
 public final class Solution {
     /**.
      * solution concstructor
      */
-    private Solution(){
+    private Solution() {
         //solution constructor
     }
+    /**.
+     * Main method to handle the testcases
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         Merge mergeObj = new Merge();
