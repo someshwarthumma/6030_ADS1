@@ -72,7 +72,7 @@ class LinkedList {
 
 			current = current.link;
 			counter++;
-			insertAt(index , data);
+			insert(current, counter, index , data);
 
 		}
 	}
