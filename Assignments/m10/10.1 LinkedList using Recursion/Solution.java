@@ -95,8 +95,9 @@ class Solution {
 	public static void main(String[] args) {
 		LinkedList linkedlistObj = new LinkedList();
 		Scanner scan = new Scanner(System.in);
-		try {
+		
 		while (scan.hasNext()) {
+			try{
 			String[] tokens = scan.nextLine().split(" ");
 			switch (tokens[0]) {
 			case "insertAt":
@@ -108,9 +109,10 @@ class Solution {
 				linkedlistObj.print();
 				break;
 			}
-		}
-		} catch(Exception e){
+			} catch(Exception e){
 			System.out.println(e.getMessage());
+			}
 		}
+		
 	}
 }

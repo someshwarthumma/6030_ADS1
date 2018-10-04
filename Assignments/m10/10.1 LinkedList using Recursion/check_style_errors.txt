@@ -56,10 +56,14 @@ Starting audit...
 [ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m10\10.1 LinkedList using Recursion\Solution.java:94:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
 [ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m10\10.1 LinkedList using Recursion\Solution.java:95:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m10\10.1 LinkedList using Recursion\Solution.java:95:33: Parameter args should be final. [FinalParameters]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m10\10.1 LinkedList using Recursion\Solution.java:101: switch without "default" clause. [MissingSwitchDefault]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m10\10.1 LinkedList using Recursion\Solution.java:103: Line is longer than 80 characters (found 113). [LineLength]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m10\10.1 LinkedList using Recursion\Solution.java:104: Line has trailing spaces. [RegexpSingleline]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m10\10.1 LinkedList using Recursion\Solution.java:112:24: 'catch' is not followed by whitespace. [WhitespaceAround]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m10\10.1 LinkedList using Recursion\Solution.java:112:37: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m10\10.1 LinkedList using Recursion\Solution.java:98: Line has trailing spaces. [RegexpSingleline]
+[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m10\10.1 LinkedList using Recursion\Solution.java:100:28: 'try' is not followed by whitespace. [WhitespaceAround]
+[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m10\10.1 LinkedList using Recursion\Solution.java:100:28: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m10\10.1 LinkedList using Recursion\Solution.java:102: switch without "default" clause. [MissingSwitchDefault]
+[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m10\10.1 LinkedList using Recursion\Solution.java:104: Line is longer than 80 characters (found 113). [LineLength]
+[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m10\10.1 LinkedList using Recursion\Solution.java:105: Line has trailing spaces. [RegexpSingleline]
+[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m10\10.1 LinkedList using Recursion\Solution.java:112:32: 'catch' is not followed by whitespace. [WhitespaceAround]
+[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m10\10.1 LinkedList using Recursion\Solution.java:112:45: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m10\10.1 LinkedList using Recursion\Solution.java:116: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 62 errors.
+Checkstyle ends with 66 errors.
