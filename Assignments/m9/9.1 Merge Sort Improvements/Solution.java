@@ -10,7 +10,7 @@ class Merge {
     private final int x = 7;
     /**.
      * merge method to sort the elements in the array
-     *
+     * Time complexity of this method is O(N).
      * @param      array  array
      * @param      aux    auxiliary array
      * @param      lo     lower of type int
@@ -38,7 +38,7 @@ class Merge {
     }
     /**.
      * sort method to implement the sort algorithm of Merge
-     *
+     *Time complexity of this method is O(log(N)).
      * @param      array  array
      * @param      aux    auxiliary array
      * @param      lo     lower of type int
@@ -66,7 +66,7 @@ class Merge {
     }
     /**.
      * Sort method with one argument
-     *
+     *Time complexity of sorting is O(N).
      * @param      a     { array }
      */
     public void sort(final Comparable[] a) {
@@ -76,7 +76,7 @@ class Merge {
     }
     /**.
      * method to implement insertion sort
-     *
+     *Time complexity of insertion sort is O(N^2/2).
      * @param      a     { array }
      * @param      low   low of type int
      * @param      high  high of type int
@@ -91,7 +91,7 @@ class Merge {
     }
     /**.
      * method to swap the elements in a given array
-     *
+     * Time complexity of this method is O(N).
      * @param      a     { parameter_description }
      * @param      i     { parameter_description }
      * @param      j     { parameter_description }
@@ -104,7 +104,7 @@ class Merge {
     }
     /**.
      * Method to check weather the given numbers are less or not
-     *
+     * Time complextiy of this method is O(1).
      * @param      item1  item 1
      * @param      item2  item 2
      *
@@ -115,7 +115,7 @@ class Merge {
     }
     /**.
      * method to check weather array is sorted or not
-     *
+     * Time complexity of this method is O(1).
      * @param      array  array
      *
      * @return     True if sorted, False otherwise.
@@ -125,7 +125,7 @@ class Merge {
     }
     /**.
      * method to check weather given array is sorted or not
-     *
+     * Time complexity of this method is O(N).
      * @param      array  The array
      * @param      lo     The lower
      * @param      hi     The higher
@@ -143,7 +143,7 @@ class Merge {
     }
     /**.
      * Show method to print the output
-     *
+     * Time complexity of this method is O(N).
      * @param      array  The array
      *
      * @return     { String }
