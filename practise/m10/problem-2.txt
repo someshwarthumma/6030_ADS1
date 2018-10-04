@@ -1,0 +1,36 @@
+Given a string, compute recursively a new string where identical chars that are adjacent in the original string are separated from each other by a "*".
+
+Program: 
+
+public String recurString(String s){
+	if(s.length==1){
+	return s;
+	}
+	if(s.charAt(0)==(s.charAt(1))){
+	return s.chatAt(0) + "*" + recurString(s.subString(1))
+	}
+	return s.charAt(0)+s.subString(1);
+}
+
+
+Tracing: sample input--> sandeep;
+
+recurString(sandeep);
+
+--> s + recurString(andeep);
+		--> a + recurString(ndeep);
+				--> n + recurString(deep);
+						--> d + recurString(eep);
+								--> e + "*" + recurString(ep);
+											--> e + recurString(p);
+													--> p;
+											--> ep;
+								--> e*ep;
+						--> de*ep;
+				--> nde*ep;
+		--> ande*ep;
+--> sande*ep;
+
+output == sande*ep;
+
+complexity is O(N);
