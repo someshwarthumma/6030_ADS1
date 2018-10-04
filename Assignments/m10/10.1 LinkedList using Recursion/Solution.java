@@ -61,7 +61,7 @@ class LinkedList {
 			size++;
 			return;
 		}
-		if (counter < index - 1) {
+		if (counter < index ) {
 			if (counter == index - 1) {
 				Node newNode = new Node(data);
 				newNode.link = current.link;
