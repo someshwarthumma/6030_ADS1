@@ -71,10 +71,9 @@ class LinkedList {
 		System.out.println(current.data);
 	}
 
-	public void reverse(){
+	public void reverse() throws Exception{
 		if(size==0){
-			System.out.println("No elements to reverse.");
-			return;
+			throw new Exception("No elements to reverse.");
 		}
 		reverse(head , null);
 
