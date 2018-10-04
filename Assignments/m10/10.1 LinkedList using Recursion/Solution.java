@@ -37,20 +37,6 @@ class LinkedList {
 		Node current = head;
 		int counter = 0;
 		insert(current, counter, index, data);
-		/*f (counter < index - 1) {
-			if (counter = index - 1) {
-				Node newNode = new Node(data);
-				newNode.link = current.link;
-				current.link = newNode;
-				return;
-			}
-
-			current = current.link;
-			counter++;
-			insertAt(index , data);
-
-		}*/
-
 	}
 
 	public void insert(Node current, int counter, int index, int data){
@@ -79,7 +65,6 @@ class LinkedList {
 
 	public void print(){
 		Node current = head;
-		//int counter = 1;
 		while(current.link != null){
 			System.out.print(current.data+", ");
 			current = current.link;
@@ -87,18 +72,25 @@ class LinkedList {
 		System.out.println(current.data);
 	}
 
-	/*public String print(Node current, int counter){
-		if(counter== size-1){
-			return current.data+"";
+	public void reverse(){
+		if(size==0){
+			System.out.println("No elements to reverse.");
+			return;
 		}
-		current = current.link;
-		counter++;
-		return current.data + print(current , counter);
-	}*/
+		reverse(head , null);
 
+	}
 
-
-
+	private void reverse(Node current, Node prev){
+		if(current.link == null){
+			current.link = prev;
+			head = current;
+			return;
+		}
+		Node temp = current.link;
+		current.link = prev;
+		reverse(temp, current);
+	}
 }
 class Solution {
 	public static void main(String[] args) {
@@ -112,7 +104,8 @@ class Solution {
 				linkedlistObj.print(); 
 				break;
 			case "reverse":
-				//linkedlistObj.reverse();
+				linkedlistObj.reverse();
+				linkedlistObj.print();
 				break;
 			}
 		}
