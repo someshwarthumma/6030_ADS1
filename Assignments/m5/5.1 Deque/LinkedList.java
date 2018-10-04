@@ -110,7 +110,7 @@ class LinkedList<E>{
      */
     public void removeAtEnd(){
         if(size == 0){
-            System.out.println("Deck is Empty");
+            System.out.println("LinkedList is Empty");
             return;
         }
         Node current = head;
@@ -127,7 +127,7 @@ class LinkedList<E>{
      */
     public void removeAtStart(){
         if(size == 0){
-            System.out.println("Deck is Empty");
+            System.out.println("LinkedList is Empty");
             return; 
         }
         Node current = head;
@@ -142,7 +142,8 @@ class LinkedList<E>{
      */
     public void removeAtLocation(final int location){
         if(size == 0){
-            System.out.println("Deck is Empty");
+            System.out.println("LinkedList is Empty");
+            return;
         }
         if(location == size){
             removeAtEnd();

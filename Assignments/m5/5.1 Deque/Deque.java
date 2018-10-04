@@ -27,7 +27,7 @@ public class Deque<E>{
 	/**.
 	 * Size method to know the size
 	 *
-	 * @return     { description_of_the_return_value }
+	 * @return     { int }
 	 */
 	public int size(){
 		return size;
