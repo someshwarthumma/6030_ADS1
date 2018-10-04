@@ -71,8 +71,8 @@ class LinkedList {
     /**.
      * insert method to insert the elements at given index
      *
-     * @param      current  current of type Node
-     * @param      counter  counter of type Node
+     * @param      current1  current of type Node
+     * @param      counter1  counter of type Node
      * @param      index    index of type int
      * @param      data     data of type int
      */
