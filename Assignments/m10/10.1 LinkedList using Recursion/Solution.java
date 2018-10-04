@@ -49,7 +49,8 @@ class LinkedList {
     }
     /**.
      * InserAt method to insert the element at the given index
-     * complexity O(N): beacuse it travese al along the last element in worst case
+     * complexity O(N):
+     * beacuse it travese al along the last element in worst case
      *
      * @param      index      index of type int
      * @param      data       data of type int
@@ -71,7 +72,8 @@ class LinkedList {
     }
     /**.
      * insert method to insert the elements at given index
-     * complexity O(N): beacuse it travese al along the last element in worst case
+     * complexity O(N):
+     * beacuse it travese al along the last element in worst case
      * @param      current1  current of type Node
      * @param      counter1  counter of type Node
      * @param      index    index of type int
@@ -118,7 +120,8 @@ class LinkedList {
     }
     /**.
      * public method to reverse the linkedlist
-     * complexity O(N): beacuse it travese al along the last element in worst case
+     * complexity O(N):
+     * beacuse it travese al along the last element in worst case
      * @throws     Exception  { exception_description }
      */
     public void reverse() throws Exception {
@@ -130,7 +133,8 @@ class LinkedList {
     }
     /**.
      * Reverse method with two arguments
-     * complexity O(N): beacuse it travese al along the last element in worst case
+     * complexity O(N):
+     * beacuse it travese al along the last element in worst case
      * @param      current  The current
      * @param      prev     The previous
      */
