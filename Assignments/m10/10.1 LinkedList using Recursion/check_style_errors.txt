@@ -1,12 +1,6 @@
 Starting audit...
 [ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m10\10.1 LinkedList using Recursion\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m10\10.1 LinkedList using Recursion\Solution.java:38:24: 'data' hides a field. [HiddenField]
 [ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m10\10.1 LinkedList using Recursion\Solution.java:79:24: Parameter current should be final. [FinalParameters]
 [ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m10\10.1 LinkedList using Recursion\Solution.java:80:9: Parameter counter should be final. [FinalParameters]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m10\10.1 LinkedList using Recursion\Solution.java:90:28: ')' is preceded with whitespace. [ParenPad]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m10\10.1 LinkedList using Recursion\Solution.java:101:43: ',' is preceded with whitespace. [NoWhitespaceBefore]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m10\10.1 LinkedList using Recursion\Solution.java:125:21: ',' is preceded with whitespace. [NoWhitespaceBefore]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m10\10.1 LinkedList using Recursion\Solution.java:148: Class Solution should be declared as final. [FinalClass]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m10\10.1 LinkedList using Recursion\Solution.java:172: switch without "default" clause. [MissingSwitchDefault]
 Audit done.
-Checkstyle ends with 9 errors.
+Checkstyle ends with 3 errors.

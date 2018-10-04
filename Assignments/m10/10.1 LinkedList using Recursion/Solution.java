@@ -33,10 +33,10 @@ class LinkedList {
         /**.
          * Node constructor with data as parameter
          *
-         * @param      data  data of int type
+         * @param      data1  data of int type
          */
-        Node(final int data) {
-            this.data = data;
+        Node(final int data1) {
+            this.data = data1;
             this.link = null;
         }
     }
@@ -87,7 +87,7 @@ class LinkedList {
             size++;
             return;
         }
-        if (counter < index ) {
+        if (counter < index) {
             if (counter == index - 1) {
                 Node newNode = new Node(data);
                 newNode.link = current.link;
@@ -98,7 +98,7 @@ class LinkedList {
 
             current = current.link;
             counter++;
-            insert(current, counter, index , data);
+            insert(current, counter, index, data);
 
         }
     }
@@ -122,7 +122,7 @@ class LinkedList {
         if (size == 0) {
             throw new Exception("No elements to reverse.");
         }
-        reverse(head , null);
+        reverse(head, null);
 
     }
     /**.
@@ -145,7 +145,7 @@ class LinkedList {
 /**.
  * Solution class
  */
-class Solution {
+final class Solution {
     /**.
      * Solution constructor
      */
@@ -180,6 +180,7 @@ class Solution {
                     linkedlistObj.reverse();
                     linkedlistObj.print();
                     break;
+                default:
                 }
             } catch (Exception e) {
                 System.out.println(e.getMessage());
