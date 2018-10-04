@@ -77,20 +77,24 @@ class LinkedList {
 		}
 	}
 
-	public String print(){
+	public void print(){
 		Node current = head;
-		int counter = 1;
-		return current.data +", "+ print(current, counter);
+		//int counter = 1;
+		while(current.link != null){
+			System.out.print(current.data+", ");
+			current = current.link;
+		}
+		System.out.println(current.data);
 	}
 
-	public String print(Node current, int counter){
+	/*public String print(Node current, int counter){
 		if(counter== size-1){
 			return current.data+"";
 		}
 		current = current.link;
 		counter++;
 		return current.data + print(current , counter);
-	}
+	}*/
 
 
 
@@ -105,7 +109,7 @@ class Solution {
 			switch (tokens[0]) {
 			case "insertAt":
 				linkedlistObj.insertAt(Integer.parseInt(tokens[1]), Integer.parseInt(tokens[2]));
-				System.out.println(linkedlistObj.print());
+				linkedlistObj.print(); 
 				break;
 			case "reverse":
 				//linkedlistObj.reverse();
