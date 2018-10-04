@@ -1,6 +1,8 @@
 Starting audit...
 [ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m10\10.1 LinkedList using Recursion\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m10\10.1 LinkedList using Recursion\Solution.java:79:24: Parameter current should be final. [FinalParameters]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m10\10.1 LinkedList using Recursion\Solution.java:80:9: Parameter counter should be final. [FinalParameters]
+[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m10\10.1 LinkedList using Recursion\Solution.java:74:8: Unused @param tag for 'current'. [JavadocMethod]
+[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m10\10.1 LinkedList using Recursion\Solution.java:75:8: Unused @param tag for 'counter'. [JavadocMethod]
+[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m10\10.1 LinkedList using Recursion\Solution.java:79:35: Expected @param tag for 'current1'. [JavadocMethod]
+[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m10\10.1 LinkedList using Recursion\Solution.java:80:19: Expected @param tag for 'counter1'. [JavadocMethod]
 Audit done.
-Checkstyle ends with 3 errors.
+Checkstyle ends with 5 errors.

@@ -76,10 +76,12 @@ class LinkedList {
      * @param      index    index of type int
      * @param      data     data of type int
      */
-    public void insert(Node current,
-        int counter,
+    public void insert(final Node current1,
+        final int counter1,
         final int index,
         final int data) {
+        Node current = current1;
+        int counter = counter1;
         if (index == 0) {
             Node newNode = new Node(data);
             newNode.link = head;
