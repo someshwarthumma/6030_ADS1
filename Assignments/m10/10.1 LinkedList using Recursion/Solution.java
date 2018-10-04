@@ -24,10 +24,9 @@ class LinkedList {
 	}
 
 
-	public void insertAt(int index, int data) {
+	public void insertAt(int index, int data) throws Exception{
 		if (index > size || index < 0) {
-			System.out.println("Can't insert at this position.");
-			return;
+			throw new Exception("Can't insert at this position.");
 		}
 		if (size == 0) {
 			head = new Node(data);
@@ -96,6 +95,7 @@ class Solution {
 	public static void main(String[] args) {
 		LinkedList linkedlistObj = new LinkedList();
 		Scanner scan = new Scanner(System.in);
+		try {
 		while (scan.hasNext()) {
 			String[] tokens = scan.nextLine().split(" ");
 			switch (tokens[0]) {
@@ -108,6 +108,9 @@ class Solution {
 				linkedlistObj.print();
 				break;
 			}
+		}
+		} catch(Exception e){
+			System.out.println(e.getMessage());
 		}
 	}
 }
