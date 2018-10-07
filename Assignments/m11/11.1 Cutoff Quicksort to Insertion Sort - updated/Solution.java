@@ -4,6 +4,12 @@ import java.util.Scanner;
  */
 class Solution {
     /**.
+     * Solution constructor
+     */
+    private Solution(){
+        //constructor
+    }
+    /**.
      * Main method for hadling the iput testcases
      * Complexity : O(N)
      * since we need to read the output
@@ -56,15 +62,15 @@ class QuickSort {
     }
     /**.
      * Sort method to perform quick sort recursively
-     * Complexity is ( 1) 
+     * Complexity is ( 1)
      * @param      array  The array of type Comparable
      * @param      lo     The lower Of type integer
      * @param      hi     The higher Of type integer
      */
-    public void sort(final Comparable[] array , final int lo, final int hi) {
+    public void sort(final Comparable[] array, final int lo, final int hi) {
         int n = hi - lo + 1;
         if (n <= cutOff) {
-            insertObj.sort(array , lo, hi);
+            insertObj.sort(array, lo, hi);
             System.out.println("insertionSort called");
             return;
         }
@@ -153,6 +159,13 @@ class QuickSort {
  * Insertion class to Perform insertion sort
  */
 class Insertion {
+    /**.
+     * Sort method for insertion sort
+     * complexity is O(N^2)
+     * @param      a     { array of type Comprable  }
+     * @param      lo    The lower of tyoe int
+     * @param      hi    The higher of type int
+     */
     public void sort(final Comparable[] a, final int lo, final int hi) {
         for (int i = lo; i <= hi; i++) {
             for (int j = i; j > lo && lesser(a[j], a[j - 1]); j--) {
