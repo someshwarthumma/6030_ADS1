@@ -1,13 +1,12 @@
 import java.util.Scanner;
-import java.lang.Comparable;
 /**.
  * Solution class
  */
-class Solution {
+final class Solution {
     /**.
      * This is private constructor
      */
-    private Solution(){
+    private Solution() {
         //constructor
     }
     /**.
@@ -15,7 +14,7 @@ class Solution {
      *
      * @param      args  The arguments
      */
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         /**.
          * Scanner object reading
          */
@@ -102,13 +101,13 @@ class MinPQ<E extends Comparable<E>> {
     /**.
      * Check method to check weather it is minPQ or not
      * Complexity is O(N)
-     * since we use For loop to check 
+     * since we use For loop to check
      *
      * @param      arr  array of generic type
      *
      * @return     { Boolean flag }
      */
-    public boolean check(E[] arr) {
+    public boolean check(final E[] arr) {
         int n = arr.length;
         for (int i = n - 1; i > 1; i--) {
             if (arr[i].compareTo(arr[i / 2]) < 0) {
