@@ -11,7 +11,8 @@ final class Solution {
     }
     /**.
      * main method to handle input testcases
-     *
+     * complexity is O(N)
+     * since we use two loops to read the input and check simultaneosly
      * @param      args  The arguments
      */
     public static void main(final String[] args) {
