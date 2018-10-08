@@ -1,0 +1,1 @@
+No, An array which is sorted in ascending order is not considered as heap because in heap the elements are in sorted at 2k , 2k+1 where is k is and arbitraty index while in sorted are all the elements are in sorted order in side by side indeces.
