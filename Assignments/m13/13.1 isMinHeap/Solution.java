@@ -33,10 +33,10 @@ final class Solution {
             while (scan.hasNext()) {
                 String[] array = scan.nextLine().split(",");
                 String[] strArr = new String[array.length + 1];
-                int j = 0;
-                for (int i = 1; i <= array.length; i++) {
-                    strArr[i] = array[j];
-                    j++;
+                int index2 = 0;
+                for (int index = 1; index <= array.length; index++) {
+                    strArr[index] = array[index2];
+                    index2++;
                 }
                 System.out.println(checkObj.check(strArr));
             }
@@ -45,10 +45,10 @@ final class Solution {
             while (scan.hasNext()) {
                 String[] array = scan.nextLine().split(",");
                 Integer[] intArr = new Integer[array.length + 1];
-                int j = 0;
-                for (int i = 1; i <= array.length; i++) {
-                    intArr[i] = Integer.parseInt(array[j]);
-                    j++;
+                int index2 = 0;
+                for (int index = 1; index <= array.length; index++) {
+                    intArr[index] = Integer.parseInt(array[index2]);
+                    index2++;
                 }
                 System.out.println(checkObj.check(intArr));
             }
@@ -57,16 +57,16 @@ final class Solution {
             while (scan.hasNext()) {
                 String[] array = scan.nextLine().split(",");
                 Double[] doubleArr = new Double[array.length + 1];
-                int j = 0;
-                for (int i = 1; i <= array.length; i++) {
-                    doubleArr[i] = Double.parseDouble(array[j]);
-                    j++;
+                int index2 = 0;
+                for (int index = 1; index <= array.length; index++) {
+                    doubleArr[index] = Double.parseDouble(array[index2]);
+                    index2++;
                 }
                 System.out.println(checkObj.check(doubleArr));
             }
             break;
         case "Float":
-            for (int k = 0; k < noOfTestCases; k++) {
+            for (int index3 = 0; index3 < noOfTestCases; index3++) {
                 String array1 = scan.nextLine();
                 if (array1.length() == 0) {
                     System.out.println("false");
@@ -74,10 +74,10 @@ final class Solution {
                 }
                 String[] array = array1.split(",");
                 Float[] floatArr = new Float[array.length + 1];
-                int j = 0;
-                for (int i = 1; i <= array.length; i++) {
-                    floatArr[i] = Float.parseFloat(array[j]);
-                    j++;
+                int index2 = 0;
+                for (int index = 1; index <= array.length; index++) {
+                    floatArr[index] = Float.parseFloat(array[index2]);
+                    index2++;
                 }
                 System.out.println(checkObj.check(floatArr));
             }
@@ -109,9 +109,9 @@ class MinPQ<E extends Comparable<E>> {
      * @return     { Boolean flag }
      */
     public boolean check(final E[] arr) {
-        int n = arr.length;
-        for (int i = n - 1; i > 1; i--) {
-            if (arr[i].compareTo(arr[i / 2]) < 0) {
+        int len = arr.length;
+        for (int index = len - 1; index > 1; index--) {
+            if (arr[index].compareTo(arr[index / 2]) < 0) {
                 return false;
             }
         }
