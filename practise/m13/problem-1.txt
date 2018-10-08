@@ -1,0 +1,4 @@
+given input:  P R I O * R * * I * T * Y * * * Q U E * * * U * E 
+
+Output in sequwntial removing of max element:
+R, R, P, O, T, Y, I, I, U, Q, E, U, E
