@@ -1,4 +1,4 @@
-import java.util.*;
+//import java.util.*;
 class Students{
 	private String name;
 	private String dateOfBirth;
@@ -50,16 +50,14 @@ class Students{
 		return  Integer.parseInt(dateOfBirth.split("-")[0]);
 	}
 
-	public static Comparator<Students> comparator = new Comparator<Students>(){
-		public int compare(Students s1, Students s2){
-			if(s1.getTotal() - s2.getTotal() !=0){
+	//public static Comparator<Students> comparator = new Comparator<Students>(){
+		public int compareTo(Students s1, Students s2){
+			if(s1.getTotal() - s2.getTotal() !=0){   
 				return s1.getTotal() - s2.getTotal();
-			} else if(s1.getMarks1() - s2.getMarks1()  != 0){
-				return s1.getMarks1() -s2.getMarks1() ;
+			} else if(s1.getMarks3() - s2.getMarks3()  != 0){
+				return s1.getMarks3() -s2.getMarks3() ;
 			} else if(s1.getMarks2()  - s2.getMarks2() != 0){
 				return s1.getMarks2()-s2.getMarks2();
-			} else if(s1.getMarks3() - s2.getMarks3() != 0){
-				return s1.getMarks3()-s2.getMarks3();
 			} else if(s2.getYear() - s1.getYear() != 0){
 				return s2.getYear()-s1.getYear();
 			} else if(s2.getMonth() - s1.getMonth() != 0){
@@ -70,5 +68,5 @@ class Students{
 				return 0;
 			}
 		}
-	};
+	
 }
