@@ -14,7 +14,6 @@ Starting audit...
 [ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m14\14.2 student reservation system\Solution.java:96:50: Expression can be simplified. [SimplifyBooleanExpression]
 [ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m14\14.2 student reservation system\Solution.java:105:54: '&&' should be on a new line. [OperatorWrap]
 [ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m14\14.2 student reservation system\Solution.java:106:50: Expression can be simplified. [SimplifyBooleanExpression]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m14\14.2 student reservation system\Solution.java:116:69: '&&' should be on a new line. [OperatorWrap]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m14\14.2 student reservation system\Solution.java:117:46: Expression can be simplified. [SimplifyBooleanExpression]
+[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m14\14.2 student reservation system\Solution.java:116: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 17 errors.
+Checkstyle ends with 16 errors.
