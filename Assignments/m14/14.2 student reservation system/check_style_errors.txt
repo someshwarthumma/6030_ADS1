@@ -26,12 +26,5 @@ Starting audit...
 [ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m14\14.2 student reservation system\Solution.java:160: First sentence should end with a period. [JavadocStyle]
 [ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m14\14.2 student reservation system\Solution.java:164: Line has trailing spaces. [RegexpSingleline]
 [ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m14\14.2 student reservation system\Solution.java:168: Line has trailing spaces. [RegexpSingleline]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m14\14.2 student reservation system\Solution.java:247:13: Parameter studentName1 should be final. [FinalParameters]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m14\14.2 student reservation system\Solution.java:247:34: Parameter dateOfBirth should be final. [FinalParameters]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m14\14.2 student reservation system\Solution.java:248:20: Parameter m11 should be final. [FinalParameters]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m14\14.2 student reservation system\Solution.java:248:29: Parameter m21 should be final. [FinalParameters]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m14\14.2 student reservation system\Solution.java:248:38: Parameter m31 should be final. [FinalParameters]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m14\14.2 student reservation system\Solution.java:248:47: Parameter tm1 should be final. [FinalParameters]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m14\14.2 student reservation system\Solution.java:249:20: Parameter rc1 should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 34 errors.
+Checkstyle ends with 27 errors.

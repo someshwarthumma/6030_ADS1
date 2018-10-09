@@ -244,9 +244,9 @@ class Student implements Comparable<Student> {
      * @param      tm1          Total Marks.
      * @param      rc1          Reservation Category.
      */
-    Student(String studentName1, String dateOfBirth,
-                   int m11, int m21, int m31, int tm1,
-                   String rc1) {
+    Student(final String studentName1, final String dateOfBirth,
+                   final int m11, final int m21, final int m31, final int tm1,
+                   final String rc1) {
         this.studentName = studentName1;
 
         SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy");
