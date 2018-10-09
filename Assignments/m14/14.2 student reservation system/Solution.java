@@ -384,7 +384,7 @@ class Insertion {
   /**.
    * Insertion constructor
    */
-  Insertion() {
+  private Insertion() {
   	//Constructor
   }
   /**.
