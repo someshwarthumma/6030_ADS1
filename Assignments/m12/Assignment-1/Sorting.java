@@ -1,6 +1,6 @@
 import java.util.*;
   class Sorting{
-	public static void sort(Comparable[] a) {
+	public static void sort(Students[] a) {
         int n = a.length;
         for (int i = 0; i < n; i++) {
             for (int j = i; j > 0 && less(a[j], a[j-1]); j--) {
@@ -10,12 +10,12 @@ import java.util.*;
     }
 
 
-    private static  boolean less(Comparable v, Comparable w) {
+    private static  boolean less(Students v, Students w) {
         return v.compareTo(w) < 0;
     }
 
-    private static void exch(Comparable[] a, int i, int j) {
-        Comparable swap = a[i];
+    private static void exch(Students[] a, int i, int j) {
+        Students swap = a[i];
         a[i] = a[j];
         a[j] = swap;
     }

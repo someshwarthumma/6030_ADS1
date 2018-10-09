@@ -1,5 +1,5 @@
 import java.util.Arrays;
-public class Ranking{
+public class Ranking {
 
 	Students[] studentArray;
 	Sorting sortObj;
@@ -23,7 +23,7 @@ public class Ranking{
 
 
 	public void printMerit(){
-		sortObj.sort(studentArray, Students.comparator);
+		sortObj.sort(studentArray);
 		for(int i=0;i<size;i++){
 			System.out.println(studentArray[i].getName()+","+studentArray[i].getTotal()+","+studentArray[i].getReservation());
 		}

@@ -51,22 +51,22 @@ class Students{
 	}
 
 	//public static Comparator<Students> comparator = new Comparator<Students>(){
-		public int compareTo(Students s1, Students s2){
-			if(s1.getTotal() - s2.getTotal() !=0){   
-				return s1.getTotal() - s2.getTotal();
-			} else if(s1.getMarks3() - s2.getMarks3()  != 0){
-				return s1.getMarks3() -s2.getMarks3() ;
-			} else if(s1.getMarks2()  - s2.getMarks2() != 0){
-				return s1.getMarks2()-s2.getMarks2();
-			} else if(s2.getYear() - s1.getYear() != 0){
-				return s2.getYear()-s1.getYear();
-			} else if(s2.getMonth() - s1.getMonth() != 0){
-				return s2.getMonth()-s1.getMonth();
-			} else if(s2.getDay() - s1.getDay() != 0){
-				return s2.getDay()-s1.getDay();
-			} else {
-				return 0;
-			}
+	public int compareTo(Students s2){
+		if(this.getTotal() - s2.getTotal() !=0){   
+			return this.getTotal() - s2.getTotal();
+		} else if(this.getMarks3() - s2.getMarks3()  != 0){
+			return this.getMarks3() -s2.getMarks3() ;
+		} else if(this.getMarks2()  - s2.getMarks2() != 0){
+			return this.getMarks2()-s2.getMarks2();
+		} else if(s2.getYear() - this.getYear() != 0){
+			return s2.getYear()-this.getYear();
+		} else if(s2.getMonth() - this.getMonth() != 0){
+			return s2.getMonth()-this.getMonth();
+		} else if(s2.getDay() - this.getDay() != 0){
+			return s2.getDay()-this.getDay();
+		} else {
+			return 0;
 		}
+	}
 	
 }
