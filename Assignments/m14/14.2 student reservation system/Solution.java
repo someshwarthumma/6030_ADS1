@@ -129,43 +129,19 @@ class Solution{
  * student class which contains the information of the students
  */
 class Student implements Comparable<Student> {
-	/**
-	 * Student Name
-	 */
     private String studentName;
-    /**
-     * Date of birth as db
-     */
     private Date db;
-    /**
-     * Marks for subject one as m1
-     */
     private int m1;
-    /**
-     * marks for subject two as m2
-     */
     private int m2;
-    /**
-     * marks for subject three as m3
-     */
     private int m3;
-    /**
-     * total marks as tm
-     */
     private int tm;
-    /**
-     * reservation category as rc
-     */
     private String rc;
-    /**
-     * Flag to check weather seat allocat
-     */
     private boolean alloted;
-
+    
     /**.
      * returns true, if the student is already alloted,
      * otherwise false.
-     *
+     * 
      * @return true if alloted, otherwise false.
      */
     public boolean getAlloted() {
@@ -236,18 +212,18 @@ class Student implements Comparable<Student> {
     /**.
      * Constructs the object based on the parameters.
      *
-     * @param      studentName1  Student Name
+     * @param      studentName  Student Name
      * @param      dateOfBirth  Date of Birth
-     * @param      m11          Marks in first subject.
-     * @param      m21          Marks in second subject.
-     * @param      m31           Marks in third subject.
-     * @param      tm1           Total Marks.
-     * @param      rc1           Reservation Category.
+     * @param      m1           Marks in first subject.
+     * @param      m2           Marks in second subject.
+     * @param      m3           Marks in third subject.
+     * @param      tm           Total Marks.
+     * @param      rc           Reservation Category.
      */
-    Student(final String studentName1, final String dateOfBirth,
-                   final int m11, final int m21, final int m31, final int tm1,
-                   final String rc1) {
-        this.studentName = studentName1;
+    Student(String studentName, String dateOfBirth,
+                   int m1, int m2, int m3, int tm,
+                   String rc) {
+        this.studentName = studentName;
 
         SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy");
         try {
@@ -380,11 +356,8 @@ class Student implements Comparable<Student> {
     }
 }
 
-/**.
- * Insertion class
- */
 class Insertion {
-  /**.
+  /**
    * Insertion constructor
    */
   Insertion(){
