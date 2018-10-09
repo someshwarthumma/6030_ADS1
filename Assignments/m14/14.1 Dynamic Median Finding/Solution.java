@@ -1,9 +1,12 @@
 import java.util.Scanner;
+/**.
+ * solution class
+ */
 final class Solution {
     /**.
      * solution class constructor
      */
-    private Solution(){
+    private Solution() {
         //constructor
     }
     /**.
@@ -11,7 +14,7 @@ final class Solution {
      *
      * @param      args  The arguments
      */
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         int n = Integer.parseInt(scan.nextLine());
         MinPQ<Float> minPQObj = new MinPQ<Float>(n);
