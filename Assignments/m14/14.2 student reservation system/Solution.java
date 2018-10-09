@@ -236,13 +236,13 @@ class Student implements Comparable<Student> {
     /**.
      * Constructs the object based on the parameters.
      *
-     * @param      studentName  Student Name
+     * @param      studentName1  Student Name
      * @param      dateOfBirth  Date of Birth
-     * @param      m1           Marks in first subject.
-     * @param      m2           Marks in second subject.
-     * @param      m3           Marks in third subject.
-     * @param      tm           Total Marks.
-     * @param      rc           Reservation Category.
+     * @param      m11           Marks in first subject.
+     * @param      m21          Marks in second subject.
+     * @param      m31           Marks in third subject.
+     * @param      tm1          Total Marks.
+     * @param      rc1          Reservation Category.
      */
     Student(String studentName1, String dateOfBirth,
                    int m11, int m21, int m31, int tm1,
