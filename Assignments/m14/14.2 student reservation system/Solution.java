@@ -83,7 +83,7 @@ class Solution{
 
             if (noBC > 0) {
                 if (students[i].getRc().equals("BC")
-                    && students[i].getAlloted()) {
+                    && students[i].getAlloted() != true) {
                     noBC--;
                     students[i].setAlloted(true);
                     alloted[k++] = students[i];
@@ -93,7 +93,7 @@ class Solution{
 
             if (noSC > 0) {
                 if (students[i].getRc().equals("SC")
-                    && students[i].getAlloted()) {
+                    && students[i].getAlloted() != true) {
                     noSC--;
                     students[i].setAlloted(true);
                     alloted[k++] = students[i];
@@ -103,7 +103,7 @@ class Solution{
 
             if (noST > 0) {
                 if (students[i].getRc().equals("ST")
-                    && students[i].getAlloted()) {
+                    && students[i].getAlloted() != true) {
                     noST--;
                     students[i].setAlloted(true);
                     alloted[k++] = students[i];
