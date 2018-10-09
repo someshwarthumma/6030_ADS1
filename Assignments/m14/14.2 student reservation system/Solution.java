@@ -129,43 +129,43 @@ class Solution{
  * student class which contains the information of the students
  */
 class Student implements Comparable<Student> {
-    /**
+    /**.
      * student name
      */
     private String studentName;
-    /**
+    /**.
      * Varaible for date of birth
      */
     private Date db;
-    /**
+    /**.
      * subject 1 marks
      */
     private int m1;
-    /**
+    /**.
      * Subject 2 marks
      */
     private int m2;
-    /**
+    /**.
      * subject 3 marks
      */
     private int m3;
-    /**
+    /**.
      * total marks
      */
     private int tm;
-    /**
+    /**.
      * reservation category
      */
     private String rc;
-    /**
+    /**.
      * flag to check weather seat allocated
      */
     private boolean alloted;
-    
+
     /**.
      * returns true, if the student is already alloted,
      * otherwise false.
-     * 
+     *
      * @return true if alloted, otherwise false.
      */
     public boolean getAlloted() {
