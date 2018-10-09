@@ -115,7 +115,7 @@ class Solution{
         for (i = 0; i < n; i++) {
             if (vacancies > 0
             	&& students[i].getRc().equals("Open") 
-            	&& !students[i].getAlloted()) {
+            	&& students[i].getAlloted() == false) {
                 students[i].setAlloted(true);
                 alloted[k++] = students[i];
                 vacancies--;
