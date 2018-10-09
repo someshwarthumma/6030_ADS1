@@ -82,8 +82,8 @@ class Solution{
             }
 
             if (noBC > 0) {
-                if (students[i].getRc().equals("BC")
-                    && students[i].getAlloted() != true) {
+                if (students[i].getRc().equals("BC") &&
+                        students[i].getAlloted() != true) {
                     noBC--;
                     students[i].setAlloted(true);
                     alloted[k++] = students[i];
@@ -92,8 +92,8 @@ class Solution{
             }
 
             if (noSC > 0) {
-                if (students[i].getRc().equals("SC")
-                    && students[i].getAlloted() != true) {
+                if (students[i].getRc().equals("SC") &&
+                        students[i].getAlloted() != true) {
                     noSC--;
                     students[i].setAlloted(true);
                     alloted[k++] = students[i];
@@ -102,8 +102,8 @@ class Solution{
             }
 
             if (noST > 0) {
-                if (students[i].getRc().equals("ST")
-                    && students[i].getAlloted() != true) {
+                if (students[i].getRc().equals("ST") &&
+                        students[i].getAlloted() != true) {
                     noST--;
                     students[i].setAlloted(true);
                     alloted[k++] = students[i];
@@ -113,9 +113,8 @@ class Solution{
         }
 
         for (i = 0; i < n; i++) {
-            if (vacancies > 0
-            	&& students[i].getRc().equals("Open") 
-            	&& students[i].getAlloted() == false) {
+            if (vacancies > 0 && students[i].getRc().equals("Open") &&
+                    students[i].getAlloted() == false) {
                 students[i].setAlloted(true);
                 alloted[k++] = students[i];
                 vacancies--;
@@ -130,36 +129,36 @@ class Solution{
  * student class which contains the information of the students
  */
 class Student implements Comparable<Student> {
-	/**.
+	/**
 	 * Student Name
 	 */
     private String studentName;
-    /**.
+    /**
      * Date of birth as db
      */
     private Date db;
-    /**.
+    /**
      * Marks for subject one as m1
      */
     private int m1;
-    /**.
+    /**
      * marks for subject two as m2
      */
     private int m2;
-    /**.
+    /**
      * marks for subject three as m3
      */
     private int m3;
-    /**.
+    /**
      * total marks as tm
      */
     private int tm;
-    /**.
+    /**
      * reservation category as rc
      */
     private String rc;
-    /**.
-     * Flag to check weather seat allocated or not
+    /**
+     * Flag to check weather seat allocat
      */
     private boolean alloted;
 
