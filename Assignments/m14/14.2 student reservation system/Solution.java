@@ -4,11 +4,11 @@ import java.text.SimpleDateFormat;
 /**.
  * Solution class
  */
-class Solution {
+final class Solution {
     /**.
      * Solution class constructor
      */
-    private Solution(){
+    private Solution() {
         //Constructor
     }
     /**.
