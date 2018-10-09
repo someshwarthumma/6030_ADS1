@@ -380,7 +380,10 @@ class Student implements Comparable<Student> {
     }
 }
 
-class Insertion {
+/**.
+ * insertion class
+ */
+final class Insertion {
   /**.
    * Insertion constructor
    */

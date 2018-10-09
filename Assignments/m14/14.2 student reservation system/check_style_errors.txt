@@ -33,7 +33,5 @@ Starting audit...
 [ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m14\14.2 student reservation system\Solution.java:248:38: Parameter m31 should be final. [FinalParameters]
 [ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m14\14.2 student reservation system\Solution.java:248:47: Parameter tm1 should be final. [FinalParameters]
 [ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m14\14.2 student reservation system\Solution.java:249:20: Parameter rc1 should be final. [FinalParameters]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m14\14.2 student reservation system\Solution.java:383: Class Insertion should be declared as final. [FinalClass]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m14\14.2 student reservation system\Solution.java:383: Missing a Javadoc comment. [JavadocType]
 Audit done.
-Checkstyle ends with 36 errors.
+Checkstyle ends with 34 errors.
