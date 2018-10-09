@@ -23,7 +23,7 @@ public class Ranking{
 
 
 	public void printMerit(){
-		sortObj.sort(studentArray, comparator);
+		sortObj.sort(studentArray, Students.comparator);
 		for(int i=0;i<size;i++){
 			System.out.println(studentArray[i].getName()+","+studentArray[i].getTotal()+","+studentArray[i].getReservation());
 		}

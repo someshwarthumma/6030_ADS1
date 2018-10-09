@@ -1,4 +1,5 @@
-class Sorting{
+import java.util.Comparator;
+  class Sorting{
 	public static void sort(Object[] a, Comparator comparator) {
         int n = a.length;
         for (int i = 0; i < n; i++) {

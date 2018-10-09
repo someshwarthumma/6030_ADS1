@@ -50,7 +50,7 @@ class Students{
 		return  Integer.parseInt(dateOfBirth.split("-")[0]);
 	}
 
-	public static Comparator<Students>comparator = new Comparator<Students>(){
+	public static Comparator<Students> comparator = new Comparator<Students>(){
 		public int compare(Students s1, Students s2){
 			if(s1.getTotal() - s2.getTotal() !=0){
 				return s1.getTotal() - s2.getTotal();
