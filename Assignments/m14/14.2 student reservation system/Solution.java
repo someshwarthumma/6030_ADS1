@@ -129,13 +129,37 @@ class Solution{
  * student class which contains the information of the students
  */
 class Student implements Comparable<Student> {
+    /**
+     * student name
+     */
     private String studentName;
+    /**
+     * Varaible for date of birth
+     */
     private Date db;
+    /**
+     * subject 1 marks
+     */
     private int m1;
+    /**
+     * Subject 2 marks
+     */
     private int m2;
+    /**
+     * subject 3 marks
+     */
     private int m3;
+    /**
+     * total marks
+     */
     private int tm;
+    /**
+     * reservation category
+     */
     private String rc;
+    /**
+     * flag to check weather seat allocated
+     */
     private boolean alloted;
     
     /**.
@@ -357,10 +381,10 @@ class Student implements Comparable<Student> {
 }
 
 class Insertion {
-  /**
+  /**.
    * Insertion constructor
    */
-  Insertion(){
+  Insertion() {
   	//Constructor
   }
   /**.
@@ -376,9 +400,9 @@ class Insertion {
   }
 
   /**.
-   * { function_description }.
+   * { method to exchange the inputs }.
    * complexity is O(1)
-   * 
+   *
    * @param      array    { array }
    * @param      item1    { index1 }
    * @param      item2     { index2 }
