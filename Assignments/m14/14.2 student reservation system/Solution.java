@@ -103,7 +103,7 @@ class Solution{
 
             if (noST > 0) {
                 if (students[i].getRc().equals("ST")
-                    && students[i].getAlloted()) {
+                    && !students[i].getAlloted()) {
                     noST--;
                     students[i].setAlloted(true);
                     alloted[k++] = students[i];
