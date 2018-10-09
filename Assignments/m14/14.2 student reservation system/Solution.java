@@ -59,11 +59,17 @@ class Solution{
      * @param      noST       No st students
      */
     public static void allotment(final Student[] students,
-                                 int vacancies,
-                                 int noCategry,
-                                 int noBC,
-                                 int noSC,
-                                 int noST) {
+                                 int vacancies_,
+                                 int noCategry_,
+                                 int noBC_,
+                                 int noSC_,
+                                 int noST_) {
+        int vacancies = vacancies_;
+        int noCategry = noCategry_;
+        int noBC = noBC_;
+        int noSC = noSC_;
+        int noST = noST_;
+
         int i = 0;
         int k = 0;
         int n = students.length;
