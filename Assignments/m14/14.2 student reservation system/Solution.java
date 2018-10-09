@@ -1,8 +1,15 @@
 import java.util.Scanner;
 import java.util.Date;
 import java.text.SimpleDateFormat;
-
+/**.
+ * Solution class
+ */
 class Solution{
+	/**.
+	 * Main method to handle the input testcases
+	 *
+	 * @param      args  The arguments
+	 */
 	public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         int n = Integer.parseInt(scan.nextLine());
@@ -29,13 +36,28 @@ class Solution{
         allotment(students, vacancies, noCategry, noOfBC,
                   noOfSC, noOfST);
     }
-
+    /**.
+     * print method to print the input
+     * complexity is O(N) as it has for loop
+     *
+     * @param      students  The students array
+     */
     public static void print(final Student[] students) {
         for (Student student : students) {
             System.out.println(student);
         }
         System.out.println();
     }
+    /**.
+     * Allotment method to allocate the seats to students
+     * Complexity is O(N) as it has a looping statement
+     * @param      students   The students
+     * @param      vacancies  The vacancies
+     * @param      noCategry  No categry 
+     * @param      noBC       No bc students
+     * @param      noSC       No sc students
+     * @param      noST       No st students
+     */
     public static void allotment(final Student[] students,
                                  int vacancies,
                                  int noCategry,
@@ -103,7 +125,9 @@ class Solution{
         print(alloted);
     }
 }
-
+/**.
+ * student class which contains the information of the students
+ */
 class Student implements Comparable<Student> {
     private String studentName;
     private Date db;
@@ -114,7 +138,7 @@ class Student implements Comparable<Student> {
     private String rc;
     private boolean alloted;
     
-    /**
+    /**.
      * returns true, if the student is already alloted,
      * otherwise false.
      * 
@@ -124,7 +148,7 @@ class Student implements Comparable<Student> {
         return alloted;
     }
 
-    /**
+    /**.
      * Changes the alloted status to true once the allotment is done.
      *
      * @param      allot  should be either true or false.
@@ -133,7 +157,7 @@ class Student implements Comparable<Student> {
         this.alloted = allot;
     }
 
-    /**
+    /**.
      * Gets the data of birth.
      * @return date of birth.
      */
@@ -141,7 +165,7 @@ class Student implements Comparable<Student> {
         return db;
     }
 
-    /**
+    /**.
      * sets the student's date of birth.
      *
      * @param      b     [description]
@@ -150,7 +174,7 @@ class Student implements Comparable<Student> {
         this.db = b;
     }
 
-    /**
+    /**.
      * gets the date of birth.
      *
      * @return     the student's date of birth.
@@ -159,7 +183,7 @@ class Student implements Comparable<Student> {
         return rc;
     }
 
-    /**
+    /**.
      * Sets the student's reservation category.
      *
      * @param      r     { parameter_description }
@@ -168,7 +192,7 @@ class Student implements Comparable<Student> {
         this.rc = r;
     }
 
-    /**
+    /**.
      * gets the total marks.
      * @return returns the total marks of the student.
      */
@@ -176,7 +200,7 @@ class Student implements Comparable<Student> {
         return tm;
     }
 
-    /**
+    /**.
      * sets the student's total marks.
      *
      * @param      m     { parameter_description }
@@ -185,7 +209,7 @@ class Student implements Comparable<Student> {
         this.tm = m;
     }
 
-    /**
+    /**.
      * Constructs the object based on the parameters.
      *
      * @param      studentName  Student Name
@@ -215,7 +239,7 @@ class Student implements Comparable<Student> {
         this.alloted = false;
     }
 
-    /**
+    /**.
      * Gets the marks in subject 3.
      *
      * @return     m3 Marks in subject 3.
@@ -224,7 +248,7 @@ class Student implements Comparable<Student> {
         return m3;
     }
 
-    /**
+    /**.
      * Sets the m3 to the 3rd subject.
      *
      * @param      m     { parameter_description }
@@ -233,7 +257,7 @@ class Student implements Comparable<Student> {
         this.m3 = m;
     }
 
-    /**
+    /**.
      * Gets the marks in subject 2.
      *
      * @return     marks in subject 2.
@@ -242,7 +266,7 @@ class Student implements Comparable<Student> {
         return m2;
     }
 
-    /**
+    /**.
      * Sets marks in subject 2.
      *
      * @param      m     { parameter_description }
@@ -251,7 +275,7 @@ class Student implements Comparable<Student> {
         this.m2 = m;
     }
 
-    /**
+    /**.
      * Gets the marks in subject 1.
      * @return marks in subject 1.
      */
@@ -259,7 +283,7 @@ class Student implements Comparable<Student> {
         return m1;
     }
 
-    /**
+    /**.
      * Sets the marks to subject 1.
      *
      * @param      m     { parameter_description }
@@ -268,7 +292,7 @@ class Student implements Comparable<Student> {
         this.m1 = m;
     }
 
-    /**
+    /**.
      * Gets the student name.
      * @return the student's name.
      */
@@ -276,16 +300,17 @@ class Student implements Comparable<Student> {
         return studentName;
     }
 
-    /**
+    /**.
      * When required the student's name can be updated.
-     * @param student.
+     * @param student student
      */
     public void setStudentName(final String student) {
         this.studentName = student;
     }
 
-    /**
+    /**.
      * Compares two objects of types students.
+     * complexity is O(1)
      * @param  that second Student.
      * @return integer based on the requirements.
      */
@@ -317,8 +342,9 @@ class Student implements Comparable<Student> {
         return 0;
     }
 
-    /**
+    /**.
      * Gets the String version of the Students.
+     * complexity is O(1)
      * @return String version of object.
      */
     public String toString() {
@@ -332,42 +358,44 @@ class Student implements Comparable<Student> {
 
 class Insertion {
 
-  /**
-   * { function_description }.
+  /**.
+   * { Compares weather the given element is less or not }.
    *
-   * @param      v     { parameter_description }
-   * @param      w     { parameter_description }
+   * @param      v     { item1 }
+   * @param      w     { item2 }
    *
-   * @return     { description_of_the_return_value }
+   * @return     { boolean value }
    */
   private static boolean less(final Comparable v, final Comparable w) {
-    // System.out.println("V : " + (Team)v + " \t And : " + (Team)w);
     return v.compareTo(w) < 0;
   }
 
-  /**
+  /**.
    * { function_description }.
-   *
-   * @param      a     { parameter_description }
-   * @param      i     { parameter_description }
-   * @param      j     { parameter_description }
+   * complexity is O(1)
+   *  
+   * @param      array    { array }
+   * @param      item1    { index1 }
+   * @param      item2     { index2 }
    */
-  private static void exch(final Comparable[] a, final int i, final int j) {
-    Comparable swap = a[i];
-    a[i] = a[j];
-    a[j] = swap;
+  private static void exch(final Comparable[] array, final int item1, final int item2) {
+    Comparable swap = array[item1];
+    array[item1] = array[item2];
+    array[item2] = swap;
   }
 
-  /**
+  /**.
    * Sorts the elements using insertion sort.
+   * complexity is O(N^2)
+   * since we have two nested for loops
    * @param a contains elements that are to be sorted.
    */
-  public static void sort(final Comparable[] a) {
-    int n = a.length;
+  public static void sort(final Comparable[] array) {
+    int n = array.length;
     for (int i = 0; i < n; i++) {
       for (int j = i; j > 0; j--) {
-        if (less(a[j], a[j - 1])) {
-          exch(a, j, j - 1);
+        if (less(array[j], array[j - 1])) {
+          exch(array, j, j - 1);
         } else {
           break;
         }
