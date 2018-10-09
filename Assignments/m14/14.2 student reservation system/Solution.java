@@ -4,13 +4,19 @@ import java.text.SimpleDateFormat;
 /**.
  * Solution class
  */
-class Solution{
-	/**.
-	 * Main method to handle the input testcases
-	 *
-	 * @param      args  The arguments
-	 */
-	public static void main(final String[] args) {
+class Solution {
+    /**.
+     * Solution class constructor
+     */
+    private Solution(){
+        //Constructor
+    }
+    /**.
+     * Main method to handle the input testcases
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         int n = Integer.parseInt(scan.nextLine());
         int vacancies = Integer.parseInt(scan.nextLine());
@@ -53,7 +59,7 @@ class Solution{
      * Complexity is O(N) as it has a looping statement
      * @param      students   The students
      * @param      vacancies1  The vacancies
-     * @param      noCategry1  No categry 
+     * @param      noCategry1  No categry
      * @param      noBC1       No bc students
      * @param      noSC1       No sc students
      * @param      noST1      No st students
@@ -394,7 +400,7 @@ final class Insertion {
    * Insertion constructor
    */
   private Insertion() {
-  	//Constructor
+    //Constructor
   }
   /**.
    * { Compares weather the given element is less or not }.
@@ -417,7 +423,7 @@ final class Insertion {
    * @param      item2     { index2 }
    */
   private static void exch(final Comparable[] array,
-  	final int item1, final int item2) {
+    final int item1, final int item2) {
     Comparable swap = array[item1];
     array[item1] = array[item2];
     array[item2] = swap;
