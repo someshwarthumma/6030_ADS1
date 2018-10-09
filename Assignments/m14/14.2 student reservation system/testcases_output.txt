@@ -1,4 +1,4 @@
-########## Testcase 0: Passed ##########
+########## Testcase 0: Failed ##########
 Expected Output: 
 divya,99,ST
 Deepak,98,Open
@@ -31,38 +31,35 @@ tanvi,90,BC
 Aditya,80,ST
 priya,72,SC
 Your Output: 
-divya,99,ST
-Deepak,98,Open
-Ira,93,ST
-tanvi,90,BC
-Raj,87,BC
-riya,83,Open
-Aditya,80,ST
-Ajay,76,Open
-Arjun,75,Open
-rahul,73,Open
-priya,72,SC
-shyam,71,ST
-Priyanka,70,Open
-varsha,66,BC
-yash,61,BC
-Abhishek,60,BC
-Ankit,58,BC
-vani,50,Open
-Aishwarya,48,Open
-Manoj,39,SC
-Anjali,38,SC
-Aryan,32,ST
-Shreya,23,SC
+Manoj,0,null
+riya,0,null
+Aishwarya,0,null
+Deepak,0,null
+yash,0,null
+Raj,0,null
+tanvi,0,null
+Aditya,0,null
+Priyanka,0,null
+shyam,0,null
+rahul,0,null
+priya,0,null
+divya,0,null
+Ira,0,null
+varsha,0,null
+vani,0,null
+Ajay,0,null
+Abhishek,0,null
+Ankit,0,null
+Anjali,0,null
+Shreya,0,null
+Aryan,0,null
+Arjun,0,null
 
-divya,99,ST
-Deepak,98,Open
-Ira,93,ST
-tanvi,90,BC
-Aditya,80,ST
-priya,72,SC
+Exception in thread "main" java.lang.NullPointerException
+	at Solution.allotment(Solution.java:95)
+	at Solution.main(Solution.java:36)
 ----------------------------------------
-########## Testcase 1: Passed ##########
+########## Testcase 1: Failed ##########
 Expected Output: 
 divya,99,ST
 Ishita,99,Open
@@ -104,47 +101,42 @@ Raj,87,BC
 Aditya,80,ST
 priya,72,SC
 Your Output: 
-divya,99,ST
-Ishita,99,Open
-Deepak,98,Open
-Ira,93,ST
-tanvi,90,BC
-Raj,87,BC
-mahesh,87,Open
-riya,83,Open
-Aditya,80,ST
-Ajay,76,Open
-Arjun,75,Open
-rahul,73,Open
-priya,72,SC
-shyam,71,ST
-ROHIT,70,SC
-Amit,70,Open
-Priyanka,70,Open
-Tanya,66,BC
-varsha,66,BC
-yash,61,BC
-Abhishek,60,BC
-Ankit,58,BC
-Gayatri,58,SC
-vani,50,Open
-Sneha,50,SC
-Aishwarya,48,Open
-Manoj,39,SC
-Anjali,38,SC
-Aryan,32,ST
-Shreya,23,SC
+Manoj,0,null
+riya,0,null
+Aishwarya,0,null
+Deepak,0,null
+yash,0,null
+Raj,0,null
+tanvi,0,null
+Aditya,0,null
+Priyanka,0,null
+shyam,0,null
+rahul,0,null
+Gayatri,0,null
+priya,0,null
+divya,0,null
+Ira,0,null
+varsha,0,null
+vani,0,null
+Ajay,0,null
+Ishita,0,null
+Abhishek,0,null
+Ankit,0,null
+Anjali,0,null
+Shreya,0,null
+mahesh,0,null
+Amit,0,null
+Tanya,0,null
+ROHIT,0,null
+Aryan,0,null
+Arjun,0,null
+Sneha,0,null
 
-divya,99,ST
-Ishita,99,Open
-Deepak,98,Open
-Ira,93,ST
-tanvi,90,BC
-Raj,87,BC
-Aditya,80,ST
-priya,72,SC
+Exception in thread "main" java.lang.NullPointerException
+	at Solution.allotment(Solution.java:85)
+	at Solution.main(Solution.java:36)
 ----------------------------------------
-########## Testcase 2: Passed ##########
+########## Testcase 2: Failed ##########
 Expected Output: 
 divya,99,Open
 tanvi,90,Open
@@ -161,22 +153,22 @@ divya,99,Open
 Aditya,80,ST
 priya,76,SC
 Your Output: 
-divya,99,Open
-tanvi,90,Open
-Aditya,80,ST
-priya,76,SC
-Ajay,76,Open
-rahul,73,Open
-Amit,70,Open
-Priyanka,70,Open
-Tanya,66,BC
-Abhishek,60,BC
+tanvi,0,null
+Aditya,0,null
+Priyanka,0,null
+rahul,0,null
+priya,0,null
+divya,0,null
+Ajay,0,null
+Abhishek,0,null
+Amit,0,null
+Tanya,0,null
 
-divya,99,Open
-Aditya,80,ST
-priya,76,SC
+Exception in thread "main" java.lang.NullPointerException
+	at Solution.allotment(Solution.java:95)
+	at Solution.main(Solution.java:36)
 ----------------------------------------
-########## Testcase 3: Passed ##########
+########## Testcase 3: Failed ##########
 Expected Output: 
 divya,99,Open
 tanvi,90,ST
@@ -196,25 +188,22 @@ priya,76,SC
 Ajay,76,Open
 Tanya,66,BC
 Your Output: 
-divya,99,Open
-tanvi,90,ST
-Aditya,80,Open
-priya,76,SC
-Ajay,76,Open
-rahul,73,Open
-Amit,70,Open
-Priyanka,70,Open
-Tanya,66,BC
-Abhishek,60,BC
+tanvi,0,null
+Aditya,0,null
+Priyanka,0,null
+rahul,0,null
+priya,0,null
+divya,0,null
+Ajay,0,null
+Abhishek,0,null
+Amit,0,null
+Tanya,0,null
 
-divya,99,Open
-tanvi,90,ST
-Aditya,80,Open
-priya,76,SC
-Ajay,76,Open
-Tanya,66,BC
+Exception in thread "main" java.lang.NullPointerException
+	at Solution.allotment(Solution.java:85)
+	at Solution.main(Solution.java:36)
 ----------------------------------------
-########## Testcase 4: Passed ##########
+########## Testcase 4: Failed ##########
 Expected Output: 
 divya,99,Open
 tanvi,99,Open
@@ -261,52 +250,42 @@ Ajay,76,Open
 Amit,76,Open
 Arjun,75,Open
 Your Output: 
-divya,99,Open
-tanvi,99,Open
-Ishita,99,Open
-Deepak,98,Open
-Ira,93,Open
-Raj,87,Open
-mahesh,87,Open
-riya,83,Open
-Aditya,80,Open
-priya,76,Open
-Ajay,76,Open
-Amit,76,Open
-Arjun,75,Open
-rahul,73,Open
-Tanya,72,Open
-ROHIT,70,Open
-Priyanka,70,Open
-varsha,66,Open
-yash,61,Open
-Abhishek,60,Open
-Ankit,58,Open
-Gayatri,58,Open
-vani,50,Open
-Sneha,50,Open
-Aishwarya,48,Open
-Manoj,39,Open
-Anjali,38,Open
-Aryan,32,Open
-shyam,23,Open
-Shreya,23,Open
+Manoj,0,null
+riya,0,null
+Aishwarya,0,null
+Deepak,0,null
+yash,0,null
+Raj,0,null
+tanvi,0,null
+Aditya,0,null
+Priyanka,0,null
+shyam,0,null
+rahul,0,null
+Gayatri,0,null
+priya,0,null
+divya,0,null
+Ira,0,null
+varsha,0,null
+vani,0,null
+Ajay,0,null
+Ishita,0,null
+Abhishek,0,null
+Ankit,0,null
+Anjali,0,null
+Shreya,0,null
+mahesh,0,null
+Amit,0,null
+Tanya,0,null
+ROHIT,0,null
+Aryan,0,null
+Arjun,0,null
+Sneha,0,null
 
-divya,99,Open
-tanvi,99,Open
-Ishita,99,Open
-Deepak,98,Open
-Ira,93,Open
-Raj,87,Open
-mahesh,87,Open
-riya,83,Open
-Aditya,80,Open
-priya,76,Open
-Ajay,76,Open
-Amit,76,Open
-Arjun,75,Open
+Exception in thread "main" java.lang.NullPointerException
+	at Solution.allotment(Solution.java:85)
+	at Solution.main(Solution.java:36)
 ----------------------------------------
-########## Testcase 5: Passed ##########
+########## Testcase 5: Failed ##########
 Expected Output: 
 divya,99,ST
 Deepak,99,Open
@@ -355,50 +334,38 @@ rahul,73,Open
 priya,72,SC
 varsha,66,BC
 Your Output: 
-divya,99,ST
-Deepak,99,Open
-Ishita,99,Open
-Ira,93,ST
-tanvi,90,BC
-Raj,87,BC
-mahesh,87,BC
-riya,83,Open
-Aditya,80,ST
-Ajay,76,Open
-Amit,76,Open
-Arjun,75,Open
-rahul,73,Open
-priya,72,SC
-shyam,71,ST
-ROHIT,70,SC
-Priyanka,70,Open
-Tanya,66,SC
-varsha,66,BC
-yash,61,Open
-Abhishek,60,SC
-Ankit,58,SC
-Gayatri,58,SC
-vani,50,Open
-Sneha,50,SC
-Aishwarya,48,Open
-Anjali,38,SC
-Manoj,32,SC
-Aryan,32,ST
-Shreya,23,SC
+Manoj,0,null
+riya,0,null
+Aishwarya,0,null
+Deepak,0,null
+yash,0,null
+Raj,0,null
+tanvi,0,null
+Aditya,0,null
+Priyanka,0,null
+shyam,0,null
+rahul,0,null
+Gayatri,0,null
+priya,0,null
+divya,0,null
+Ira,0,null
+varsha,0,null
+vani,0,null
+Ajay,0,null
+Ishita,0,null
+Abhishek,0,null
+Ankit,0,null
+Anjali,0,null
+Shreya,0,null
+mahesh,0,null
+Amit,0,null
+Tanya,0,null
+ROHIT,0,null
+Aryan,0,null
+Arjun,0,null
+Sneha,0,null
 
-divya,99,ST
-Deepak,99,Open
-Ishita,99,Open
-Ira,93,ST
-tanvi,90,BC
-Raj,87,BC
-mahesh,87,BC
-riya,83,Open
-Aditya,80,ST
-Ajay,76,Open
-Amit,76,Open
-Arjun,75,Open
-rahul,73,Open
-priya,72,SC
-varsha,66,BC
+Exception in thread "main" java.lang.NullPointerException
+	at Solution.allotment(Solution.java:85)
+	at Solution.main(Solution.java:36)
 ----------------------------------------
