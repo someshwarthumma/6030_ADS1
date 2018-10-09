@@ -244,10 +244,10 @@ class Student implements Comparable<Student> {
      * @param      tm           Total Marks.
      * @param      rc           Reservation Category.
      */
-    Student(String studentName, String dateOfBirth,
-                   int m1, int m2, int m3, int tm,
-                   String rc) {
-        this.studentName = studentName;
+    Student(String studentName1, String dateOfBirth,
+                   int m11, int m21, int m31, int tm1,
+                   String rc1) {
+        this.studentName = studentName1;
 
         SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy");
         try {
@@ -255,11 +255,11 @@ class Student implements Comparable<Student> {
         } catch (Exception ex) {
             ex.printStackTrace();
         }
-        this.m1 = m1;
-        this.m2 = m2;
-        this.m3 = m3;
-        this.tm = tm;
-        this.rc = rc;
+        this.m1 = m11;
+        this.m2 = m21;
+        this.m3 = m31;
+        this.tm = tm1;
+        this.rc = rc1;
         this.alloted = false;
     }
 
