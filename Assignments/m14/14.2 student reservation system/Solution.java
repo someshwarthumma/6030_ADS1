@@ -52,23 +52,23 @@ class Solution{
      * Allotment method to allocate the seats to students
      * Complexity is O(N) as it has a looping statement
      * @param      students   The students
-     * @param      vacancies_  The vacancies
-     * @param      noCategry_  No categry 
-     * @param      noBC_       No bc students
-     * @param      noSC_       No sc students
-     * @param      noST_      No st students
+     * @param      vacancies1  The vacancies
+     * @param      noCategry1  No categry 
+     * @param      noBC1       No bc students
+     * @param      noSC1       No sc students
+     * @param      noST1      No st students
      */
     public static void allotment(final Student[] students,
-                                 final int vacancies_,
-                                 final int noCategry_,
-                                 final int noBC_,
-                                 final int noSC_,
-                                 final int noST_) {
-        int vacancies = vacancies_;
-        int noCategry = noCategry_;
-        int noBC = noBC_;
-        int noSC = noSC_;
-        int noST = noST_;
+                                 final int vacancies1,
+                                 final int noCategry1,
+                                 final int noBC1,
+                                 final int noSC1,
+                                 final int noST1) {
+        int vacancies = vacancies1;
+        int noCategry = noCategry1;
+        int noBC = noBC1;
+        int noSC = noSC1;
+        int noST = noST1;
 
         int i = 0;
         int k = 0;

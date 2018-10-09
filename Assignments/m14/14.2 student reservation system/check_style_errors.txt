@@ -3,10 +3,5 @@ Starting audit...
 [ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m14\14.2 student reservation system\Solution.java:7:15: '{' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m14\14.2 student reservation system\Solution.java:8:1: File contains tab characters (this is the first instance). [FileTabCharacter]
 [ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m14\14.2 student reservation system\Solution.java:56: Line has trailing spaces. [RegexpSingleline]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m14\14.2 student reservation system\Solution.java:62:44: Name 'vacancies_' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m14\14.2 student reservation system\Solution.java:63:44: Name 'noCategry_' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m14\14.2 student reservation system\Solution.java:64:44: Name 'noBC_' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m14\14.2 student reservation system\Solution.java:65:44: Name 'noSC_' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m14\14.2 student reservation system\Solution.java:66:44: Name 'noST_' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
 Audit done.
-Checkstyle ends with 9 errors.
+Checkstyle ends with 4 errors.
