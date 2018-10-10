@@ -4,7 +4,7 @@ import java.util.Arrays;
  * solution class
  */
 final class Solution {
-    private Solution(){
+    private Solution() {
         //constructor
     }
     /**.
@@ -121,7 +121,9 @@ class SymbolTable <Key extends Comparable<Key>, Value> {
         }
 
         // insert new key-value pair
-        if (size == keyArr.length) resize();
+        if (size == keyArr.length) {
+            resize();
+        }
 
         for (int j = size; j > i; j--)  {
             keyArr[j] = keyArr[j - 1];
@@ -149,9 +151,11 @@ class SymbolTable <Key extends Comparable<Key>, Value> {
         while (lo <= hi) {
             int mid = lo + (hi - lo) / 2;
             int cmp = key.compareTo(keyArr[mid]);
-            if      (cmp < 0) hi = mid - 1;
-            else if (cmp > 0) lo = mid + 1;
-            else return mid;
+            if (cmp < 0) {
+                hi = mid - 1;
+            } else if (cmp > 0) {
+                lo = mid + 1;
+            } else return mid;
         }
         return lo;
     }
@@ -205,10 +209,16 @@ class SymbolTable <Key extends Comparable<Key>, Value> {
      * @throws     Exception  { when key is null }
      */
     public Value get(final Key key) throws Exception {
-        if (key == null) throw new Exception("argument to get() is null");
-        if (isEmpty()) return null;
+        if (key == null) {
+            throw new Exception("argument to get() is null");
+        }
+        if (isEmpty()) {
+            return null;
+        }
         int i = rank(key);
-        if (i < size && keyArr[i].compareTo(key) == 0) return valueArr[i];
+        if (i < size && keyArr[i].compareTo(key) == 0) {
+            return valueArr[i];
+        }
         return null;
     }
     /**.
@@ -221,8 +231,12 @@ class SymbolTable <Key extends Comparable<Key>, Value> {
      * @throws     Exception  { when key is null }
      */
     public void delete(final Key key) throws Exception {
-        if (key == null) throw new Exception("argument to delete() is null");
-        if (isEmpty()) return;
+        if (key == null) {
+            throw new Exception("argument to delete() is null");
+        }
+        if (isEmpty()) {
+            return;
+        }
 
         // compute rank
         int i = rank(key);
@@ -239,7 +253,9 @@ class SymbolTable <Key extends Comparable<Key>, Value> {
         size--;
         keyArr[size] = null;
         valueArr[size] = null;
-        if (size > 0 && size == keyArr.length / 4) resize();
+        if (size > 0 && size == keyArr.length / 4) {
+            resize();
+        }
     }
     /**.
      * method to delete the min element
@@ -258,7 +274,7 @@ class SymbolTable <Key extends Comparable<Key>, Value> {
      * @param      key        The key
      *
      * @return     { Return the weather the element present or not as noolean }
-     * 
+     *
      *  @throws     Exception  { when key is null }
      */
     public boolean contains(final Key key) throws Exception {
@@ -275,11 +291,18 @@ class SymbolTable <Key extends Comparable<Key>, Value> {
      * @throws     Exception  { when key is null }
      */
     public Key floor(final Key key) throws Exception {
-        if (key == null) throw new Exception("argument to floor() is null");
+        if (key == null) {
+            throw new Exception("argument to floor() is null");
+        }
         int i = rank(key);
-        if (i < size && key.compareTo(keyArr[i]) == 0) return keyArr[i];
-        if (i == 0) return null;
-        else return keyArr[i - 1];
+        if (i < size && key.compareTo(keyArr[i]) == 0) {
+            return keyArr[i];
+        }
+        if (i == 0) {
+            return null;
+        } else {
+            return keyArr[i - 1];
+        }
     }
     /**.
      * method to print the table.
