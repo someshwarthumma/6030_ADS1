@@ -128,14 +128,14 @@ class BinarySearchTree<Book extends Comparable<Book>, Integer> {
         /**.
          * Varaible for right leaf as Right of type Node
          */
-        public Node right;
+        private Node right;
         /**.
          * Node constructor
          *
-         * @param      k     { of tyoe Book }
+         * @param      k     { of type Book }
          * @param      v     { of type integer }
          */
-        Node(Book k, int v) {
+        Node(final Book k, final int v) {
             this.key = k;
             this.value = v;
             this.right = null;
@@ -162,7 +162,7 @@ class BinarySearchTree<Book extends Comparable<Book>, Integer> {
          *
          * @return     The left.
          */
-        private Node getLeft(){
+        private Node getLeft() {
             return this.left;
         }
         /**.
@@ -170,7 +170,7 @@ class BinarySearchTree<Book extends Comparable<Book>, Integer> {
          *
          * @return     The right.
          */
-        public Node getRight(){
+        public Node getRight() {
             return this.right;
         }
         /**.
@@ -178,7 +178,7 @@ class BinarySearchTree<Book extends Comparable<Book>, Integer> {
          *
          * @param      l     { left node }
          */
-        public void setLeft(Node l){
+        public void setLeft(Node l) {
             this.left = l;
         }
         /**.
@@ -186,15 +186,15 @@ class BinarySearchTree<Book extends Comparable<Book>, Integer> {
          *
          * @param      r     { right node }
          */
-        public void setRight(Node r){
+        public void setRight(Node r) {
             this.right = r;
         }
         /**
          * Sets the value.
          *
-         * @param      v     { parameter_description }
+         * @param      v     { of type int }
          */
-        public void setValue(int v){
+        public void setValue(int v) {
             this.value = v;
         }
 
