@@ -2,7 +2,13 @@ import java.util.Scanner;
 /**.
  * Solution class
  */
-class Solution {
+final class Solution {
+    /**.
+     * Constructs the object.
+     */
+    private Solution(){
+        //constructor
+    }
     /**.
      * { main method to handle the input testcases }
      *
@@ -20,10 +26,12 @@ class Solution {
             String[] tokens = scan.nextLine().split(",");
             switch (tokens[0]) {
             case "put":
-                bst.put(new Book(tokens[one], tokens[two], tokens[three]), Integer.parseInt(tokens[four]));
+                bst.put(new Book(tokens[one], tokens[two], tokens[three]),
+                    Integer.parseInt(tokens[four]));
                 break;
             case "get":
-                int temp = bst.get(new Book(tokens[one], tokens[two], tokens[three]));
+                int temp = bst.get(new Book(
+                    tokens[one], tokens[two], tokens[three]));
                 if (temp == nul) {
                     System.out.println("null");
                     break;
@@ -178,7 +186,7 @@ class BinarySearchTree<Book extends Comparable<Book>, Integer> {
          *
          * @param      l     { left node }
          */
-        public void setLeft(Node l) {
+        public void setLeft(final Node l) {
             this.left = l;
         }
         /**.
@@ -186,7 +194,7 @@ class BinarySearchTree<Book extends Comparable<Book>, Integer> {
          *
          * @param      r     { right node }
          */
-        public void setRight(Node r) {
+        public void setRight(final Node r) {
             this.right = r;
         }
         /**
@@ -194,7 +202,7 @@ class BinarySearchTree<Book extends Comparable<Book>, Integer> {
          *
          * @param      v     { of type int }
          */
-        public void setValue(int v) {
+        public void setValue(final int v) {
             this.value = v;
         }
 
@@ -235,7 +243,7 @@ class BinarySearchTree<Book extends Comparable<Book>, Integer> {
             current.setLeft(put(current.getLeft(), key, value));
         } else if (c > 0) {
             current.setRight(put(current.right, key, value));
-        } else if ( c == 0) {
+        } else if (c == 0) {
             current.value = value;
         }
         return current;
@@ -256,7 +264,7 @@ class BinarySearchTree<Book extends Comparable<Book>, Integer> {
                 current = current.right;
             } else if (c < 0) {
                 current = current.left;
-            } else if ( c == 0) {
+            } else if (c == 0) {
                 return current.value;
             }
         }
