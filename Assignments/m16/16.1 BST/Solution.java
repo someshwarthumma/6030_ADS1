@@ -6,7 +6,7 @@ final class Solution {
     /**.
      * Constructs the object.
      */
-    private Solution(){
+    private Solution() {
         //constructor
     }
     /**.
