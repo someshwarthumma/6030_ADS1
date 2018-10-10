@@ -1,6 +1,14 @@
 import java.util.Scanner;
+/**.
+ * Solution class
+ */
 class Solution {
-	public static void main(String[] args) {
+	/**.
+	 * { main method to handle the input testcases }
+	 *
+	 * @param      args  The arguments
+	 */
+	public static void main(final String[] args) {
 		BinarySearchTree bst = new BinarySearchTree();
 		Scanner scan = new Scanner(System.in);
 		while (scan.hasNext()) {
@@ -22,27 +30,49 @@ class Solution {
 		}
 	}
 }
-
+/**.
+ * Book class to store the propersties of a book
+ */
 class Book implements Comparable<Book> {
+	/**.
+	 * variable for Book name
+	 */
 	private String name;
+	/**.
+	 * variable for name of the author
+	 */
 	private String author;
+	/**.
+	 * variable for storing the price of the book
+	 */
 	private double price;
-	Book(String n, String a, String p) {
+	/**.
+	 * Book class constructor
+	 *
+	 * @param      n     { name of type String }
+	 * @param      a     { Author of type  String }
+	 * @param      p     { Price of integer type }
+	 */
+	Book(final String n, final String a, final String p) {
 		this.name = n;
 		this.author = a;
 		this.price = Double.parseDouble(p);
 	}
-
+	/**.
+	 * method to get the name of the book
+	 *
+	 * @return     The name.
+	 */
 	public String getName() {
 		return name;
 	}
-	public String getAuthor() {
+	/*public String getAuthor() {
 		return author;
-	}
-	public double getPrice() {
+	}*/
+	/*public double getPrice() {
 		return price;
-	}
-	public void setName(String n) {
+	}*/
+	/*public void setName(String n) {
 		this.name = n;
 	}
 	public void setAuthor(String a) {
@@ -50,50 +80,105 @@ class Book implements Comparable<Book> {
 	}
 	public void setPrice(String p) {
 		this.price = Double.parseDouble(p);
-	}
-	public int compareTo(Book that) {
+	}*/
+
+	/**.
+	 * method to compare the given two books
+	 *
+	 * @param      that  book as Type Book
+	 *
+	 * @return     { Integer value for comparision }
+	 */
+	public int compareTo(final Book that) {
 		return this.getName().compareTo(that.getName());
 	}
 }
-
+/**.
+ * BinarySearchTree class
+ *
+ * @param      <Book>     The book as Key
+ * @param      <Integer>  value of type Integer
+ */
 class BinarySearchTree<Book extends Comparable<Book>, Integer> {
+	/**.
+	 * variable to deneote the root of the bst
+	 */
 	private Node root;
-
+	/**.
+	 * Node class to denote the the BST structure which contains key, value
+	 */
 	class Node {
+		/**.
+		 * variable for key of type book
+		 */
 		public Book key;
+		/**.
+		 * variable for Value of type int 
+		 */
 		public int value;
+		/**.
+		 * variable left leaf as Left of type Node
+		 */
 		public Node left;
+		/**.
+		 * Varaible for right leaf as Right of type Node
+		 */
 		public Node right;
-		Node() {
-			this.key = null;
-			this.value = 0;;
-			this.right = null;
-			this.left = null;
-		}
-
+		/**.
+		 * Node constructor
+		 *
+		 * @param      k     { of tyoe Book }
+		 * @param      v     { of type integer }
+		 */
 		Node(Book k, int v) {
 			this.key = k;
 			this.value = v;
 			this.right = null;
 			this.left = null;
 		}
+		/**.
+		 * Method to return the key
+		 *
+		 * @return     The key.
+		 */
 		public Book getKey() {
 			return this.key;
 		}
+		/**.
+		 * method to return value
+		 *
+		 * @return     The value.
+		 */
 		public int getValue() {
 			return this.value;
 		}
 	}
-
+	/**.
+	 * constructor for BinarySearchTree
+	 */
 	BinarySearchTree() {
 		this.root = null;
 	}
-
-	public void put(Book key, int value) {
+	/**.
+	 * method for putting a key into the bst
+	 *
+	 * @param      key    of type book
+	 * @param      value  of type Integer
+	 */
+	public void put(final Book key, final int value) {
 		root = put(root, key, value);
 	}
-
-	public Node put(Node curr, Book key, int value) {
+	/**.
+	 * method to put the given key into the BST recursively.
+	 * 
+	 *
+	 * @param      curr   of type Node
+	 * @param      key    of type Book
+	 * @param      value  of type integer
+	 *
+	 * @return     { Current node of type Node }
+	 */
+	public Node put(final Node curr, final Book key, final int value) {
 		Node current = curr;
 
 		if(current == null){
@@ -110,8 +195,14 @@ class BinarySearchTree<Book extends Comparable<Book>, Integer> {
 		return current;
 
 	}
-
-	public int get(Book key){
+	/**.
+	 * { method to get the value for the searched element }
+	 *
+	 * @param      key   of type key
+	 *
+	 * @return     { the value of type integer }
+	 */
+	public int get(final Book key){
 		Node current = root;
 		while(current != null){
 			int c = key.compareTo(current.key);
