@@ -10,7 +10,12 @@ class Solution {
 				bst.put(new Book(tokens[1], tokens[2], tokens[3]), Integer.parseInt(tokens[4]));
 				break;
 			case "get":
-				System.out.println(bst.get(new Book(tokens[1], tokens[2], tokens[3])));
+				int temp = bst.get(new Book(tokens[1], tokens[2], tokens[3]));
+				if(temp == 10101){
+					System.out.println("null");
+					break;
+				}
+				System.out.println(temp);
 				break;
 			default:
 			}
