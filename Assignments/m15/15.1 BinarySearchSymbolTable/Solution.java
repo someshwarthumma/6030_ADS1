@@ -1,7 +1,21 @@
 import java.util.Scanner;
 import java.util.Arrays;
-class Solution {
-    public static void main(String[] args) {
+/**.
+ * solution class
+ */
+final class Solution {
+    private Solution(){
+        //constructor
+    }
+    /**.
+     * main method to handle input testcases
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
+        /**.
+         * Scanner Object
+         */
         Scanner scan = new Scanner(System.in);
         SymbolTable<String, Integer> st = new SymbolTable<String, Integer>();
         String[] input = scan.nextLine().split(" ");
@@ -9,7 +23,7 @@ class Solution {
             for (int i = 0; i < input.length; i++) {
                 st.put(input[i], i);
             }
-        } catch(Exception e){
+        } catch (Exception e) {
             System.out.println(e.getMessage());
         }
         while (scan.hasNext()) {
@@ -45,23 +59,52 @@ class Solution {
         }
     }
 }
-
+/**.
+ * symbolTable
+ *
+ * @param      <Key>    Key of generic type
+ * @param      <Value>  value of generic type
+ */
 class SymbolTable <Key extends Comparable<Key>, Value> {
+    /**.
+     * Key array to store the keys
+     */
     private Key[] keyArr;
+    /**.
+     * value array to store the values
+     */
     private Value[] valueArr;
+    /**.
+     * size varible
+     */
     private int size;
+    /**.
+     * SymbolTable constructor
+     */
     SymbolTable() {
         keyArr = (Key[]) new Comparable[5];
         valueArr = (Value[]) new Object[5];
         size = 0;
     }
-
+    /**.
+     * Resize method to resize array
+     * Complexity is O(N)
+     * Here it copies all elements
+     */
     private void resize() {
         keyArr = Arrays.copyOf(keyArr, 2 * keyArr.length);
         valueArr = Arrays.copyOf(valueArr, 2 * valueArr.length);
     }
-
-    public void put(Key key, Value val) throws Exception {
+    /**.
+     * method to put the elements into the symbol table
+     * complexity is O(N)
+     * because we iterate over all elements in worst case
+     * @param      key        The key
+     * @param      val        The value
+     *
+     * @throws     Exception  { when key is null }
+     */
+    public void put(final Key key, final Value val) throws Exception {
         if (key == null) {
             throw new Exception("Key cannot be null");
         }
@@ -88,8 +131,17 @@ class SymbolTable <Key extends Comparable<Key>, Value> {
         valueArr[i] = val;
         size++;
     }
-
-    public int rank(Key key) throws Exception {
+    /**.
+     * method to find the rank of a key in the table
+     * complexity is O(N)
+     * because iterates over all keys in worst case
+     * @param      key        The key
+     *
+     * @return     { rank of the key as integer }
+     *
+     * @throws     Exception  { when key is null }
+     */
+    public int rank(final Key key) throws Exception {
         if (key == null) {
             throw new Exception("Key cannot be null");
         }
@@ -103,33 +155,72 @@ class SymbolTable <Key extends Comparable<Key>, Value> {
         }
         return lo;
     }
+    /**.
+     * method to check weather table is empty or not
+     * complexity is O(1)
+     * since simple condition
+     * @return     True if empty, False otherwise.
+     */
     public boolean isEmpty() {
         return size == 0;
     }
-
+    /**.
+     * Method to find the min of the table
+     * complexity is O(1)
+     * beacuse of the simple return statement
+     *
+     * @return     { Key which is min }
+     *
+     * @throws     Exception  { when table is empty }
+     */
     public Key Min() throws Exception {
         if (isEmpty()) {
             throw new Exception("Table is empty ");
         }
         return keyArr[0];
     }
-
+    /**.
+     * method to find the maximum element
+     * complexity is O(1)
+     * beacuse of the simple return statement
+     *
+     * @return     { key which is maximum }
+     *
+     * @throws     Exception  { when table is empty }
+     */
     public Key Max() throws Exception {
         if (isEmpty()) {
             throw new Exception("Table is empty ");
         }
         return keyArr[size - 1];
     }
-
-    public Value get(Key key) throws Exception {
+    /**.
+     * Method to get the value for the given key
+     * complexity is O(Log(N))
+     * since rank has complexity of O(Log(N))
+     * @param      key        The key
+     *
+     * @return     { Value as for the given key }
+     *
+     * @throws     Exception  { when key is null }
+     */
+    public Value get(final Key key) throws Exception {
         if (key == null) throw new Exception("argument to get() is null");
         if (isEmpty()) return null;
         int i = rank(key);
         if (i < size && keyArr[i].compareTo(key) == 0) return valueArr[i];
         return null;
     }
-
-    public void delete(Key key) throws Exception {
+    /**.
+     * method to delete the key provided
+     * complexity is O(Log(N))
+     * since rank has O(Log(N))
+     *
+     * @param      key        The key
+     *
+     * @throws     Exception  { when key is null }
+     */
+    public void delete(final Key key) throws Exception {
         if (key == null) throw new Exception("argument to delete() is null");
         if (isEmpty()) return;
 
@@ -145,31 +236,55 @@ class SymbolTable <Key extends Comparable<Key>, Value> {
             keyArr[j] = keyArr[j + 1];
             valueArr[j] = valueArr[j + 1];
         }
-
         size--;
-        keyArr[size] = null;  // to avoid loitering
+        keyArr[size] = null;
         valueArr[size] = null;
-
-        // resize if 1/4 full
         if (size > 0 && size == keyArr.length / 4) resize();
     }
-
-    public void deleteMin() throws Exception{
+    /**.
+     * method to delete the min element
+     * complexity is O(Log(N))
+     * since we use delete method which has complexity of O(Log(N))
+     *
+     * @throws     Exception  { when tabe is empty }
+     */
+    public void deleteMin() throws Exception {
         delete(Min());
     }
-
-    public boolean contains(Key key) throws Exception{
+    /**.
+     * method to check weather the given key contains or not
+     * complexity is O(Log(N))
+     * because it uses get method
+     * @param      key        The key
+     *
+     * @return     { Return the weather the element present or not as noolean }
+     * 
+     *  @throws     Exception  { when key is null }
+     */
+    public boolean contains(final Key key) throws Exception {
         return get(key) != null;
     }
-
-    public Key floor(Key key) throws Exception {
+    /**.
+     * method to find the floor value for the given key
+     * complexity is O(LOg(N))
+     * because rank here has O(Log(N))
+     * @param      key        The key
+     *
+     * @return     { a Key for the given key }
+     *
+     * @throws     Exception  { when key is null }
+     */
+    public Key floor(final Key key) throws Exception {
         if (key == null) throw new Exception("argument to floor() is null");
         int i = rank(key);
         if (i < size && key.compareTo(keyArr[i]) == 0) return keyArr[i];
         if (i == 0) return null;
         else return keyArr[i - 1];
     }
-
+    /**.
+     * method to print the table.
+     * complexity is O(N), we have to iterate all over the elements
+     */
     public void keys() {
         for (int i = 0; i < size; i++) {
             Key key = keyArr[i];
