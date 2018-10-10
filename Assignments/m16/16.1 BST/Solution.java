@@ -116,15 +116,15 @@ class BinarySearchTree<Book extends Comparable<Book>, Integer> {
         /**.
          * variable for key of type book
          */
-        public Book key;
+        private Book key;
         /**.
          * variable for Value of type int
          */
-        public int value;
+        private int value;
         /**.
          * variable left leaf as Left of type Node
          */
-        public Node left;
+        private Node left;
         /**.
          * Varaible for right leaf as Right of type Node
          */
@@ -157,6 +157,47 @@ class BinarySearchTree<Book extends Comparable<Book>, Integer> {
         public int getValue() {
             return this.value;
         }
+        /**.
+         * Getter method for left
+         *
+         * @return     The left.
+         */
+        private Node getLeft(){
+            return this.left;
+        }
+        /**.
+         * getter method for right
+         *
+         * @return     The right.
+         */
+        public Node getRight(){
+            return this.right;
+        }
+        /**.
+         * setter method for left
+         *
+         * @param      l     { left node }
+         */
+        public void setLeft(Node l){
+            this.left = l;
+        }
+        /**.
+         * setter method for right
+         *
+         * @param      r     { right node }
+         */
+        public void setRight(Node r){
+            this.right = r;
+        }
+        /**
+         * Sets the value.
+         *
+         * @param      v     { parameter_description }
+         */
+        public void setValue(int v){
+            this.value = v;
+        }
+
     }
     /**.
      * constructor for BinarySearchTree
@@ -189,11 +230,11 @@ class BinarySearchTree<Book extends Comparable<Book>, Integer> {
         if (current == null) {
             return new Node(key, value);
         }
-        int c = key.compareTo(current.key);
+        int c = key.compareTo(current.getKey());
         if (c < 0) {
-            current.left = put(current.left, key, value);
+            current.setLeft(put(current.getLeft(), key, value));
         } else if (c > 0) {
-            current.right = put(current.right, key, value);
+            current.setRight(put(current.right, key, value));
         } else if ( c == 0) {
             current.value = value;
         }
