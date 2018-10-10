@@ -4,6 +4,9 @@ import java.util.Arrays;
  * solution class
  */
 final class Solution {
+    /**.
+     * Constructor
+     */
     private Solution() {
         //constructor
     }
@@ -31,7 +34,7 @@ final class Solution {
                 String[] tokens = scan.nextLine().split(" ");
                 switch (tokens[0]) {
                 case "max":
-                    System.out.println(st.Max());
+                    System.out.println(st.max());
                     break;
                 case "get":
                     System.out.println(st.get(tokens[1]));
@@ -82,8 +85,9 @@ class SymbolTable <Key extends Comparable<Key>, Value> {
      * SymbolTable constructor
      */
     SymbolTable() {
-        keyArr = (Key[]) new Comparable[5];
-        valueArr = (Value[]) new Object[5];
+        final int five = 5;
+        keyArr = (Key[]) new Comparable[five];
+        valueArr = (Value[]) new Object[five];
         size = 0;
     }
     /**.
@@ -155,7 +159,9 @@ class SymbolTable <Key extends Comparable<Key>, Value> {
                 hi = mid - 1;
             } else if (cmp > 0) {
                 lo = mid + 1;
-            } else return mid;
+            } else {
+                return mid;
+            }
         }
         return lo;
     }
@@ -177,7 +183,7 @@ class SymbolTable <Key extends Comparable<Key>, Value> {
      *
      * @throws     Exception  { when table is empty }
      */
-    public Key Min() throws Exception {
+    public Key min() throws Exception {
         if (isEmpty()) {
             throw new Exception("Table is empty ");
         }
@@ -192,7 +198,7 @@ class SymbolTable <Key extends Comparable<Key>, Value> {
      *
      * @throws     Exception  { when table is empty }
      */
-    public Key Max() throws Exception {
+    public Key max() throws Exception {
         if (isEmpty()) {
             throw new Exception("Table is empty ");
         }
@@ -253,9 +259,6 @@ class SymbolTable <Key extends Comparable<Key>, Value> {
         size--;
         keyArr[size] = null;
         valueArr[size] = null;
-        if (size > 0 && size == keyArr.length / 4) {
-            resize();
-        }
     }
     /**.
      * method to delete the min element
@@ -265,7 +268,7 @@ class SymbolTable <Key extends Comparable<Key>, Value> {
      * @throws     Exception  { when tabe is empty }
      */
     public void deleteMin() throws Exception {
-        delete(Min());
+        delete(min());
     }
     /**.
      * method to check weather the given key contains or not
