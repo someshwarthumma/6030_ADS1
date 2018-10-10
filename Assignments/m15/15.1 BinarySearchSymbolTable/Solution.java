@@ -68,7 +68,7 @@ final class Solution {
  * @param      <Key>    Key of generic type
  * @param      <Value>  value of generic type
  */
-class SymbolTable <Key extends Comparable<Key>, Value> {
+class SymbolTable<Key extends Comparable<Key>, Value> {
     /**.
      * Key array to store the keys
      */

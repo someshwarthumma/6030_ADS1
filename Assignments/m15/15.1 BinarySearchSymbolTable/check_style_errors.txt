@@ -1,5 +1,2 @@
 Starting audit...
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:71:18: '<' is preceded with whitespace. [GenericWhitespace]
 Audit done.
-Checkstyle ends with 2 errors.
