@@ -1,0 +1,17 @@
+Starting audit...
+[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m17\TaxiCabNumbers\TaxiCabNumbers.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m17\TaxiCabNumbers\TaxiCabNumbers.java:1: Missing a Javadoc comment. [JavadocType]
+[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m17\TaxiCabNumbers\TaxiCabNumbers.java:2:1: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m17\TaxiCabNumbers\TaxiCabNumbers.java:5:17: '600' is a magic number. [MagicNumber]
+[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m17\TaxiCabNumbers\TaxiCabNumbers.java:20:15: 'if' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m17\TaxiCabNumbers\TaxiCabNumbers.java:20:34: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m17\TaxiCabNumbers\TaxiCabNumbers.java:25: Line has trailing spaces. [RegexpSingleline]
+[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m17\TaxiCabNumbers\TaxiCabNumbers.java:26:36: '-' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m17\TaxiCabNumbers\TaxiCabNumbers.java:26:37: '-' is not followed by whitespace. [WhitespaceAround]
+[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m17\TaxiCabNumbers\TaxiCabNumbers.java:26:39: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m17\TaxiCabNumbers\TaxiCabNumbers.java:28:19: 'if' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m17\TaxiCabNumbers\TaxiCabNumbers.java:28:38: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m17\TaxiCabNumbers\TaxiCabNumbers.java:34: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m17\TaxiCabNumbers\TaxiCabNumbers.java:39: Line has trailing spaces. [RegexpSingleline]
+Audit done.
+Checkstyle ends with 14 errors.
