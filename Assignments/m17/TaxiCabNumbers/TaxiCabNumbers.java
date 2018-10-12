@@ -1,8 +1,19 @@
+/**.
+ * TaxiCabNumbers class.
+ */
 class TaxiCabNumbers {
+    /**.
+     * method to find the taxiNumber.
+     *
+     * @param      number        The number of type integer
+     * @param      possibleWays  of type integer
+     *
+     * @return     { Integer type which is a taxiCabNumber }
+     */
     public int findTaxiCabNumber(final int number, final int possibleWays) {
         int num = number;
         int ways = possibleWays;
-        int n = 600;
+        final int n = 600;
 
         // initialize priority queue
         MinPQ<CubeSum> pq = new MinPQ<CubeSum>();

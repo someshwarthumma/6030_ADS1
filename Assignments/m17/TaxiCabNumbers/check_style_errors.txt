@@ -1,7 +1,4 @@
 Starting audit...
 [ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m17\TaxiCabNumbers\TaxiCabNumbers.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m17\TaxiCabNumbers\TaxiCabNumbers.java:1: Missing a Javadoc comment. [JavadocType]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m17\TaxiCabNumbers\TaxiCabNumbers.java:2:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m17\TaxiCabNumbers\TaxiCabNumbers.java:5:17: '600' is a magic number. [MagicNumber]
 Audit done.
-Checkstyle ends with 4 errors.
+Checkstyle ends with 1 errors.
