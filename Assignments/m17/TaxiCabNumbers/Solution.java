@@ -1,5 +1,5 @@
 import java.util.Scanner;
-/**
+/**.
  * solution class
  */
 class Solution {
