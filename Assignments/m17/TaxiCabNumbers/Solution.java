@@ -2,7 +2,7 @@ import java.util.Scanner;
 /**.
  * solution class
  */
-class Solution {
+final class Solution {
     /**.
      * solution constructor.
      */
