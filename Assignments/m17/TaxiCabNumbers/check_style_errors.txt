@@ -1,4 +1,10 @@
 Starting audit...
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m17\TaxiCabNumbers\TaxiCabNumbers.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m17\TaxiCabNumbers\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m17\TaxiCabNumbers\Solution.java:3: Class Solution should be declared as final. [FinalClass]
+[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m17\TaxiCabNumbers\Solution.java:3: Missing a Javadoc comment. [JavadocType]
+[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m17\TaxiCabNumbers\Solution.java:4:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m17\TaxiCabNumbers\Solution.java:7:27: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m17\TaxiCabNumbers\Solution.java:10: First sentence should end with a period. [JavadocStyle]
+[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m17\TaxiCabNumbers\Solution.java:15:33: Parameter args should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 1 errors.
+Checkstyle ends with 7 errors.
