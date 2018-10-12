@@ -1,5 +1,5 @@
 class TaxiCabNumbers {
-public int findTaxiCabNumber(final int number, final int possibleWays) {
+    public int findTaxiCabNumber(final int number, final int possibleWays) {
         int num = number;
         int ways = possibleWays;
         int n = 600;
@@ -17,24 +17,24 @@ public int findTaxiCabNumber(final int number, final int possibleWays) {
         while (!pq.isEmpty()) {
             CubeSum s = pq.delMin();
             //System.out.println("This is while: ");
-            if(previous == s.sum){
+            if (previous == s.sum) {
                 waysCounter++;
             } else {
                 waysCounter = 0;
             }
-            
-            if (waysCounter == ways-1){
+
+            if (waysCounter == ways - 1) {
                 numCounter++;
-                if(numCounter == num){
+                if (numCounter == num) {
                     return s.sum;
                 }
             }
             previous = s.sum;
             //StdOut.println(s);
-            if (s.j < n)
+            if (s.j < n) {
                 pq.insert(new CubeSum(s.i, s.j + 1));
+            }
         }
         return -1;
     }
-    
 }
