@@ -20,7 +20,7 @@ class Stock implements Comparable<Stock>{
 		Integer s1 = this.getName().length();
 		Integer s2 = that.getName().length();
 		if(s1 != s2){
-			return s1.compareTo(s2);
+			return s2.compareTo(s1);
 		}
 		return that.getName().compareTo(that.getName());
 	}
