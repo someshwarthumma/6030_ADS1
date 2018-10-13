@@ -1,0 +1,19 @@
+Starting audit...
+[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m18\Week-3_Assignment-1\Stock.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m18\Week-3_Assignment-1\Stock.java:1: Missing a Javadoc comment. [JavadocType]
+[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m18\Week-3_Assignment-1\Stock.java:1:12: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m18\Week-3_Assignment-1\Stock.java:2:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m18\Week-3_Assignment-1\Stock.java:2:9: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m18\Week-3_Assignment-1\Stock.java:2:16: Variable 'name' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m18\Week-3_Assignment-1\Stock.java:3:9: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m18\Week-3_Assignment-1\Stock.java:3:15: Variable 'change' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m18\Week-3_Assignment-1\Stock.java:4:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m18\Week-3_Assignment-1\Stock.java:4:15: Parameter s should be final. [FinalParameters]
+[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m18\Week-3_Assignment-1\Stock.java:4:25: Parameter c should be final. [FinalParameters]
+[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m18\Week-3_Assignment-1\Stock.java:4:33: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m18\Week-3_Assignment-1\Stock.java:9:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m18\Week-3_Assignment-1\Stock.java:9:32: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m18\Week-3_Assignment-1\Stock.java:12:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m18\Week-3_Assignment-1\Stock.java:12:33: '{' is not preceded with whitespace. [WhitespaceAround]
+Audit done.
+Checkstyle ends with 16 errors.
