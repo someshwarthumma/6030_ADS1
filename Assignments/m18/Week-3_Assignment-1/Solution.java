@@ -30,15 +30,15 @@ class Solution {
 				}
 				if (maxST.size() == minST.size()) {
 					median = (maxST.min().getChange() + minST.max().getChange()) / 2;
-					System.out.println(median);
+					//System.out.println(median);
 				}
 				if (minST.size() > maxST.size()) {
 					median = minST.max().getChange();
-					System.out.println(median);
+					//System.out.println(median);
 				}
 				if (maxST.size() > minST.size()) {
 					median = maxST.min().getChange();
-					System.out.println(median);
+					//System.out.println(median);
 				}
 			}
 
