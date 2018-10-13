@@ -17,6 +17,11 @@ class Stock implements Comparable<Stock>{
 		if(this.getChange() != that.getChange()){
 			return this.getChange().compareTo(that.getChange());
 		}
-		return that.getName().compareTo(this.getName());
+		Integer s1 = this.getName().length();
+		Integer s2 = that.getName().length();
+		if(s1 != s2){
+			return s1.compareTo(s2);
+		}
+		return that.getName().compareTo(that.getName());
 	}
 }

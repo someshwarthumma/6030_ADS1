@@ -3,6 +3,7 @@ class Solution {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		int noOfStocks = Integer.parseInt(scan.nextLine());
+		
 		for (int j = 0; j < 6; j++) {
 			//for (int j = 0; j < noOfStocks; j++) {
 
@@ -59,6 +60,8 @@ class Solution {
 		int counter = 0;
 		for(int i = s.length-1;i>=0;i--){
 			System.out.println(s[i].getName()+" "+s[i].getChange());
+			Stock st = s[i];
+			
 			counter++;
 			if(counter == 5){
 				break;

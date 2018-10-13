@@ -21,5 +21,7 @@ Starting audit...
 [ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m18\Week-3_Assignment-1\Stock.java:16:41: '{' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m18\Week-3_Assignment-1\Stock.java:17:19: 'if' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m18\Week-3_Assignment-1\Stock.java:17:57: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m18\Week-3_Assignment-1\Stock.java:22:19: 'if' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m18\Week-3_Assignment-1\Stock.java:22:29: '{' is not preceded with whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 22 errors.
+Checkstyle ends with 24 errors.
