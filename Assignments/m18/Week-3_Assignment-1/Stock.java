@@ -1,4 +1,4 @@
-class Stock{
+class Stock implements Comparable<Stock>{
 	String name;
 	Float change;
 	Stock(String s, Float c){
@@ -11,5 +11,12 @@ class Stock{
 	}
 	public Float getChange(){
 		return this.change;
+	}
+
+	public int compareTo(Stock that){
+		if(this.getChange() != that.getChange()){
+			return this.getChange().compareTo(that.getChange());
+		}
+		return this.getName().compareTo(that.getName());
 	}
 }

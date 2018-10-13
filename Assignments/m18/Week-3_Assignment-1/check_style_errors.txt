@@ -1,7 +1,8 @@
 Starting audit...
 [ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m18\Week-3_Assignment-1\Stock.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m18\Week-3_Assignment-1\Stock.java:1: Missing a Javadoc comment. [JavadocType]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m18\Week-3_Assignment-1\Stock.java:1:12: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m18\Week-3_Assignment-1\Stock.java:1:41: '>' is followed by an illegal character. [GenericWhitespace]
+[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m18\Week-3_Assignment-1\Stock.java:1:41: '{' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m18\Week-3_Assignment-1\Stock.java:2:1: File contains tab characters (this is the first instance). [FileTabCharacter]
 [ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m18\Week-3_Assignment-1\Stock.java:2:9: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m18\Week-3_Assignment-1\Stock.java:2:16: Variable 'name' must be private and have accessor methods. [VisibilityModifier]
@@ -15,5 +16,10 @@ Starting audit...
 [ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m18\Week-3_Assignment-1\Stock.java:9:32: '{' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m18\Week-3_Assignment-1\Stock.java:12:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m18\Week-3_Assignment-1\Stock.java:12:33: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m18\Week-3_Assignment-1\Stock.java:16:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m18\Week-3_Assignment-1\Stock.java:16:30: Parameter that should be final. [FinalParameters]
+[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m18\Week-3_Assignment-1\Stock.java:16:41: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m18\Week-3_Assignment-1\Stock.java:17:19: 'if' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m18\Week-3_Assignment-1\Stock.java:17:57: '{' is not preceded with whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 16 errors.
+Checkstyle ends with 22 errors.

@@ -53,8 +53,6 @@ class Solution {
 			printer(maxStocks);
 			printer(minStocks);
 		}
-
-		
 	}
 
 	public static void printer(Stock[] s){
