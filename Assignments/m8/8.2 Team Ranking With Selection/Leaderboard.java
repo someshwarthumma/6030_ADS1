@@ -3,7 +3,7 @@ import java.util.Arrays;
 /**.
  * Leaderboad class for implementaion of lead team in given teams
  */
-class Leaderboard{
+class Leaderboard {
 	/**.
 	 * array of type Team.
 	 */
@@ -19,7 +19,7 @@ class Leaderboard{
 	/**.
 	 * Leaderboard constructor
 	 */
-	Leaderboard(){
+	Leaderboard() {
 		teamsObj = new Teams[10];
 		size = 0;
 		sortObj = new Sorting();
@@ -29,8 +29,8 @@ class Leaderboard{
 	 *
 	 * @param      item   Team
 	 */
-	public void add(final Teams item){
-		if(size == teamsObj.length){
+	public void add(final Teams item) {
+		if (size == teamsObj.length) {
 			resize();
 		}
 		teamsObj[size++] = item;
@@ -38,25 +38,25 @@ class Leaderboard{
 	/**.
 	 * method to resize the array teamObj.
 	 */
-	private void resize(){
-		teamsObj = Arrays.copyOf(teamsObj, 2*teamsObj.length);
+	private void resize() {
+		teamsObj = Arrays.copyOf(teamsObj, 2 * teamsObj.length);
 	}
 	/**.
 	 * Getter  method for size
 	 *
 	 * @return     The size.
 	 */
-	public int getSize(){
+	public int getSize() {
 		return this.size;
 	}
 	/**.
 	 * Print method to print the output in the required fashion.
 	 */
-	public void print(){
+	public void print() {
 		teamsObj = sortObj.sort(teamsObj , size);
-		for(int i=size-1; i>0;i++){
-			System.out.print(teamsObj[i].getTeamName()+",");
+		for (int i = 0; i < size - 1; i++) {
+			System.out.print(teamsObj[i].getTeamName() + ",");
 		}
-		System.out.println(teamsObj[0].getTeamName());
+		System.out.println(teamsObj[size - 1].getTeamName());
 	}
 }
