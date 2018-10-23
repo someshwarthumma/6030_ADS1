@@ -1,7 +1,7 @@
 /**.
  * Class for Teams object
  */
-class Teams{
+class Teams {
 	/**.
 	 * team name variable
 	 */
@@ -26,7 +26,7 @@ class Teams{
 	 * @param      l     { lose of type int }
 	 * @param      d     { draw of type int }
 	 */
-	Teams(String s, int w, int l, int d){
+	Teams(final String s, final int w, final int l, final int d) {
 		this.teamName = s;
 		this.wins = w;
 		this.lose = l;
@@ -38,16 +38,16 @@ class Teams{
 	 * it returns the team name
 	 * @return     String
 	 */
-	public String getTeamName(){
+	public String getTeamName() {
 		return this.teamName;
 	}
 	/**.
 	 * Getter method for wins
 	 * complexity O(1)
-	 * returns the total wins 
+	 * returns the total wins
 	 * @return     int
 	 */
-	public int getWins(){
+	public int getWins() {
 		return this.wins;
 	}
 	/**.
@@ -56,7 +56,7 @@ class Teams{
 	 * return total looses
 	 * @return     int
 	 */
-	public int  getLose(){
+	public int  getLose() {
 		return this.lose;
 	}
 	/**.
@@ -65,7 +65,7 @@ class Teams{
 	 * return total draws for the given team
 	 * @return    int
 	 */
-	public int getDraw(){
+	public int getDraw() {
 		return this.draw;
 	}
 	/**.
@@ -76,18 +76,18 @@ class Teams{
 	 *
 	 * @return     { Boolean }
 	 */
-	public boolean compareTo(Teams that){
-		if(this.wins < that.wins){
+	public boolean compareTo(final Teams that) {
+		if (this.wins < that.wins) {
 			return true;
-		} else if (this.wins > that.wins){
+		} else if (this.wins > that.wins) {
 			return false;
 		} else {
-			if(this.lose < that.lose){
+			if (this.lose < that.lose) {
 				return false;
-			} else if( this.lose > that.lose){
+			} else if ( this.lose > that.lose) {
 				return true;
 			} else {
-				if(this.draw >= that.draw){
+				if (this.draw >= that.draw) {
 					return false;
 				} else {
 					return true;
