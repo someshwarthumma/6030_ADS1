@@ -26,7 +26,7 @@ class Leaderboard {
 	}
 	/**.
 	 * Add method to add the team objects into the array
-	 *
+	 * complexity is O(1) since simply add the element into the array
 	 * @param      item   Team
 	 */
 	public void add(final Teams item) {
@@ -37,12 +37,14 @@ class Leaderboard {
 	}
 	/**.
 	 * method to resize the array teamObj.
+	 * complexity is O(N) in worst case
 	 */
 	private void resize() {
 		teamsObj = Arrays.copyOf(teamsObj, 2 * teamsObj.length);
 	}
 	/**.
 	 * Getter  method for size
+	 * Complexity is O(1)
 	 *
 	 * @return     The size.
 	 */
@@ -51,6 +53,7 @@ class Leaderboard {
 	}
 	/**.
 	 * Print method to print the output in the required fashion.
+	 * Complexity is O(N) because we need to print the all the elements
 	 */
 	public void print() {
 		teamsObj = sortObj.sort(teamsObj , size);
