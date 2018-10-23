@@ -11,6 +11,7 @@ final class Solution {
     }
     /**.
      * { main method to handle the input testcases }
+     * Complexity is O(N) as we take the inputs
      *
      * @param      args  The arguments
      */
@@ -73,6 +74,7 @@ class Book implements Comparable<Book> {
     }
     /**.
      * method to get the name of the book
+     * Complexity is (1) beacuse it returns Name of the object
      *
      * @return     The name.
      */
@@ -97,6 +99,7 @@ class Book implements Comparable<Book> {
 
     /**.
      * method to compare the given two books
+     * Complexity is (1) beacuse it returns the integer value for comparision
      *
      * @param      that  book as Type Book
      *
@@ -151,6 +154,7 @@ class BinarySearchTree<Book extends Comparable<Book>, Integer> {
         }
         /**.
          * Method to return the key
+         * Complexity is (1) beacuse it returns the Key
          *
          * @return     The key.
          */
@@ -159,6 +163,7 @@ class BinarySearchTree<Book extends Comparable<Book>, Integer> {
         }
         /**.
          * method to return value
+         * Complexity is (1) beacuse it returns the value of given item
          *
          * @return     The value.
          */
@@ -167,6 +172,7 @@ class BinarySearchTree<Book extends Comparable<Book>, Integer> {
         }
         /**.
          * Getter method for left
+         * Complexity is (1) beacuse it returns the left item
          *
          * @return     The left.
          */
@@ -175,6 +181,7 @@ class BinarySearchTree<Book extends Comparable<Book>, Integer> {
         }
         /**.
          * getter method for right
+         * Complexity is (1) beacuse it returns the right item
          *
          * @return     The right.
          */
@@ -183,6 +190,7 @@ class BinarySearchTree<Book extends Comparable<Book>, Integer> {
         }
         /**.
          * setter method for left
+         * Complexity is (1) beacuse it set the left
          *
          * @param      l     { left node }
          */
@@ -191,6 +199,7 @@ class BinarySearchTree<Book extends Comparable<Book>, Integer> {
         }
         /**.
          * setter method for right
+         * Complexity is (1) beacuse it set the right
          *
          * @param      r     { right node }
          */
@@ -199,6 +208,7 @@ class BinarySearchTree<Book extends Comparable<Book>, Integer> {
         }
         /**
          * Sets the value.
+         * Complexity is (1) beacuse it set the value
          *
          * @param      v     { of type int }
          */
@@ -215,6 +225,7 @@ class BinarySearchTree<Book extends Comparable<Book>, Integer> {
     }
     /**.
      * method for putting a key into the bst
+     * Complexity is O(N) becuase it calls put method with three parameters
      *
      * @param      key    of type book
      * @param      value  of type Integer
@@ -224,7 +235,8 @@ class BinarySearchTree<Book extends Comparable<Book>, Integer> {
     }
     /**.
      * method to put the given key into the BST recursively.
-     *
+     * Complexity is O(N) becuase in worst case it iterate all items
+     * to insert the given element at the position required
      *
      * @param      curr   of type Node
      * @param      key    of type Book
@@ -251,6 +263,7 @@ class BinarySearchTree<Book extends Comparable<Book>, Integer> {
     }
     /**.
      * { method to get the value for the searched element }
+     * Complexity is O(N) becuase in worst case it iterate all items
      *
      * @param      key   of type key
      *
