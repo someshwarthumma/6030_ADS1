@@ -1,7 +1,5 @@
 Starting audit...
 [ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m8\8.1 Team Ranking With Insertion\Teams.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m8\8.1 Team Ranking With Insertion\Teams.java:5:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m8\8.1 Team Ranking With Insertion\Teams.java:87:36: '(' is followed by whitespace. [ParenPad]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m8\8.1 Team Ranking With Insertion\Teams.java:90:33: Conditional logic can be removed. [SimplifyBooleanReturn]
+[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m8\8.1 Team Ranking With Insertion\Teams.java:87:24: '(' is followed by whitespace. [ParenPad]
 Audit done.
-Checkstyle ends with 4 errors.
+Checkstyle ends with 2 errors.
