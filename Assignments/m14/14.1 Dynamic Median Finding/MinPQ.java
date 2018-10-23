@@ -108,6 +108,7 @@ public class MinPQ<Key> implements Iterable<Key> {
 
     /**
      * Returns true if this priority queue is empty.
+     * complexit is O(1) since it simply checks the condition
      *
      * @return {@code true} if this priority queue is empty;
      *         {@code false} otherwise
@@ -118,6 +119,7 @@ public class MinPQ<Key> implements Iterable<Key> {
 
     /**
      * Returns the number of keys on this priority queue.
+     * Complexity is O(1) as it return the size
      *
      * @return the number of keys on this priority queue
      */
