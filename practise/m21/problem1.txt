@@ -1,0 +1,1 @@
+3 rd and the 4 rth are considered as the Red Black BST trees since the black links are equal in this BST while the count of black links are not equal from root.
