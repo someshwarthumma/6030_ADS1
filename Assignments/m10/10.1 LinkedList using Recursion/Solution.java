@@ -50,7 +50,7 @@ class LinkedList {
     /**.
      * InserAt method to insert the element at the given index
      * complexity O(N):
-     * beacuse it travese al along the last element in worst case
+     * beacuse it traverse all along the last element in worst case
      *
      * @param      index      index of type int
      * @param      data       data of type int
@@ -73,7 +73,7 @@ class LinkedList {
     /**.
      * insert method to insert the elements at given index
      * complexity O(N):
-     * beacuse it travese al along the last element in worst case
+     * beacuse it traverse all along the last element in worst case
      * @param      current1  current of type Node
      * @param      counter1  counter of type Node
      * @param      index    index of type int
@@ -109,6 +109,7 @@ class LinkedList {
     }
     /**.
      * method to print the output
+     * Complexity is O(N) because it print all elements in the list
      */
     public void print() {
         Node current = head;
@@ -121,8 +122,8 @@ class LinkedList {
     /**.
      * public method to reverse the linkedlist
      * complexity O(N):
-     * beacuse it travese al along the last element in worst case
-     * @throws     Exception  { exception_description }
+     * beacuse it traverse all along the last element in worst case
+     * @throws     Exception  { if linked list is Empty }
      */
     public void reverse() throws Exception {
         if (size == 0) {
@@ -134,7 +135,7 @@ class LinkedList {
     /**.
      * Reverse method with two arguments
      * complexity O(N):
-     * beacuse it travese al along the last element in worst case
+     * beacuse it traverse all along the last element in worst case
      * @param      current  The current
      * @param      prev     The previous
      */
@@ -161,7 +162,7 @@ final class Solution {
     }
     /**.
      * Main method to handle the input testcases
-     *
+     * Complexity is O(N) since it reads all the elements
      * @param      args  arguments
      */
     public static void main(final String[] args) {
