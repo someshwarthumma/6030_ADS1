@@ -54,7 +54,7 @@ class QuickSort {
     }
     /**.
      * Sort method to perform quick sort
-     * Complexity is O(1) as it calling the sort method
+     * Complexity is O(N^2) as it calling the sort method
      * @param      array  The array of Comprable type
      */
     public void sort(final Comparable[] array) {
@@ -62,7 +62,8 @@ class QuickSort {
     }
     /**.
      * Sort method to perform quick sort recursively
-     * Complexity is ( 1)
+     * Complexity is O(N^2) since we are calling the Partion method
+     * which takes O(N) as complexities
      * @param      array  The array of type Comparable
      * @param      lo     The lower Of type integer
      * @param      hi     The higher Of type integer
@@ -80,7 +81,7 @@ class QuickSort {
     }
     /**.
      * Partitiion method to find the pivot  element
-     * Complexity is O(N^2) if it is sorted
+     * Complexity is O(N) in the worst case when the array is sorted.
      * @param      array  The array of Comparable
      * @param      low    The low of type integer
      * @param      high   The high of type integer
