@@ -11,7 +11,7 @@ final class Solution {
     }
     /**.
      * method to handle the input testcases
-     * complexity O(1) as we take the input once per testcase
+     * complexity O(N) as we take the input
      * @param      args  argument
      */
     public static void main(final String[] args) {
