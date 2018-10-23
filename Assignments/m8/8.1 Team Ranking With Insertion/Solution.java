@@ -11,6 +11,7 @@ final class Solution {
     }
     /**.
      * Main method to handle the input testacases
+     * Complexity O(N) because we read the all the inputs
      *
      * @param      args  The arguments
      */

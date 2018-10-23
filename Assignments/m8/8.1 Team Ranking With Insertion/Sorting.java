@@ -6,7 +6,7 @@
 class Sorting{
 	/**.
 	 * Method to sort the fiven elements
-	 *  complexity : O(N^2)
+	 *  complexity : O(N^2) in worst case
 	 * @param      teams  Team
 	 * @param      size   int
 	 *
@@ -26,7 +26,7 @@ class Sorting{
 	}
 	/**.
 	 * Exchange method to swap the provided elements in a given array
-	 * compleity: O(1)
+	 * compleity: O(1) for exchanging the elements
 	 * @param      teams  Teams[]
 	 * @param      i      { int }
 	 * @param      j      { int j }

@@ -20,7 +20,7 @@ class Teams{
 	private int draw;
 	/**.
 	 * Teams constructor
-	 * complexity(1)
+	 * complexity is O(1) since it is constructor
 	 * @param      s     { String for team Name }
 	 * @param      w     {Wins of type int }
 	 * @param      l     { lose of type int }
@@ -35,6 +35,7 @@ class Teams{
 	/**.
 	 * Getter Method for team name
 	 * complexity: O(1)
+	 * it returns the team name
 	 * @return     String
 	 */
 	public String getTeamName(){
@@ -43,6 +44,7 @@ class Teams{
 	/**.
 	 * Getter method for wins
 	 * complexity O(1)
+	 * returns the total wins 
 	 * @return     int
 	 */
 	public int getWins(){
@@ -51,6 +53,7 @@ class Teams{
 	/**.
 	 * Getter method for loses
 	 * complexity O(1)
+	 * return total looses
 	 * @return     int
 	 */
 	public int  getLose(){
@@ -59,6 +62,7 @@ class Teams{
 	/**.
 	 * Getter method for draw
 	 * complexity O(1)
+	 * return total draws for the given team
 	 * @return    int
 	 */
 	public int getDraw(){
@@ -67,6 +71,7 @@ class Teams{
 	/**.
 	 * Method to compare the given elements
 	 * complexity O(1)
+	 * CompareTo method for comparirion of given two teams
 	 * @param      that  The that
 	 *
 	 * @return     { Boolean }
