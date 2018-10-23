@@ -84,7 +84,7 @@ class Teams {
         } else {
             if (this.lose < that.lose) {
                 return false;
-            } else if ( this.lose > that.lose) {
+            } else if (this.lose > that.lose) {
                 return true;
             } else {
                 if (this.draw >= that.draw) {
