@@ -76,7 +76,7 @@ class Merge {
     }
     /**.
      * method to implement insertion sort
-     *Time complexity of insertion sort is O(N^2/2).
+     *Time complexity of insertion sort is O(N^2).
      * @param      a     { array }
      * @param      low   low of type int
      * @param      high  high of type int
@@ -92,9 +92,9 @@ class Merge {
     /**.
      * method to swap the elements in a given array
      * Time complexity of this method is O(N).
-     * @param      a     { parameter_description }
-     * @param      i     { parameter_description }
-     * @param      j     { parameter_description }
+     * @param      a     { Comparable array }
+     * @param      i     { i as  index }
+     * @param      j     { j as  index }
      */
     public void exch(final Comparable[] a,
         final int i, final int j) {
@@ -170,7 +170,7 @@ public final class Solution {
     }
     /**.
      * Main method to handle the testcases
-     *
+     * Complexity is O(N) since it reads inputs
      * @param      args  The arguments
      */
     public static void main(final String[] args) {
