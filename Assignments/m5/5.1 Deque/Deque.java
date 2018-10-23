@@ -35,7 +35,7 @@ public class Deque<E> {
     /**.
      * Push left method to put the element at the left end
      *
-     * @param      item  The item
+     * @param      item  of generic type
      */
     public void pushLeft(final E item) {
         linkedQueue.addAtStart(item);
@@ -45,7 +45,7 @@ public class Deque<E> {
     /**.
      * push right method to push the element in right end
      *
-     * @param      item  The item
+     * @param      item  of generic type
      */
     public void pushRight(final E item) {
         linkedQueue.addAtEnd(item);
