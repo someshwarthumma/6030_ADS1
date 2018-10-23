@@ -11,7 +11,7 @@ final class Solution {
     }
     /**.
      * method to handle the input testcases
-     *
+     * complexity O(1) as we take the input once per testcase
      * @param      args  argument
      */
     public static void main(final String[] args) {
@@ -27,11 +27,12 @@ final class Solution {
 
 /**.
  * TaxiCabNumbers class.
+ * complexity O(N)
  */
 class TaxiCabNumbers {
     /**.
      * method to find the taxiNumber.
-     *
+     * complexity is O(N) becuse it has for and while loop
      * @param      number        The number of type integer
      * @param      possibleWays  of type integer
      *
