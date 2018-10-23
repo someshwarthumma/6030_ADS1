@@ -2,7 +2,6 @@ import java.util.Arrays;
 
 /**.
  * Leaderboad class for implementaion of lead team in given teams
- * complexity : O(1)
  */
 class Leaderboard{
 	/**.
@@ -19,7 +18,6 @@ class Leaderboard{
 	Sorting sortObj;
 	/**.
 	 * Leaderboard constructor
-	 * complexity : O(1)
 	 */
 	Leaderboard(){
 		teamsObj = new Teams[10];
@@ -28,8 +26,7 @@ class Leaderboard{
 	}
 	/**.
 	 * Add method to add the team objects into the array
-	 * complexity : O(1)
-	 * since it add the element into the teams Array
+	 *
 	 * @param      item   Team
 	 */
 	public void add(final Teams item){
@@ -40,15 +37,12 @@ class Leaderboard{
 	}
 	/**.
 	 * method to resize the array teamObj.
-	 * complexity : O(N) in worst case
-	 * 
 	 */
 	private void resize(){
 		teamsObj = Arrays.copyOf(teamsObj, 2*teamsObj.length);
 	}
 	/**.
 	 * Getter  method for size
-	 * complexity is O(1) since it return the size
 	 *
 	 * @return     The size.
 	 */
@@ -57,13 +51,12 @@ class Leaderboard{
 	}
 	/**.
 	 * Print method to print the output in the required fashion.
-	 * complexity : O(N) bacuase it Print the teams
 	 */
 	public void print(){
 		teamsObj = sortObj.sort(teamsObj , size);
-		for(int i=size-1; i>0; i--){
+		for(int i=0; i<size-1;i++){
 			System.out.print(teamsObj[i].getTeamName()+",");
 		}
-		System.out.println(teamsObj[0].getTeamName());
+		System.out.println(teamsObj[size-1].getTeamName());
 	}
 }
