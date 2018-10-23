@@ -12,6 +12,7 @@ final class Solution {
     }
     /**.
      * main method to handle input testcases
+     * Complexity is O(N) it takes inputs
      *
      * @param      args  The arguments
      */
@@ -206,8 +207,8 @@ class SymbolTable<Key extends Comparable<Key>, Value> {
     }
     /**.
      * Method to get the value for the given key
-     * complexity is O(Log(N))
-     * since rank has complexity of O(Log(N))
+     * complexity is O(N)
+     * since rank has complexity of O(N)
      * @param      key        The key
      *
      * @return     { Value as for the given key }
@@ -229,8 +230,8 @@ class SymbolTable<Key extends Comparable<Key>, Value> {
     }
     /**.
      * method to delete the key provided
-     * complexity is O(Log(N))
-     * since rank has O(Log(N))
+     * complexity is O(N)
+     * since rank has O(N)
      *
      * @param      key        The key
      *
@@ -262,8 +263,8 @@ class SymbolTable<Key extends Comparable<Key>, Value> {
     }
     /**.
      * method to delete the min element
-     * complexity is O(Log(N))
-     * since we use delete method which has complexity of O(Log(N))
+     * complexity is O(N)
+     * since we use delete method which has complexity of O(N)
      *
      * @throws     Exception  { when tabe is empty }
      */
@@ -272,7 +273,7 @@ class SymbolTable<Key extends Comparable<Key>, Value> {
     }
     /**.
      * method to check weather the given key contains or not
-     * complexity is O(Log(N))
+     * complexity is O(N)
      * because it uses get method
      * @param      key        The key
      *
@@ -285,8 +286,8 @@ class SymbolTable<Key extends Comparable<Key>, Value> {
     }
     /**.
      * method to find the floor value for the given key
-     * complexity is O(LOg(N))
-     * because rank here has O(Log(N))
+     * complexity is O(N)
+     * because rank here has O(N)
      * @param      key        The key
      *
      * @return     { a Key for the given key }
