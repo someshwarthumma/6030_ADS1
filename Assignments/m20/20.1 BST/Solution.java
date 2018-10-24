@@ -1,5 +1,13 @@
 import java.util.Scanner;
+/**.
+ * This solution class for input testcases
+ */
 class Solution{
+	/**.
+	 * Main method
+	 *
+	 * @param      args  The arguments
+	 */
 	public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         BST bst = new BST();
@@ -67,31 +75,75 @@ class Solution{
         }
     }
 }
-
+/**
+ * Class to represent the properties of a book
+ */
 class BookInfo implements Comparable<BookInfo> {
+    /**
+     * variable for bookName
+     */
 	String bookName;
+    /**
+     * variable for author name
+     */
 	String bookAuthor;
+    /**
+     * variable for price
+     */
 	String bookPrice;
-	BookInfo(String n, String a, String p){
+    /**
+     * BookInfo constructor
+     *
+     * @param      n     { as name }
+     * @param      a     { as Author }
+     * @param      p     { as price }
+     */
+	BookInfo(final String n, final String a, final String p){
 		this.bookName = n;
 		this.bookAuthor = a;
 		this.bookPrice = p;
 	}
-
+    /**
+     * method to get the name of the book
+     *
+     * @return     The name of type string
+     */
 	public String getName(){
 		return this.bookName;
 	}
+    /**
+     * method to get Author  of the book
+     *
+     * @return     The author of type string
+     */
 	public String getAuthor(){
 		return this.bookAuthor;
 	}
+    /**
+     * method to get the price of the book
+     *
+     * @return     The price of type string
+     */
 	public String getPrice(){
 		return this.bookPrice;
 	}
+    /**
+     * Returns a string representation of the object.
+     *
+     * @return     String representation of the object.
+     */
 	public String toString() {
         return this.getName() + ", "
                + this.getAuthor() + ", "
                + Float.parseFloat(this.getPrice());
     }
+    /**
+     * method to compare the given two books
+     *
+     * @param      that  object
+     *
+     * @return     { int }
+     */
     public int compareTo(final BookInfo that) {
         return this.getName().compareTo(that.getName());
     }
