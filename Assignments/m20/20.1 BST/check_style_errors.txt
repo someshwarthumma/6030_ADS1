@@ -1,22 +1,7 @@
 Starting audit...
 [ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m20\20.1 BST\Solution.java:5:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m20\20.1 BST\Solution.java:5:15: '{' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m20\20.1 BST\Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m20\20.1 BST\Solution.java:78: First sentence should end with a period. [JavadocStyle]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m20\20.1 BST\Solution.java:82: First sentence should end with a period. [JavadocStyle]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m20\20.1 BST\Solution.java:85:16: Variable 'bookName' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m20\20.1 BST\Solution.java:86: First sentence should end with a period. [JavadocStyle]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m20\20.1 BST\Solution.java:89:16: Variable 'bookAuthor' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m20\20.1 BST\Solution.java:90: First sentence should end with a period. [JavadocStyle]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m20\20.1 BST\Solution.java:93:16: Variable 'bookPrice' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m20\20.1 BST\Solution.java:94: First sentence should end with a period. [JavadocStyle]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m20\20.1 BST\Solution.java:101:65: '{' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m20\20.1 BST\Solution.java:106: First sentence should end with a period. [JavadocStyle]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m20\20.1 BST\Solution.java:111:32: '{' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m20\20.1 BST\Solution.java:114: First sentence should end with a period. [JavadocStyle]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m20\20.1 BST\Solution.java:119:34: '{' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m20\20.1 BST\Solution.java:122: First sentence should end with a period. [JavadocStyle]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m20\20.1 BST\Solution.java:127:33: '{' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m20\20.1 BST\Solution.java:140: First sentence should end with a period. [JavadocStyle]
+[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m20\20.1 BST\Solution.java:85:12: Variable 'bookName' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m20\20.1 BST\Solution.java:89:12: Variable 'bookAuthor' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m20\20.1 BST\Solution.java:93:12: Variable 'bookPrice' must be private and have accessor methods. [VisibilityModifier]
 Audit done.
-Checkstyle ends with 19 errors.
+Checkstyle ends with 4 errors.
