@@ -54,7 +54,7 @@ final class Solution {
                     System.out.println(floor.toString());
                 }
                 break;
-            case "ceilig":
+            case "ceiling":
                 Comparable ceiling = bst.ceiling(new BookInfo(
                     tokens[1], tokens[2], tokens[2 + 1]));
                 if (ceiling == null) {
