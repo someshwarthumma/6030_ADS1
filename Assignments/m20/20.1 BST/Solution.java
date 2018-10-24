@@ -82,15 +82,15 @@ class BookInfo implements Comparable<BookInfo> {
     /**.
      * variable for bookName
      */
-    String bookName;
+    private String bookName;
     /**.
      * variable for author name
      */
-    String bookAuthor;
+    private String bookAuthor;
     /**.
      * variable for price
      */
-    String bookPrice;
+    private String bookPrice;
     /**.
      * BookInfo constructor
      *
