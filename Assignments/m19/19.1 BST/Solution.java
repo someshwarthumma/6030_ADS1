@@ -1,11 +1,17 @@
 import java.util.Scanner;
 
 final class Solution {
-    
+    /**
+     * Private constructor
+     */
     private Solution() {
         //private constructor
     }
-    
+    /**
+     * main method for handling the input testcases
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         BST bst = new BST();
