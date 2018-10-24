@@ -2,21 +2,29 @@ import java.util.Scanner;
 /**.
  * Class for solution.
  */
-class Solution {
+final class Solution {
+    /**.
+     * Solution constructor
+     */
+    private Solution() {
+        //Solution constructor
+    }
     /**.
      * main method to handle the input testcases
      * Complexity is O(N) as we read the all inputs
      *
      * @param      args  The arguments
      */
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         String[] tokens = scan.nextLine().split(" ");
         int noOfWordsInMag = Integer.parseInt(tokens[0]);
         int noOfWordsInRansom = Integer.parseInt(tokens[1]);
         String[] magWords = scan.nextLine().split(" ");
         String[] ransomWords = scan.nextLine().split(" ");
-        RansomNote ransomNote = new RansomNote(noOfWordsInMag, noOfWordsInRansom, magWords, ransomWords);
+        RansomNote ransomNote = new RansomNote(
+            noOfWordsInMag, noOfWordsInRansom,
+            magWords, ransomWords);
         System.out.println(ransomNote.isReplicaPossible());
     }
 }
@@ -27,27 +35,27 @@ class RansomNote {
     /**.
      * variable for no of words in magazine
      */
-    int magNum;
+    private int magNum;
     /**.
      * variable for no of words in ramson note
      */
-    int ransomNum;
+    private int ransomNum;
     /**.
      * String array for storing the mag words
      */
-    String[] magWords;
+    private String[] magWords;
     /**.
      * String array for storing the ransom words
      */
-    String[] ransomWords;
+    private String[] ransomWords;
     /**.
      * hash table for mag words
      */
-    SeparateChainingHashST<String , Integer> hashMag;
+    private SeparateChainingHashST<String , Integer> hashMag;
     /**.
      * hashtable for ransom words
      */
-    SeparateChainingHashST<String , Integer> hashRansom;
+    private SeparateChainingHashST<String , Integer> hashRansom;
     /**.
      * constructor for ramsonNote
      *
@@ -56,7 +64,8 @@ class RansomNote {
      * @param      mW    mag words as Array
      * @param      rW    ransom words as Array
      */
-    RansomNote(int m, int r, String[] mW, String[] rW) {
+    RansomNote(final int m, final int r,
+        final String[] mW, final String[] rW) {
         this.magNum = m;
         this.ransomNum = r;
         this.magWords = mW;
@@ -71,7 +80,8 @@ class RansomNote {
      * @param      arr   of Type array
      * @param      hash  of type hashtable
      */
-    public void loadWords(String[] arr, SeparateChainingHashST<String , Integer> hash) {
+    public void loadWords(final String[] arr,
+        final SeparateChainingHashST<String , Integer> hash) {
         for (String word : arr) {
             if (hash.contains(word)) {
                 int count = hash.get(word);
