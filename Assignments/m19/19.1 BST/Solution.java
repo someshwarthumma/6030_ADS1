@@ -39,7 +39,7 @@ final class Solution {
                     parseInt(tokens[1]));
                 System.out.println(select.toString());
                 break;
-            case "flor":
+            case "floor":
                 Comparable floor = bst.floor(new BookInfo(
                     tokens[1], tokens[2], tokens[2 + 1]));
                 if (floor == null) {
