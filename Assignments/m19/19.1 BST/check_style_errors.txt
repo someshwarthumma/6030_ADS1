@@ -1,24 +1,5 @@
 Starting audit...
 [ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m19\19.1 BST\Solution.java:3: Missing a Javadoc comment. [JavadocType]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m19\19.1 BST\Solution.java:4: First sentence should end with a period. [JavadocStyle]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m19\19.1 BST\Solution.java:10: First sentence should end with a period. [JavadocStyle]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m19\19.1 BST\Solution.java:73: Missing a Javadoc comment. [JavadocType]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m19\19.1 BST\Solution.java:74: Line has trailing spaces. [RegexpSingleline]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m19\19.1 BST\Solution.java:75:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m19\19.1 BST\Solution.java:76: Line has trailing spaces. [RegexpSingleline]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m19\19.1 BST\Solution.java:77:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m19\19.1 BST\Solution.java:78: Line has trailing spaces. [RegexpSingleline]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m19\19.1 BST\Solution.java:79:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m19\19.1 BST\Solution.java:80: Line has trailing spaces. [RegexpSingleline]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m19\19.1 BST\Solution.java:81:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m19\19.1 BST\Solution.java:86: Line has trailing spaces. [RegexpSingleline]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m19\19.1 BST\Solution.java:87:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m19\19.1 BST\Solution.java:90: Line has trailing spaces. [RegexpSingleline]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m19\19.1 BST\Solution.java:91:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m19\19.1 BST\Solution.java:94: Line has trailing spaces. [RegexpSingleline]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m19\19.1 BST\Solution.java:95:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m19\19.1 BST\Solution.java:98: Line has trailing spaces. [RegexpSingleline]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m19\19.1 BST\Solution.java:99:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m19\19.1 BST\Solution.java:104:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m19\19.1 BST\Solution.java:89: First sentence should end with a period. [JavadocStyle]
 Audit done.
-Checkstyle ends with 21 errors.
+Checkstyle ends with 2 errors.
