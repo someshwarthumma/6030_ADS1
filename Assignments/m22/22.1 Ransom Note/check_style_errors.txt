@@ -1,8 +1,2 @@
 Starting audit...
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m22\22.1 Ransom Note\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m22\22.1 Ransom Note\Solution.java:54:42: ',' is preceded with whitespace. [NoWhitespaceBefore]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m22\22.1 Ransom Note\Solution.java:58:42: ',' is preceded with whitespace. [NoWhitespaceBefore]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m22\22.1 Ransom Note\Solution.java:84:44: ',' is preceded with whitespace. [NoWhitespaceBefore]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m22\22.1 Ransom Note\Solution.java:127:24: '(' is followed by whitespace. [ParenPad]
 Audit done.
-Checkstyle ends with 5 errors.

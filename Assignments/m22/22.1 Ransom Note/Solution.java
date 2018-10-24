@@ -51,11 +51,11 @@ class RansomNote {
     /**.
      * hash table for mag words
      */
-    private SeparateChainingHashST<String , Integer> hashMag;
+    private SeparateChainingHashST<String, Integer> hashMag;
     /**.
      * hashtable for ransom words
      */
-    private SeparateChainingHashST<String , Integer> hashRansom;
+    private SeparateChainingHashST<String, Integer> hashRansom;
     /**.
      * constructor for ramsonNote
      *
@@ -81,7 +81,7 @@ class RansomNote {
      * @param      hash  of type hashtable
      */
     public void loadWords(final String[] arr,
-        final SeparateChainingHashST<String , Integer> hash) {
+        final SeparateChainingHashST<String, Integer> hash) {
         for (String word : arr) {
             if (hash.contains(word)) {
                 int count = hash.get(word);
@@ -124,7 +124,7 @@ class RansomNote {
             Integer twoVal = hashRansom.get(key);
             if (twoVal == null || oneVal == null) {
                 return "No";
-            } else if ( oneVal < twoVal) {
+            } else if (oneVal < twoVal) {
                 return "No";
             }
         }
