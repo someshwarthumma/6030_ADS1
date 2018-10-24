@@ -11,6 +11,7 @@ final class Solution {
     }
     /**.
      * Main method
+     * Complexity is O(N) as it reads the input
      *
      * @param      args  The arguments
      */
@@ -111,6 +112,7 @@ class BookInfo implements Comparable<BookInfo> {
     }
     /**.
      * method to get the name of the book
+     * Complexity is O(1)
      *
      * @return     The name of type string
      */
@@ -119,7 +121,7 @@ class BookInfo implements Comparable<BookInfo> {
     }
     /**.
      * method to get Author  of the book
-     *
+     * Complexity is O(1)
      * @return     The author of type string
      */
     public String getAuthor() {
@@ -127,7 +129,7 @@ class BookInfo implements Comparable<BookInfo> {
     }
     /**.
      * method to get the price of the book
-     *
+     * Complexity is O(1)
      * @return     The price of type string
      */
     public String getPrice() {
@@ -135,7 +137,7 @@ class BookInfo implements Comparable<BookInfo> {
     }
     /**.
      * Returns a string representation of the object.
-     *
+     * Complexity is O(1)
      * @return     String representation of the object.
      */
     public String toString() {
@@ -145,7 +147,7 @@ class BookInfo implements Comparable<BookInfo> {
     }
     /**.
      * method to compare the given two books
-     *
+     * Complexity is O(1)
      * @param      that  object
      *
      * @return     { int }
