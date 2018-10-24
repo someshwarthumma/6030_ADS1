@@ -1,5 +1,7 @@
 import java.util.Scanner;
-
+/**
+ * solution class
+ */
 final class Solution {
     /**.
      * Private constructor
@@ -86,7 +88,7 @@ class BookInfo implements Comparable<BookInfo> {
      * variable for book price
      */
     private String bookPrice;
-    /**
+    /**.
      * bookInfo constructor
      *
      * @param      n     { as name }
