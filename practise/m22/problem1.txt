@@ -1,0 +1,1 @@
+This is not a valid hash code because for every input value, the hash funtion simply gives the hashcode as the 17. which results to have a long linked list.
