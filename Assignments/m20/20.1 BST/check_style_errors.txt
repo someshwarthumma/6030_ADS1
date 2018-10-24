@@ -1,5 +1,2 @@
 Starting audit...
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m20\20.1 BST\Solution.java:5: Class Solution should be declared as final. [FinalClass]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m20\20.1 BST\Solution.java:9:23: '{' is not preceded with whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 2 errors.

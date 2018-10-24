@@ -2,11 +2,11 @@ import java.util.Scanner;
 /**.
  * This solution class for input testcases
  */
-class Solution {
+final class Solution {
     /**.
      * Solution constructor
      */
-    private Solution(){
+    private Solution() {
         //private constructor
     }
     /**.
