@@ -12,6 +12,9 @@ class Solution{
 		while(scan.hasNext()){
 			String[] tokens2 = scan.nextLine().split(" ");
 			Student temp = hash.get(Integer.parseInt(tokens2[1]));
+			if(temp == null){
+				System.out.println("Student doesn't exists...");
+			}
 			switch(tokens2[2]){
 				case "1":
 					System.out.println(temp.getName());
