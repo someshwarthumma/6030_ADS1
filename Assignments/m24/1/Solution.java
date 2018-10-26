@@ -9,7 +9,7 @@ class Solution {
 			hash.put(Integer.parseInt(tokens[0]), new Student(tokens[1], Double.parseDouble(tokens[2])));
 		}
 		int totalTestsCases = Integer.parseInt(scan.nextLine());
-		while (scan.hasNext()) {
+		for(int i = 0;i<totalTestsCases;i++){
 			try {
 				String[] tokens2 = scan.nextLine().split(" ");
 				Student temp = hash.get(Integer.parseInt(tokens2[1]));

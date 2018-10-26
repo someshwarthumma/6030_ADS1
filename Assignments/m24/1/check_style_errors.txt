@@ -8,6 +8,12 @@ Starting audit...
 [ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m24\1\Solution.java:4: Line is longer than 80 characters (found 105). [LineLength]
 [ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m24\1\Solution.java:7:31: ';' is preceded with whitespace. [NoWhitespaceBefore]
 [ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m24\1\Solution.java:9: Line is longer than 80 characters (found 117). [LineLength]
+[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m24\1\Solution.java:12:20: 'for' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m24\1\Solution.java:12:31: ';' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m24\1\Solution.java:12:32: '<' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m24\1\Solution.java:12:33: '<' is not followed by whitespace. [WhitespaceAround]
+[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m24\1\Solution.java:12:49: ';' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m24\1\Solution.java:12:53: '{' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m24\1\Solution.java:15: Line is longer than 80 characters (found 86). [LineLength]
 [ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m24\1\Solution.java:17: Line is longer than 80 characters (found 89). [LineLength]
 [ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m24\1\Solution.java:19: switch without "default" clause. [MissingSwitchDefault]
@@ -24,4 +30,4 @@ Starting audit...
 [ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m24\1\Solution.java:41:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m24\1\Solution.java:45:9: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 24 errors.
+Checkstyle ends with 30 errors.

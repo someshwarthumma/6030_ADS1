@@ -48,7 +48,7 @@ Your Output:
 45.4
 99.3
 ----------------------------------------
-########## Testcase 2: Failed ##########
+########## Testcase 2: Passed ##########
 Expected Output: 
 Knuth
 100.0
@@ -81,7 +81,6 @@ John
 Hank
 13.3
 Jeannette Caines
-Student doesn't exists...
 Student doesn't exists...
 Student doesn't exists...
 Student doesn't exists...
