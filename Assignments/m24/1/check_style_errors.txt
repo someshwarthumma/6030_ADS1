@@ -4,13 +4,5 @@ Starting audit...
 [ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m24\1\Solution.java:21:23: ';' is preceded with whitespace. [NoWhitespaceBefore]
 [ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m24\1\Solution.java:23: Line is longer than 80 characters (found 105). [LineLength]
 [ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m24\1\Solution.java:33: switch without "default" clause. [MissingSwitchDefault]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m24\1\Solution.java:47: First sentence should end with a period. [JavadocStyle]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m24\1\Solution.java:51: First sentence should end with a period. [JavadocStyle]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m24\1\Solution.java:54:12: Variable 'name' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m24\1\Solution.java:55: First sentence should end with a period. [JavadocStyle]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m24\1\Solution.java:58:12: Variable 'marks' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m24\1\Solution.java:59:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m24\1\Solution.java:63: First sentence should end with a period. [JavadocStyle]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m24\1\Solution.java:71: First sentence should end with a period. [JavadocStyle]
 Audit done.
-Checkstyle ends with 13 errors.
+Checkstyle ends with 5 errors.

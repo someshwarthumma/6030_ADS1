@@ -44,23 +44,29 @@ final class Solution {
         }
     }
 }
-/**
+/**.
  * student class
  */
 class Student {
-    /**
+    /**.
      * name variable
      */
-    String name;
-    /**
+    private String name;
+    /**.
      * marks varible
      */
-    Double marks;
-    Student(final String n, final Double rN) {
-        this.marks = rN;
+    private Double marks;
+    /**.
+     * student constructor
+     *
+     * @param      n     { variable for name of type string}
+     * @param      m    variable for marks of type double
+     */
+    Student(final String n, final Double m) {
+        this.marks = m;
         this.name = n;
     }
-    /**
+    /**.
      * getter method for name
      *
      * @return     The name.
@@ -68,7 +74,7 @@ class Student {
     public String getName() {
         return this.name;
     }
-    /**
+    /**.
      * getter method for marks
      *
      * @return     The marks.
