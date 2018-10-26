@@ -11,6 +11,8 @@ final class Solution {
     }
     /**.
      * main method to handle the input testcases
+     * complexity is O(N^2) since in for loop we use hashTable
+     * which has a complexity of O(N)
      *
      * @param      args  The arguments
      */
