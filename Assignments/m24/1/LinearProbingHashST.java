@@ -13,6 +13,7 @@
  *  Linear Probing hash st class with constant insert
  *  and delete Operation and search operation
  *  Complexity is O(N) which in guranted case
+ *  where N is no of Inputs
  *
  */
 public class LinearProbingHashST<Key, Value> {
@@ -88,6 +89,7 @@ public class LinearProbingHashST<Key, Value> {
     /**.
      * method to resize the array
      * complexity is O(N) in guaranted case
+     * where N is no of Inputs
      * @param      capacity  The capacity
      */
     private void resize(int capacity) {
@@ -109,6 +111,7 @@ public class LinearProbingHashST<Key, Value> {
      * if the specified value is {@code null}.
      * 
      * complexity is O(N) in guaranted case
+     * where N is no of Inputs
      * 
      * @param  key the key
      * @param  val the value
@@ -138,6 +141,7 @@ public class LinearProbingHashST<Key, Value> {
      * Returns the value associated with the specified key.
      * 
      * complexity is O(N) in guaranted case
+     * where N is no of Inputs
      * 
      * @param key the key
      * @return the value associated with {@code key};
