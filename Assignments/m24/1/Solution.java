@@ -15,12 +15,15 @@ final class Solution {
      * @param      args  The arguments
      */
     public static void main(final String[] args) {
-        LinearProbingHashST<Integer, Student> hash = new LinearProbingHashST<Integer, Student>();
+        LinearProbingHashST<
+        Integer, Student> hash = new LinearProbingHashST<
+        Integer, Student>();
         Scanner scan = new Scanner(System.in);
         int totalStudents = Integer.parseInt(scan.nextLine());
-        for (int i = 0 ; i < totalStudents; i++) {
+        for (int i = 0; i < totalStudents; i++) {
             String[] tokens = scan.nextLine().split(",");
-            hash.put(Integer.parseInt(tokens[0]), new Student(tokens[1], Double.parseDouble(tokens[2])));
+            hash.put(Integer.parseInt(tokens[0]), new Student(
+                tokens[1], Double.parseDouble(tokens[2])));
         }
         int totalTestsCases = Integer.parseInt(scan.nextLine());
         for (int i = 0; i < totalTestsCases; i++) {
@@ -37,7 +40,9 @@ final class Solution {
                 case "2":
                     System.out.println(temp.getMarks());
                     break;
+                default:
                 }
+
             } catch (Exception e) {
                 System.out.println(e.getMessage());
             }

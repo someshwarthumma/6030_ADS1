@@ -1,8 +1,4 @@
 Starting audit...
 [ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m24\1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m24\1\Solution.java:18: Line is longer than 80 characters (found 97). [LineLength]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m24\1\Solution.java:21:23: ';' is preceded with whitespace. [NoWhitespaceBefore]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m24\1\Solution.java:23: Line is longer than 80 characters (found 105). [LineLength]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m24\1\Solution.java:33: switch without "default" clause. [MissingSwitchDefault]
 Audit done.
-Checkstyle ends with 5 errors.
+Checkstyle ends with 1 errors.
