@@ -76,7 +76,7 @@ class Student {
     /**.
      * getter method for name
      *
-     * @return     The name.
+     * @return     The name of type string
      */
     public String getName() {
         return this.name;
@@ -84,7 +84,7 @@ class Student {
     /**.
      * getter method for marks
      *
-     * @return     The marks.
+     * @return     The marks of type double
      */
     public Double getMarks() {
         return this.marks;
