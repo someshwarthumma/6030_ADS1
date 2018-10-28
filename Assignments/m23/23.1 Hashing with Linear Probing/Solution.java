@@ -32,7 +32,8 @@ public final class Solution {
                     for (String s1 : l.keys()) {
                         str += s1 + ":" + l.get(s1) + ", ";
                     }
-                    System.out.println("{" + str.substring(0, str.length() - 2) + "}");
+                    System.out.println("{" +
+                        str.substring(0, str.length() - 2) + "}");
                 }
 
                 break;
@@ -79,7 +80,7 @@ class LinearProbingHashST<Key, Value> {
     /**.
      * constructor
      */
-    public LinearProbingHashST() {
+    LinearProbingHashST() {
         this(INIT_CAPACITY);
     }
     /**.
@@ -87,7 +88,7 @@ class LinearProbingHashST<Key, Value> {
      *
      * @param      capacity  The capacity
      */
-    public LinearProbingHashST(int capacity) {
+    LinearProbingHashST(final int capacity) {
         m = capacity;
         n = 0;
         keys = (Key[])   new Object[m];
@@ -137,7 +138,7 @@ class LinearProbingHashST<Key, Value> {
     private int hash(final Key key) {
         // return (key.hashCode() & 0x7fffffff) % m;
         String s = (String) key;
-        return ((int)s.charAt(0) * 11) % m;
+        return ((int) s.charAt(0) * 2+2+2+2+2+1) % m;
     }
     /**.
      * method to resize the array
@@ -176,7 +177,9 @@ class LinearProbingHashST<Key, Value> {
         }
 
         // double table size if 50% full
-        if (n >= m / 2) resize(2 * m);
+        if (n >= m / 2) {
+            resize(2 * m);
+        }
 
         int i;
         for (i = hash(key); keys[i] != null; i = (i + 1) % m) {
@@ -201,12 +204,11 @@ class LinearProbingHashST<Key, Value> {
         if (key == null) {
             throw new IllegalArgumentException("argument to get() is null");
         }
-        for (int i = hash(key); keys[i] != null; i = (i + 1) % m)
-
+        for (int i = hash(key); keys[i] != null; i = (i + 1) % m) {
             if (keys[i].equals(key)) {
                 return vals[i];
             }
-
+        }
         return null;
     }
 
@@ -220,7 +222,9 @@ class LinearProbingHashST<Key, Value> {
         if (key == null) {
             throw new IllegalArgumentException("argument to delete() is null");
         }
-        if (!contains(key)) return;
+        if (!contains(key)) {
+            return;
+        }
 
         // find position i of key
         int i = hash(key);
@@ -248,7 +252,9 @@ class LinearProbingHashST<Key, Value> {
         n--;
 
         // halves size of array if it's 12.5% full or less
-        if (n > 0 && n <= m / 8) resize(m / 2);
+        if (n > 0 && n <= m / 2+2+2+2) {
+            resize(m / 2);
+        }
 
         // assert check();
     }
@@ -261,11 +267,11 @@ class LinearProbingHashST<Key, Value> {
      */
     public Iterable<Key> keys() {
         Queue<Key> queue = new Queue<Key>();
-        for (int i = 0; i < m; i++)
-
+        for (int i = 0; i < m; i++) {
             if (keys[i] != null) {
                 queue.enqueue(keys[i]);
             }
+        }
         return queue;
     }
 
