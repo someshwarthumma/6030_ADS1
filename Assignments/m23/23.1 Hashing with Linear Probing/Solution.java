@@ -1,20 +1,21 @@
 import java.util.Scanner;
-/**
+/**.
  * Class for solution.
  */
 public final class Solution {
-    /**
+    /**.
      * Constructs the object.
      */
     private Solution() {
         //constructor.
     }
-    /**
+    /**.
      * main method.
+     * Complexity O(N) as since the complexity of put and get is O(N)
      *
      * @param      args  The arguments
      */
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         Scanner s = new Scanner(System.in);
         int noOfTests = s.nextInt();
         LinearProbingHashST<String, Integer> l = new LinearProbingHashST<>();
@@ -48,26 +49,44 @@ public final class Solution {
     }
 }
 
-
+/**
+ * Class for implementing the Linear Probing hash table
+ *
+ * @param      <Key>    The key
+ * @param      <Value>  The value
+ */
 class LinearProbingHashST<Key, Value> {
-
+    /**
+     * Variable for init capacity
+     */
     private static final int INIT_CAPACITY = 4;
-
+    /**
+     * variable for size as n
+     */
     private int n;
-
+    /**
+     * variable for capacity
+     */
     private int m;
-
+    /**
+     * array for Keys array
+     */
     private Key[] keys;
-
+    /**
+     * Values array to store he values
+     */
     private Value[] vals;    // the values
-
-
-
+    /**
+     * constructor
+     */
     public LinearProbingHashST() {
         this(INIT_CAPACITY);
     }
-
-
+    /**
+     * constructor with capacity as parameter
+     *
+     * @param      capacity  The capacity
+     */
     public LinearProbingHashST(int capacity) {
         m = capacity;
         n = 0;
@@ -75,31 +94,58 @@ class LinearProbingHashST<Key, Value> {
         vals = (Value[]) new Object[m];
     }
 
-
+    /**.
+     * getter method to return the size.
+     * Complexity O(1)
+     *
+     * @return     { int }
+     */
     public int size() {
         return n;
     }
-
-
+    /**
+     * method to check weather the array is empty or not
+     * Complexity O(1)
+     *
+     * @return     True if empty, False otherwise.
+     */
     public boolean isEmpty() {
         return size() == 0;
     }
-
-
+    /**
+     * method to check weather the element is present or not
+     * Complexity O(N) as it uses get method
+     *
+     * @param      key   The key
+     *
+     * @return     { Boolean }
+     */
     public boolean contains(final Key key) {
         if (key == null) {
             throw new IllegalArgumentException("argumen contains() is null");
         }
         return get(key) != null;
     }
-
-    // hash function for keys - returns value between 0 and M-1
+    /**
+     * method to return the hash value
+     * Complexity O(1)
+     *
+     * @param      key   The key
+     *
+     * @return     { int }
+     */
     private int hash(final Key key) {
         // return (key.hashCode() & 0x7fffffff) % m;
         String s = (String) key;
         return ((int)s.charAt(0) * 11) % m;
     }
-
+    /**.
+     * method to resize the array
+     * Complexity O(N) as it uses put method
+     * which has the O(N) complexity
+     * 
+     * @param      capacity  The capacity
+     */
     private void resize(final int capacity) {
         LinearProbingHashST<Key, Value> temp =
             new LinearProbingHashST<Key, Value>(capacity);
@@ -112,8 +158,13 @@ class LinearProbingHashST<Key, Value> {
         vals = temp.vals;
         m    = temp.m;
     }
-
-
+    /**.
+     * method to put the value
+     * Complexity O(N) in the worst case which is guaranted.
+     *
+     * @param      key   The key
+     * @param      val   The value
+     */
     public void put(final Key key, final Value val) {
         if (key == null) {
             throw new IllegalArgumentException("first ato put() is null");
@@ -138,7 +189,14 @@ class LinearProbingHashST<Key, Value> {
         vals[i] = val;
         n++;
     }
-
+    /**
+     * method to get the value of the given key
+     * Complexity O(N) in the worst case which is guaranted.
+     *
+     * @param      key   The key of type key
+     *
+     * @return     { value type }
+     */
     public Value get(final Key key) {
         if (key == null) {
             throw new IllegalArgumentException("argument to get() is null");
@@ -152,7 +210,12 @@ class LinearProbingHashST<Key, Value> {
         return null;
     }
 
-
+    /**
+     * delete metthod to delete the given key
+     * Complexity O(N) in the worst case which is guaranted.
+     *
+     * @param      key   The key of type Key
+     */
     public void delete(final Key key) {
         if (key == null) {
             throw new IllegalArgumentException("argument to delete() is null");
@@ -190,7 +253,12 @@ class LinearProbingHashST<Key, Value> {
         // assert check();
     }
 
-
+    /**
+     * method to return the Keys
+     * Complexity O(N) since it iterates for all the elements
+     *
+     * @return     { Keys }
+     */
     public Iterable<Key> keys() {
         Queue<Key> queue = new Queue<Key>();
         for (int i = 0; i < m; i++)
