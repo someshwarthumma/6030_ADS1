@@ -32,8 +32,8 @@ public final class Solution {
                     for (String s1 : l.keys()) {
                         str += s1 + ":" + l.get(s1) + ", ";
                     }
-                    System.out.println("{" +
-                        str.substring(0, str.length() - 2) + "}");
+                    System.out.println("{" + str.
+                        substring(0, str.length() - 2) + "}");
                 }
 
                 break;
