@@ -49,40 +49,40 @@ public final class Solution {
     }
 }
 
-/**
+/**.
  * Class for implementing the Linear Probing hash table
  *
  * @param      <Key>    The key
  * @param      <Value>  The value
  */
 class LinearProbingHashST<Key, Value> {
-    /**
+    /**.
      * Variable for init capacity
      */
     private static final int INIT_CAPACITY = 4;
-    /**
+    /**.
      * variable for size as n
      */
     private int n;
-    /**
+    /**.
      * variable for capacity
      */
     private int m;
-    /**
+    /**.
      * array for Keys array
      */
     private Key[] keys;
-    /**
+    /**.
      * Values array to store he values
      */
     private Value[] vals;    // the values
-    /**
+    /**.
      * constructor
      */
     public LinearProbingHashST() {
         this(INIT_CAPACITY);
     }
-    /**
+    /**.
      * constructor with capacity as parameter
      *
      * @param      capacity  The capacity
@@ -103,7 +103,7 @@ class LinearProbingHashST<Key, Value> {
     public int size() {
         return n;
     }
-    /**
+    /**.
      * method to check weather the array is empty or not
      * Complexity O(1)
      *
@@ -112,7 +112,7 @@ class LinearProbingHashST<Key, Value> {
     public boolean isEmpty() {
         return size() == 0;
     }
-    /**
+    /**.
      * method to check weather the element is present or not
      * Complexity O(N) as it uses get method
      *
@@ -126,7 +126,7 @@ class LinearProbingHashST<Key, Value> {
         }
         return get(key) != null;
     }
-    /**
+    /**.
      * method to return the hash value
      * Complexity O(1)
      *
@@ -143,7 +143,7 @@ class LinearProbingHashST<Key, Value> {
      * method to resize the array
      * Complexity O(N) as it uses put method
      * which has the O(N) complexity
-     * 
+     *
      * @param      capacity  The capacity
      */
     private void resize(final int capacity) {
@@ -189,7 +189,7 @@ class LinearProbingHashST<Key, Value> {
         vals[i] = val;
         n++;
     }
-    /**
+    /**.
      * method to get the value of the given key
      * Complexity O(N) in the worst case which is guaranted.
      *
@@ -210,7 +210,7 @@ class LinearProbingHashST<Key, Value> {
         return null;
     }
 
-    /**
+    /**.
      * delete metthod to delete the given key
      * Complexity O(N) in the worst case which is guaranted.
      *
@@ -253,7 +253,7 @@ class LinearProbingHashST<Key, Value> {
         // assert check();
     }
 
-    /**
+    /**.
      * method to return the Keys
      * Complexity O(N) since it iterates for all the elements
      *
