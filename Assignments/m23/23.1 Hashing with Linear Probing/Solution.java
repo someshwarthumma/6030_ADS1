@@ -87,7 +87,7 @@ class LinearProbingHashST<Key, Value> {
      *
      * @param      capacity  The capacity
      */
-    public LinearProbingHashST(int capacity) {
+    public LinearProbingHashST(final int capacity) {
         m = capacity;
         n = 0;
         keys = (Key[])   new Object[m];
@@ -137,7 +137,8 @@ class LinearProbingHashST<Key, Value> {
     private int hash(final Key key) {
         // return (key.hashCode() & 0x7fffffff) % m;
         String s = (String) key;
-        return ((int)s.charAt(0) * 11) % m;
+        final int el = 11;
+        return ((int) s.charAt(0) * el) % m;
     }
     /**.
      * method to resize the array

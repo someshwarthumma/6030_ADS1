@@ -3,8 +3,5 @@ Starting audit...
 [ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:35: Line is longer than 80 characters (found 87). [LineLength]
 [ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:82:5: Redundant 'public' modifier. [RedundantModifier]
 [ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:90:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:90:32: Parameter capacity should be final. [FinalParameters]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:140:22: 'typecast' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:140:36: '11' is a magic number. [MagicNumber]
 Audit done.
-Checkstyle ends with 7 errors.
+Checkstyle ends with 4 errors.
