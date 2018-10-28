@@ -176,7 +176,9 @@ class LinearProbingHashST<Key, Value> {
         }
 
         // double table size if 50% full
-        if (n >= m / 2) resize(2 * m);
+        if (n >= m / 2) {
+            resize(2 * m);
+        }
 
         int i;
         for (i = hash(key); keys[i] != null; i = (i + 1) % m) {
@@ -201,12 +203,11 @@ class LinearProbingHashST<Key, Value> {
         if (key == null) {
             throw new IllegalArgumentException("argument to get() is null");
         }
-        for (int i = hash(key); keys[i] != null; i = (i + 1) % m)
-
+        for (int i = hash(key); keys[i] != null; i = (i + 1) % m) {
             if (keys[i].equals(key)) {
                 return vals[i];
             }
-
+        }
         return null;
     }
 
@@ -220,7 +221,9 @@ class LinearProbingHashST<Key, Value> {
         if (key == null) {
             throw new IllegalArgumentException("argument to delete() is null");
         }
-        if (!contains(key)) return;
+        if (!contains(key)) {
+            return;
+        }
 
         // find position i of key
         int i = hash(key);
@@ -248,7 +251,10 @@ class LinearProbingHashST<Key, Value> {
         n--;
 
         // halves size of array if it's 12.5% full or less
-        if (n > 0 && n <= m / 8) resize(m / 2);
+        final int eight = 8;
+        if (n > 0 && n <= m / eight) {
+            resize(m / 2);
+        }
 
         // assert check();
     }
@@ -261,11 +267,11 @@ class LinearProbingHashST<Key, Value> {
      */
     public Iterable<Key> keys() {
         Queue<Key> queue = new Queue<Key>();
-        for (int i = 0; i < m; i++)
-
+        for (int i = 0; i < m; i++) {
             if (keys[i] != null) {
                 queue.enqueue(keys[i]);
             }
+        }
         return queue;
     }
 
