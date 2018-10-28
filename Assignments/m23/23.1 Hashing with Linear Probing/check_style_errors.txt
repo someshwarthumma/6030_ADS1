@@ -1,21 +1,5 @@
 Starting audit...
 [ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:35:44: '+' should be on a new line. [OperatorWrap]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:141:38: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:141:39: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:141:40: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:141:41: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:141:42: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:141:43: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:141:44: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:141:45: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:141:46: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:141:47: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:255:32: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:255:33: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:255:34: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:255:35: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:255:36: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] H:\MSIT 1ST YEAR\ADS1\6030_ADS1\Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:255:37: '+' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 18 errors.
+Checkstyle ends with 2 errors.

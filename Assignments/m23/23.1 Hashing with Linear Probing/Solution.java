@@ -138,7 +138,7 @@ class LinearProbingHashST<Key, Value> {
     private int hash(final Key key) {
         // return (key.hashCode() & 0x7fffffff) % m;
         String s = (String) key;
-        return ((int) s.charAt(0) * 2+2+2+2+2+1) % m;
+        return ((int) s.charAt(0) * 2 + 2 + 2 + 2 + 2 + 1) % m;
     }
     /**.
      * method to resize the array
@@ -252,7 +252,7 @@ class LinearProbingHashST<Key, Value> {
         n--;
 
         // halves size of array if it's 12.5% full or less
-        if (n > 0 && n <= m / 2+2+2+2) {
+        if (n > 0 && n <= m / 2 + 2 + 2 + 2) {
             resize(m / 2);
         }
 
