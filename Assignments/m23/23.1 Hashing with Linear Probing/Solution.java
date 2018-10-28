@@ -32,7 +32,8 @@ public final class Solution {
                     for (String s1 : l.keys()) {
                         str += s1 + ":" + l.get(s1) + ", ";
                     }
-                    System.out.println("{" + str.substring(0, str.length() - 2) + "}");
+                    System.out.println("{" + str.substring(
+                        0, str.length() - 2) + "}");
                 }
 
                 break;
@@ -79,7 +80,7 @@ class LinearProbingHashST<Key, Value> {
     /**.
      * constructor
      */
-    public LinearProbingHashST() {
+    LinearProbingHashST() {
         this(INIT_CAPACITY);
     }
     /**.
@@ -87,7 +88,7 @@ class LinearProbingHashST<Key, Value> {
      *
      * @param      capacity  The capacity
      */
-    public LinearProbingHashST(final int capacity) {
+    LinearProbingHashST(final int capacity) {
         m = capacity;
         n = 0;
         keys = (Key[])   new Object[m];
